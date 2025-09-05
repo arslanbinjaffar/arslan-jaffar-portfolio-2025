@@ -33,13 +33,19 @@ function ResumeNew() {
             &nbsp;Download Indeed Resume
           </Button>
         </Row>
-        <Row className="resume">
-          <Document file={IndeedResume} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
-            {/* Add more <Page /> if IndeedResume has more pages */}
-          </Document>
-        </Row>
+          <Row className="resume" style={{ justifyContent: "center" }}>
+            <Document file={IndeedResume}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "30px" }}>
+                <div style={{ boxShadow: "0 4px 16px rgba(0,0,0,0.12)", borderRadius: 8, background: "#fff", padding: 16, maxWidth: 900, width: "100%" }}>
+                  <Page pageNumber={1} scale={width > 786 ? 1.2 : 0.6} />
+                </div>
+                <div style={{ boxShadow: "0 4px 16px rgba(0,0,0,0.12)", borderRadius: 8, background: "#fff", padding: 16, maxWidth: 900, width: "100%" }}>
+                  <Page pageNumber={2} scale={width > 786 ? 1.2 : 0.6} />
+                </div>
+                {/* Add more <div><Page /></div> if IndeedResume has more pages */}
+              </div>
+            </Document>
+          </Row>
 
         {/* My Resume Section (single-page) */}
         <Row style={{ justifyContent: "center", position: "relative", marginTop: 40 }}>
