@@ -11,7 +11,7 @@ import {
 } from "react-icons/si";
 import { TbCursorText } from "react-icons/tb";
 import { FaCode } from "react-icons/fa";
-
+import cusorCodeAi from "../../Assets/cusor_code_editor.webp";
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
@@ -37,7 +37,7 @@ function Toolstack() {
         <SiClickup />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbCursorText />
+        <img src={cusorCodeAi} alt="Cursor AI" style={{ width: "40px", height: "40px" }} />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaCode />
