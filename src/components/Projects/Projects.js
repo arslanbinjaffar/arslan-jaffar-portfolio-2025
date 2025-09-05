@@ -4,20 +4,20 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { projects, backendProjects } from "./projectsData";
 
-  const allProjects = [
-    ...projects.map((project) => ({ ...project, isBackend: false })),
-    ...backendProjects.map((project) => ({ ...project, isBackend: true })),
-  ];
 
-  const [displayProjects, setDisplayProjects] = useState(() => {
-    const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
-    const randomThree = shuffled.slice(0, 3);
-    const rest = allProjects.filter(
-      (p) => !randomThree.some((rp) => rp.title === p.title)
-    );
-    return [...randomThree, ...rest];
-  });
+const allProjects = [
+  ...projects.map((project) => ({ ...project, isBackend: false })),
+  ...backendProjects.map((project) => ({ ...project, isBackend: true })),
+];
 
+const [displayProjects, setDisplayProjects] = useState(() => {
+  const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
+  const randomThree = shuffled.slice(0, 3);
+  const rest = allProjects.filter(
+    (p) => !randomThree.some((rp) => rp.title === p.title)
+  );
+  return [...randomThree, ...rest];
+});
   function Projects() {
     const allProjects = [
       ...projects.map((project) => ({ ...project, isBackend: false })),
@@ -76,3 +76,5 @@ import { projects, backendProjects } from "./projectsData";
       </Container>
     );
   }
+
+  export default Projects;
