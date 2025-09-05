@@ -16,6 +16,10 @@ import {
   SiNextdotjs,
   SiSolidity,
   SiPostgresql,
+  SiBitbucket,
+  SiVite,
+  SiTypescript,
+  SiTailwindcss,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -28,18 +32,18 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <TbBrandGolang />
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiReact />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+      {/* <Col xs={4} md={2} className="tech-icons">
         <SiSolidity />
-      </Col>
+      </Col> */}
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
@@ -61,9 +65,21 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
+        <Col xs={4} md={2} className="tech-icons">
+          <SiBitbucket />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiVite />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiTypescript />
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+          <SiTailwindcss />
+        </Col>
+      {/* <Col xs={4} md={2} className="tech-icons">
         <DiJava />
-      </Col>
+      </Col> */}
     </Row>
   );
 }
