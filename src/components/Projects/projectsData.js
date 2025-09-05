@@ -87,7 +87,7 @@ const projects = [
       "Facebook Clone is a social media platform built with React.js, replicating the core features of Facebook. Users can sign up, log in, and post updates, images, and videos on their timeline. The app includes a dynamic feed, real-time notifications, and interactive comment and like functionalities, creating a seamless social experience. With a sleek and responsive design, this clone mimics the user interface and user experience of Facebook while showcasing the power of React for building modern web applications.",
   },
   {
-    imgPath: require("../../Assets/Projects/fleetERPsystem.png"),
+    imgPath: require("../../Assets/Projects/fleet.png"),
     isBlog: false,
     title: "FleetERP System",
     description:
