@@ -1,32 +1,32 @@
 const experienceData = [
   {
-    role: "Full Stack Developer",
-    company: "PATCO Technologies",
+    role: "Senior Software Engineer - MERN",
+    company: "Beyond Technologies",
     designation: "Senior Software Engineer",
-    duration: "Jan 2023 - Present",
-    companyImage: require("../../Assets/Projects/orkhontech-web.png"),
+    duration: "October 2023 - Present",
+    companyImage: require("../../Assets/logo.png"),
     description:
-      "Leading full-stack development projects using React.js, Node.js, and modern web technologies. Responsible for architecting scalable solutions, mentoring junior developers, and delivering high-quality software products for international clients. Worked on 15+ projects including ERP systems, e-commerce platforms, and mobile applications."
+      "Designed backend services using NestJS + Node.js, Express.js ensuring modularity and performance. Developed and optimized complex MySQL queries, stored procedures, and indexes for reporting and analytics. Built GitLab CI/CD pipelines with automated testing and deployments. Leading a team of developers on the EventCenter Application and ERP System, ensuring high-quality delivery and adherence to best practices. Reviewing code, merging branches, and managing Git workflows to maintain a clean and efficient repository. Designing and developing scalable web and mobile applications using the MERN stack (MongoDB, Express.js, React.js, Node.js) and PostgreSQL. Building responsive interfaces with React.js and Next.js, optimizing UI performance and user engagement. Implementing secure and scalable server-side APIs and backend logic using Node.js and Express.js. Mentoring junior developers by providing solutions, guiding through technical challenges, and explaining complex scenarios. Utilizing Redux for state management to ensure efficient data flow and optimized app performance."
   },
   {
-    role: "MERN Stack Developer",
-    company: "Enlatics Software",
-    designation: "Software Developer",
-    duration: "Jun 2022 - Dec 2022",
-    companyImage: require("../../Assets/Projects/aml-watcher.png"),
-    description:
-      "Developed and maintained the AML Watcher application using MERN stack. Focused on building responsive, scalable, and secure platforms with seamless integration between frontend and backend services. Implemented real-time data processing features and optimized application performance for better user experience."
-  },
-  {
-    role: "React Developer",
-    company: "EventBuizz",
-    designation: "Frontend Developer",
-    duration: "Mar 2022 - May 2022",
+    role: "Midlevel React.js Developer",
+    company: "Eventbuizz",
+    designation: "React.js Developer",
+    duration: "February 2022 - October 2023",
     companyImage: require("../../Assets/Projects/eventbuizz.png"),
     description:
-      "Worked on the Eventcenter project focusing on event and program schedule management. Developed features for event timing, participant check-ins/check-outs, and other event-related functionalities. Ensured smooth integration between frontend and backend while optimizing for performance and scalability."
+      "Led a small frontend team of two intern developers, providing guidance, reviewing code, and ensuring adherence to best practices. Developed responsive, secure, and scalable applications using React.js and React Native for the frontend, with Node.js, Express.js, Vue.js, and MongoDB powering the backend. Wrote clean, efficient, and maintainable code in JavaScript and TypeScript, following modern coding standards and ensuring reliability. Collaborated closely with UI/UX teams to translate design concepts into seamless, interactive user experiences. Integrated interfaces with HTML, CSS, and modern design frameworks to enhance usability and visual appeal."
   },
   {
+    role: "React/VueJs Developer",
+    company: "Enlatics",
+    designation: "Frontend Developer",
+    duration: "March 2021 - February 2022",
+    companyImage: require("../../Assets/Projects/aml-watcher.png"),
+    description:
+      "Began career specializing in frontend development using React.js and modern JavaScript tools. Built responsive and dynamic web applications, ensuring seamless UI performance and cross-browser compatibility. Collaborated closely with the backend team to integrate REST APIs with the frontend for smooth data exchange. Managed application state efficiently using Redux, improving data flow and UI responsiveness. Translated UI/UX designs into functional, visually appealing interfaces using HTML, CSS, and React libraries. Gained hands-on experience in writing maintainable, scalable, and efficient frontend code following industry best practices."
+  },
+   {
     role: "Frontend Developer",
     company: "Freelance",
     designation: "Independent Contractor",
