@@ -18,7 +18,7 @@ const projects = [
       "https://play.google.com/store/apps/details?id=com.eventbuizz.app&hl=en&gl=US&pli=1",
   },
   {
-    imgPath: require("../../Assets/Projects/aifawebsite.png"),
+    imgPath: require("../../Assets/Projects/afiawebsite.png"),
     isBlog: false,
     title: "AIFA Services",
     description:
