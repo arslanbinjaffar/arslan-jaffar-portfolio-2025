@@ -1,13 +1,5 @@
 const projects = [
-  {
-    imgPath: require("../../Assets/Projects/orkhontech-web.png"),
-    isBlog: false,
-    title: "PATCO - AI-Based Software Development",
-    description:
-      "PATCO is a well-established AI-based software development company headquartered in Baku, Azerbaijan. With over 8 years in the industry and a team of more than 50 highly qualified specialists, they've successfully delivered 300+ projects across global markets—boasting a client return rate of 80%, a perfect GDPR compliance record, and a 4.9 rating on Clutch. Leadership & Vision: Shahin Valiyev, Founder & CEO — A tech visionary focused on bridging Azerbaijan and Pakistan's innovation ecosystems. Agha Zain Haider, Co-Founder & COO — Orchestrates operational excellence and strategic collaborations between the two nations. Core Capabilities: PATCO excels in delivering tailored development services—from web and mobile applications to complex backend systems—leveraging modern technologies such as React.js, Laravel, Docker, Kubernetes, and more.",
-    demoLink: "https://www.patco.az/",
-    ghLink: "https://github.com/Beyondevs/orkhontech-web",
-  },
+
   {
     imgPath: require("../../Assets/Projects/gigbase.png"),
     isBlog: false,
@@ -17,7 +9,23 @@ const projects = [
     demoLink: "https://gigbase.io/",
     ghLink: "https://www.app.gigbase.io/auth/login",
   },
-
+ {
+    imgPath: require("../../Assets/Projects/aml-watcher.png"),
+    isBlog: false,
+    title: "Aml watcher App",
+    description:
+      "I was currently working as a MERN developer on the AML Watcher application, a web solution owned by Enlatics Software Company. In this role, I contribute to the design, development, and maintenance of the application, focusing on leveraging the MERN stack to build a responsive, scalable, and secure platform. I collaborate with cross-functional teams to ensure seamless integration of front-end interfaces with back-end services, ensuring high performance and reliability. This project demonstrates my expertise in full-stack development, API design, and real-time data processing, aimed at providing a robust solution for anti-money laundering monitoring.",
+    demoLink: "https://amlwatcher.com/",
+  },
+   {
+    imgPath: require("../../Assets/Projects/fleet.png"),
+    isBlog: false,
+    title: "FleetERP System",
+    description:
+      "FleetERP System – Modules & Features\n\n1. MRM (Maintenance & Resource Management)\nManages the complete fleet lifecycle including fleet records, fleet types, suppliers, local purchase orders (LPOs), customers, timesheets, fleet purchases, purchase orders, and shipping/receiving operations.\n\n2. GOM (Garage Operations Management)\nCovers all garage-related activities such as job assignments, repair tracking, supplier management, and inventory control. Inventory features include brand, category, model, warehouse, stock lists, and spare parts management.\n\n3. HRM (Human Resource Management)\nProvides comprehensive employee management with payroll, salaries, and salary slips. Supports attendance tracking, holiday management, leave management (leave types, leave balance, leave requests), loans, and shift scheduling.\n\n4. Finance Management\nHandles organizational financial operations including chart of accounts, billing (invoices, quotations, payment receipts), transactions (journal entries, debit/credit notes, vouchers for receipts, payments, sundry, petty cash), and financial reporting.\n\n5. Role & Permission Management\nOffers robust access control with role creation, assignment of permissions, and the ability to edit or delete roles. Ensures secure and efficient management of user access across the system.",
+    demoLink: "https://itc.beyondaio.com/",
+    ghLink: "https://github.com/Beyondevs/Fleet-Management-Frontend"
+  },
   {
     imgPath: require("../../Assets/Projects/afiawebsite.png"),
     isBlog: false,
@@ -27,17 +35,15 @@ const projects = [
     demoLink: "https://www.aifaservices.ae/",
     ghLink: "https://github.com/Beyondevs/aifaWebsite",
   },
- 
-  {
-    imgPath: require("../../Assets/Projects/aml-watcher.png"),
+   {
+    imgPath: require("../../Assets/Projects/orkhontech-web.png"),
     isBlog: false,
-    title: "Aml watcher App",
+    title: "PATCO - AI-Based Software Development",
     description:
-      "I was currently working as a MERN developer on the AML Watcher application, a web solution owned by Enlatics Software Company. In this role, I contribute to the design, development, and maintenance of the application, focusing on leveraging the MERN stack to build a responsive, scalable, and secure platform. I collaborate with cross-functional teams to ensure seamless integration of front-end interfaces with back-end services, ensuring high performance and reliability. This project demonstrates my expertise in full-stack development, API design, and real-time data processing, aimed at providing a robust solution for anti-money laundering monitoring.",
-    demoLink: "https://amlwatcher.com/",
+      "PATCO is a well-established AI-based software development company headquartered in Baku, Azerbaijan. With over 8 years in the industry and a team of more than 50 highly qualified specialists, they've successfully delivered 300+ projects across global markets—boasting a client return rate of 80%, a perfect GDPR compliance record, and a 4.9 rating on Clutch. Leadership & Vision: Shahin Valiyev, Founder & CEO — A tech visionary focused on bridging Azerbaijan and Pakistan's innovation ecosystems. Agha Zain Haider, Co-Founder & COO — Orchestrates operational excellence and strategic collaborations between the two nations. Core Capabilities: PATCO excels in delivering tailored development services—from web and mobile applications to complex backend systems—leveraging modern technologies such as React.js, Laravel, Docker, Kubernetes, and more.",
+    demoLink: "https://www.patco.az/",
+    ghLink: "https://github.com/Beyondevs/orkhontech-web",
   },
-  
- 
  
   {
     imgPath: require("../../Assets/Projects/aifaERPsystem.png"),
@@ -49,15 +55,7 @@ const projects = [
     ghLink: "https://github.com/Beyondevs/aifa-monorepo",
   },
 
-  {
-    imgPath: require("../../Assets/Projects/fleet.png"),
-    isBlog: false,
-    title: "FleetERP System",
-    description:
-      "FleetERP System – Modules & Features\n\n1. MRM (Maintenance & Resource Management)\nManages the complete fleet lifecycle including fleet records, fleet types, suppliers, local purchase orders (LPOs), customers, timesheets, fleet purchases, purchase orders, and shipping/receiving operations.\n\n2. GOM (Garage Operations Management)\nCovers all garage-related activities such as job assignments, repair tracking, supplier management, and inventory control. Inventory features include brand, category, model, warehouse, stock lists, and spare parts management.\n\n3. HRM (Human Resource Management)\nProvides comprehensive employee management with payroll, salaries, and salary slips. Supports attendance tracking, holiday management, leave management (leave types, leave balance, leave requests), loans, and shift scheduling.\n\n4. Finance Management\nHandles organizational financial operations including chart of accounts, billing (invoices, quotations, payment receipts), transactions (journal entries, debit/credit notes, vouchers for receipts, payments, sundry, petty cash), and financial reporting.\n\n5. Role & Permission Management\nOffers robust access control with role creation, assignment of permissions, and the ability to edit or delete roles. Ensures secure and efficient management of user access across the system.",
-    demoLink: "https://itc.beyondaio.com/",
-    ghLink: "https://github.com/Beyondevs/Fleet-Management-Frontend"
-  },
+ 
 
   {
     imgPath: require("../../Assets/Projects/quick_legals.png"),
