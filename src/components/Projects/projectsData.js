@@ -1,5 +1,14 @@
 const projects = [
   {
+    imgPath: require("../../Assets/Projects/orkhontech-web.png"),
+    isBlog: false,
+    title: "PATCO - AI-Based Software Development",
+    description:
+      "PATCO is a well-established AI-based software development company headquartered in Baku, Azerbaijan. With over 8 years in the industry and a team of more than 50 highly qualified specialists, they've successfully delivered 300+ projects across global markets—boasting a client return rate of 80%, a perfect GDPR compliance record, and a 4.9 rating on Clutch. Leadership & Vision: Shahin Valiyev, Founder & CEO — A tech visionary focused on bridging Azerbaijan and Pakistan's innovation ecosystems. Agha Zain Haider, Co-Founder & COO — Orchestrates operational excellence and strategic collaborations between the two nations. Core Capabilities: PATCO excels in delivering tailored development services—from web and mobile applications to complex backend systems—leveraging modern technologies such as React.js, Laravel, Docker, Kubernetes, and more.",
+    demoLink: "https://www.patco.az/",
+    ghLink: "https://github.com/Beyondevs/orkhontech-web",
+  },
+  {
     imgPath: require("../../Assets/Projects/gigbase.png"),
     isBlog: false,
     title: "Gigbase",
@@ -167,3 +176,5 @@ const backendProjects = [
 ];
 
 export { projects, backendProjects };
+
+
