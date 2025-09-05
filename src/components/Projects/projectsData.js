@@ -86,6 +86,53 @@ const projects = [
     description:
       "Facebook Clone is a social media platform built with React.js, replicating the core features of Facebook. Users can sign up, log in, and post updates, images, and videos on their timeline. The app includes a dynamic feed, real-time notifications, and interactive comment and like functionalities, creating a seamless social experience. With a sleek and responsive design, this clone mimics the user interface and user experience of Facebook while showcasing the power of React for building modern web applications.",
   },
+  {
+    imgPath: require("../../Assets/Projects/fleetERPsystem.png"),
+    isBlog: false,
+    title: "FleetERP System",
+    description:
+      "FleetERP System – Modules & Features\n\n1. MRM (Maintenance & Resource Management)\nManages the complete fleet lifecycle including fleet records, fleet types, suppliers, local purchase orders (LPOs), customers, timesheets, fleet purchases, purchase orders, and shipping/receiving operations.\n\n2. GOM (Garage Operations Management)\nCovers all garage-related activities such as job assignments, repair tracking, supplier management, and inventory control. Inventory features include brand, category, model, warehouse, stock lists, and spare parts management.\n\n3. HRM (Human Resource Management)\nProvides comprehensive employee management with payroll, salaries, and salary slips. Supports attendance tracking, holiday management, leave management (leave types, leave balance, leave requests), loans, and shift scheduling.\n\n4. Finance Management\nHandles organizational financial operations including chart of accounts, billing (invoices, quotations, payment receipts), transactions (journal entries, debit/credit notes, vouchers for receipts, payments, sundry, petty cash), and financial reporting.\n\n5. Role & Permission Management\nOffers robust access control with role creation, assignment of permissions, and the ability to edit or delete roles. Ensures secure and efficient management of user access across the system.",
+    demoLink: "https://itc.beyondaio.com/",
+    ghLink: "https://github.com/Beyondevs/Fleet-Management-Frontend"
+  },
+
+  {
+    imgPath: require("../../Assets/Projects/quick_legals.png"),
+    isBlog: false,
+    title: "QuickLegals Website & User Portal",
+    description:
+      "QuickLegals is an intuitive online platform designed to help users generate premium legal documents in minutes—no lawyers necessary, no complexity involved. It puts legal solutions squarely within reach, offering simplicity and professionalism at your fingertips.\n\nKey Highlights:\n- Fast & User-Friendly: Users can quickly craft professional legal documents through an easy-to-use interface—ideal for those looking to save time and avoid legal jargon.\n- Accessible Legal Resources: The platform democratizes document creation, empowering individuals and businesses to generate legal drafts without the hassle of hiring a lawyer.",
+    demoLink: "https://quicklegals.com/",
+    ghLink: "https://github.com/Beyondevs/Quick-Legals-web"
+  },
+  {
+    imgPath: require("../../Assets/Projects/admin_quick_legals.png"),
+    isBlog: false,
+    title: "QuickLegals Admin Portal",
+    description:
+      "QuickLegals Admin Portal provides administrative features for managing users, documents, and platform settings, supporting the main QuickLegals platform for legal document generation.",
+    demoLink: "https://admin.quicklegals.com/",
+    ghLink: "https://github.com/Beyondevs/Quick-Legals-Admin-Portal"
+  },
+  {
+    imgPath: require("../../Assets/Projects/islamiya.png"),
+    isBlog: false,
+    title: "Islamiyya Website & User Portal",
+    description:
+      "Islamiyya is Scotland’s first Shari‘ah-compliant will writing service, offering a professional and faith-based solution to estate planning. Features include Islamic will templates, localization for Scottish law, user guidance for creating valid Islamic wills, and a strong emphasis on legal compliance, data privacy, and Shari‘ah integrity.",
+    demoLink: "https://islamiyya.com/",
+    ghLink: "https://github.com/Beyondevs/Islamiya-FE"
+  },
+  {
+    imgPath: require("../../Assets/Projects/adminIslamiya.png"),
+    isBlog: false,
+    title: "Islamiyya Admin Panel",
+    description:
+      "Islamiyya Admin Panel provides administrative control over the platform’s operations, including user management, document and template control, system configuration, analytics, and support handling. Admins can oversee users, manage legal templates, configure system settings, track analytics, and respond to feedback, ensuring secure and efficient platform management.",
+    demoLink: "https://admin.islamiyya.com/",
+    ghLink: "https://github.com/Beyondevs/Islamiya-admin-panel-fe"
+  }
+
 ];
 
 const backendProjects = [
@@ -119,4 +166,4 @@ const backendProjects = [
   },
 ];
 
-export { projects, backendProjects };
+export { projects, backendProjects, quickLegalsProjects };
