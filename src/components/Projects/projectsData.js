@@ -166,4 +166,4 @@ const backendProjects = [
   },
 ];
 
-export { projects, backendProjects, quickLegalsProjects };
+export { projects, backendProjects };
