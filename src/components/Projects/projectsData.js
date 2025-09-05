@@ -137,28 +137,28 @@ const projects = [
 
 const backendProjects = [
   {
-    imgPath: require("../../Assets/Projects/pre.svg"),
+    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
     isBlog: false,
     title: "Islamiya Backend",
     description: "Solo backend project for Islamiya platform.",
     ghLink: "https://github.com/Beyondevs/Islamiya-Backend",
   },
   {
-    imgPath: require("../../Assets/Projects/pre.svg"),
+    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
     isBlog: false,
     title: "Fleet Management Backend",
     description: "Solo backend project for Fleet Management system.",
     ghLink: "https://github.com/Beyondevs/Fleet-Management-Backend",
   },
   {
-    imgPath: require("../../Assets/Projects/pre.svg"),
+    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
     isBlog: false,
     title: "Quick Legals Backend",
     description: "Solo backend project for Quick Legals platform.",
     ghLink: "https://github.com/Beyondevs/Quick-legals-backend",
   },
   {
-    imgPath: require("../../Assets/Projects/pre.svg"),
+    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
     isBlog: false,
     title: "Aifa ERP Backend",
     description: "Solo backend project for Aifa ERP system.",
