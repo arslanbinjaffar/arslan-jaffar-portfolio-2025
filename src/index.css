@@ -6,3 +6,69 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
+
+
+
+.project-card-view {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 10px;
+  background-color: #1a1a1a; /* Dark theme for consistency */
+  color: #fff;
+}
+
+.project-card-view:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.project-card-img-wrapper {
+  position: relative;
+}
+
+.project-card-img-wrapper img {
+  object-fit: cover;
+  height: 200px; /* Adjust as needed */
+  width: 100%;
+}
+
+.backend-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #6f42c1; /* Purple theme */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.project-card-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-card-buttons .btn-primary {
+  background-color: #6f42c1;
+  border-color: #6f42c1;
+  transition: background-color 0.3s ease;
+}
+
+.project-card-buttons .btn-primary:hover {
+  background-color: #563d7c;
+  border-color: #563d7c;
+}
+
+.read-more {
+  color: #6f42c1;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
