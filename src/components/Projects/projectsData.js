@@ -35,6 +35,15 @@ const projects = [
     demoLink: "https://www.aifaservices.ae/",
     ghLink: "https://github.com/Beyondevs/aifaWebsite",
   },
+    {
+    imgPath: require("../../Assets/Projects/FeedDrop.png"),
+    isBlog: false,
+    title: "FeedDrop",
+    description:
+      "FeedDrop is an innovative AI-powered platform designed to help creators, brands, and businesses generate engaging short-form videos similar to TikTok and Instagram reels. With cutting-edge artificial intelligence, the portal makes it easy to transform ideas, scripts, or prompts into high-quality, shareable content in just minutes. Key Highlights: 🎥 AI-Driven Video Creation – Automatically generate professional-grade short videos tailored for TikTok, Instagram, and other social platforms. ✨ Smart Editing Tools – Enhance your clips with AI effects, captions, music, and transitions—no editing skills required. 🚀 Fast & Scalable – Produce videos quickly at scale, perfect for marketing campaigns, influencers, or content creators. 🌍 For Everyone – Whether you're a solo creator, a brand, or an agency, FeedDrop simplifies content creation while boosting reach and engagement. FeedDrop is more than just a video tool—it's a creative assistant that reshapes how stories are told and shared in the digital age.",
+    demoLink: "https://www.feeddrop.com/portal",
+    ghLink: "https://www.feeddrop.com/portal",
+  },
    {
     imgPath: require("../../Assets/Projects/orkhontech-web.png"),
     isBlog: false,
