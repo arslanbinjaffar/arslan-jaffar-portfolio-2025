@@ -10,33 +10,22 @@ function Projects() {
       ...projects.map((project) => ({ ...project, isBackend: false })),
       ...backendProjects.map((project) => ({ ...project, isBackend: true })),
     ],
-    [projects, backendProjects]
+    [] // Empty dependency array - projects and backendProjects are static imports
   );
 
   const [displayProjects, setDisplayProjects] = useState(() => {
-    const order = JSON.parse(localStorage.getItem("projectOrder"));
-    if (order && Array.isArray(order) && order.length === allProjects.length) {
-      return order
-        .map((title) => allProjects.find((p) => p.title === title))
-        .filter(Boolean);
-    }
+    // Shuffle projects on initial load
     const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
-    localStorage.setItem(
-      "projectOrder",
-      JSON.stringify(shuffled.map((p) => p.title))
-    );
     return shuffled;
   });
 
   useEffect(() => {
+    // Re-shuffle every 10 minutes
     const interval = setInterval(() => {
       const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
-      localStorage.setItem(
-        "projectOrder",
-        JSON.stringify(shuffled.map((p) => p.title))
-      );
       setDisplayProjects(shuffled);
     }, 600000); // 10 minutes
+
     return () => clearInterval(interval);
   }, [allProjects]);
 
