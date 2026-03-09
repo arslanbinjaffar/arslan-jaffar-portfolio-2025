@@ -10,38 +10,31 @@ function Projects() {
     ...backendProjects.map((project) => ({ ...project, isBackend: true })),
   ];
 
-  // Helper to shuffle and save to localStorage
-  const shuffleAndSave = () => {
-    const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
-    localStorage.setItem(
-      "projectOrder",
-      JSON.stringify(shuffled.map((p) => p.title))
-    );
-    return shuffled;
-  };
-
-  // Get order from localStorage or shuffle
-  const getOrderedProjects = () => {
+  const [displayProjects, setDisplayProjects] = useState(() => {
     const order = JSON.parse(localStorage.getItem("projectOrder"));
     if (order && Array.isArray(order) && order.length === allProjects.length) {
       return order
         .map((title) => allProjects.find((p) => p.title === title))
         .filter(Boolean);
     }
-    return shuffleAndSave();
-  };
-
-  const [displayProjects, setDisplayProjects] = useState(getOrderedProjects);
+    const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
+    localStorage.setItem(
+      "projectOrder",
+      JSON.stringify(shuffled.map((p) => p.title))
+    );
+    return shuffled;
+  });
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setDisplayProjects(shuffleAndSave());
+      const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
+      localStorage.setItem(
+        "projectOrder",
+        JSON.stringify(shuffled.map((p) => p.title))
+      );
+      setDisplayProjects(shuffled);
     }, 600000); // 10 minutes
     return () => clearInterval(interval);
-  }, [allProjects]);
-
-  useEffect(() => {
-    setDisplayProjects(getOrderedProjects());
   }, [allProjects]);
 
   return (
