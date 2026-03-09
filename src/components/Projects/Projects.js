@@ -1,14 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { projects, backendProjects } from "./projectsData";
 
 function Projects() {
-  const allProjects = [
-    ...projects.map((project) => ({ ...project, isBackend: false })),
-    ...backendProjects.map((project) => ({ ...project, isBackend: true })),
-  ];
+  const allProjects = useMemo(
+    () => [
+      ...projects.map((project) => ({ ...project, isBackend: false })),
+      ...backendProjects.map((project) => ({ ...project, isBackend: true })),
+    ],
+    [projects, backendProjects]
+  );
 
   const [displayProjects, setDisplayProjects] = useState(() => {
     const order = JSON.parse(localStorage.getItem("projectOrder"));
