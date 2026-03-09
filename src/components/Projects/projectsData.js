@@ -1,5 +1,40 @@
 const projects = [
-
+ {
+    imgPath: require("../../Assets/Projects/gigbase.png"),
+    isBlog: false,
+    title: "VoxtAsia-Admin",
+    description:
+      "VoxtAsia Admin is the central dashboard for managing our audio streaming platform. Admins can upload and organize audio content, manage stories, episodes, categories, and genres, track user engagement, and monitor analytics in real-time. The platform is designed to streamline content management, optimize user experience, and provide actionable insights — all in one intuitive interface. With role-based access and advanced moderation tools, running the backend of a large-scale audio streaming service has never been easier.",
+    demoLink: "https://admin.voxt.asia/signin",
+    ghLink: "https://github.com/VoxtAsia/Vox-Front",
+},
+{
+    imgPath: require("../../Assets/Projects/voxtasia-mobile-app.jpeg"),
+    isBlog: false,
+    title: "VoxtAsia-Mobile",
+    description:
+      "VoxtAsia Mobile brings the full audio streaming experience to your smartphone. Users can stream stories, podcasts, and music on the go, create and manage playlists, follow favorite creators, and track listening progress. The app offers offline downloads, personalized recommendations, and push notifications for new releases. With a sleek, responsive design and seamless audio playback, VoxtAsia Mobile ensures users can enjoy their favorite content anytime, anywhere, with the convenience and performance of a native mobile experience.",
+    demoLink: "https://drive.google.com/file/d/1PvwZRxeoxkpoI2fYRa7ffgM6Bq45E2dd/view?usp=drive_link",
+    ghLink: "https://github.com/VoxtAsia/Vox-Mobile",
+},
+{
+    imgPath: require("../../Assets/Projects/voxtasia-web.png"),
+    isBlog: false,
+    title: "VoxtAsia-Web",
+    description:
+      "VoxtAsia Web is the frontend of our audio streaming platform, providing users seamless access to stories, podcasts, and audio content. Listeners can browse categories and genres, follow favorite creators, track listening history, and engage with content through likes and playlists. Built with a modern, responsive design, the platform ensures high-quality audio playback across devices, personalized recommendations, and an intuitive user experience. VoxtAsia Web brings a full-featured, user-friendly audio streaming experience directly to your browser.",
+    demoLink: "https://voxt.asia/signin",
+    ghLink: "https://github.com/VoxtAsia/Vox-Admin",
+},
+{
+    imgPath: require("../../Assets/Projects/voxtasia-web.png"),
+    isBlog: false,
+    title: "VoxtAsia-Web",
+    description:
+      "VoxtAsia Web is the frontend of our audio streaming platform, providing users seamless access to stories, podcasts, and audio content. Listeners can browse categories and genres, follow favorite creators, track listening history, and engage with content through likes and playlists. Built with a modern, responsive design, the platform ensures high-quality audio playback across devices, personalized recommendations, and an intuitive user experience. VoxtAsia Web brings a full-featured, user-friendly audio streaming experience directly to your browser.",
+    demoLink: "https://voxt.asia/signin",
+    ghLink: "https://github.com/VoxtAsia/Vox-Admin",
+},
   {
     imgPath: require("../../Assets/Projects/gigbase.png"),
     isBlog: false,

@@ -1,5 +1,4 @@
-# New Portfolio 2024
-
+# New Portfolio 2026
 A modern, results-driven portfolio website built with React.js, showcasing professional experience, projects, and backend expertise.
 
 ## Table of Contents
@@ -61,6 +60,7 @@ Solo backend projects with vector image representation:
 - React Bootstrap
 - JavaScript (ES6+)
 - CSS
+- RabbitMQ
 
 ## Contact
 - [GitHub](https://github.com/arslanbinjaffar)
