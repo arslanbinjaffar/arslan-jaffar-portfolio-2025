@@ -1,7 +1,8 @@
 {
-  "name": "portfolio",
+  "name": "arslan-jaffar-portfolio",
   "version": "0.1.0",
   "private": true,
+  "description": "Portfolio of Arslan Jaffar, Senior MERN Stack Developer with 3.5+ years experience building scalable, high-performance web and SaaS applications. Expertise in React.js, Next.js, Node.js, Express.js, NestJS, MongoDB, PostgreSQL, Redis, microservices, and cloud-based architectures. Demonstrates strong skills in API development, system design, CI/CD pipelines, and team leadership. Includes projects in audio streaming platforms, AI-powered ERP systems, and real-time event management apps. Showcases proficiency in modern frontend frameworks, backend engineering, and deployment best practices.",
   "dependencies": {
     "@react-pdf/renderer": "^2.2.0",
     "@testing-library/jest-dom": "^5.16.2",
