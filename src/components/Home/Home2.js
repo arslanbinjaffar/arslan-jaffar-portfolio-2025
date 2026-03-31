@@ -19,11 +19,13 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a results-driven software engineer with over 3.5+ years of professional experience, specializing in building scalable and high-performance web applications.<br />
-              My core expertise lies in <b className="purple">React.js</b> and modern JavaScript frameworks, complemented by strong skills in backend integration and API development.<br />
-              I am passionate about writing clean, maintainable code and delivering user-centric solutions with precision and speed.<br />
-              Throughout my career, I have successfully contributed to complex projects, collaborating with cross-functional teams to develop innovative features, optimize performance, and ensure seamless user experiences.<br />
-              I thrive in fast-paced environments, continuously enhancing my skills to stay ahead of evolving technologies while maintaining a strong focus on quality and impact.
+              Hi, I`m Arslan Jaffar. I`m a Senior MERN Stack Engineer with 3.5+ years of experience focused on building scalable, production-grade applications.
+
+              My core strength is backend engineering — designing APIs, microservices, and handling high-performance systems using Node.js, NestJS, and modern architectures. I`ve worked with distributed systems, message queues like RabbitMQ, and optimized databases like PostgreSQL and MongoDB.
+
+              Currently, I`m leading development on large-scale ERP and event platforms, where I make key technical decisions and ensure system scalability and reliability.
+
+              I`m particularly interested in solving complex system design problems and building efficient, real-world solutions.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
