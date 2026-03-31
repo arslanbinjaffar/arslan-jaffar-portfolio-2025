@@ -1,71 +1,135 @@
-# New Portfolio 2026
-A modern, results-driven portfolio website built with React.js, showcasing professional experience, projects, and backend expertise.
+# 🚀 Arslan Jaffar — Portfolio 
 
-## Table of Contents
-- [About](#about)
-- [Features](#features)
-- [Projects](#projects)
-- [Backend Projects](#backend-projects)
-- [Getting Started](#getting-started)
-- [Tech Stack](#tech-stack)
-- [Contact](#contact)
-
-## About
-This portfolio highlights the work of Arslan Bin Jaffar, a software engineer with 3.5+ years of experience in scalable web applications, backend integration, and API development. It demonstrates a passion for clean code, user-centric solutions, and modern JavaScript frameworks.
-
-## Features
-- Responsive and modern UI
-- Dynamic project showcase using data-driven components
-- Dedicated section for backend-only projects
-- Integration with GitHub and LinkedIn
-- Particle and tilt effects for visual appeal
-
-## Projects
-Showcases a variety of web applications, including:
-- Gigbase: All-in-one platform for freelancers ([Demo](https://gigbase.io/))
-- EventBuizz Mobile App ([Demo](https://play.google.com/store/apps/details?id=com.eventbuizz.app&hl=en&gl=US&pli=1))
-- AIFA Services ([Demo](https://www.aifaservices.ae/))
-- Eventcenter Web-app ([Demo](http://my.eventbuizz.com))
-- AML Watcher ([Demo](https://amlwatcher.com/))
-- Ninja Training App ([Demo](https://ninja-training-alpha.vercel.app/))
-- Hasty App ([Demo](https://github.com/arslanbinjaffar/hasty-next-app))
-- Martial Arts ([Demo](https://martial-art-school-2.vercel.app/))
-- Facebook Clone
-- Aifa ERP System ([Demo](https://staging.d31px19nsmiqd.amplifyapp.com/))
-
-## Backend Projects
-Solo backend projects with vector image representation:
-- Islamiya Backend ([GitHub](https://github.com/Beyondevs/Islamiya-Backend))
-- Fleet Management Backend ([GitHub](https://github.com/Beyondevs/Fleet-Management-Backend))
-- Quick Legals Backend ([GitHub](https://github.com/Beyondevs/Quick-legals-backend))
-- Aifa ERP Backend ([GitHub](https://github.com/Beyondevs/Aifa-ERP-Backend))
-
-## Getting Started
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/arslanbinjaffar/new-portfolio-2024.git
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the development server:
-   ```sh
-   npm start
-   ```
-4. Open [http://localhost:3000](http://localhost:3000) to view in your browser.
-
-## Tech Stack
-- React.js
-- React Bootstrap
-- JavaScript (ES6+)
-- CSS
-- RabbitMQ
-
-## Contact
-- [GitHub](https://github.com/arslanbinjaffar)
-- [LinkedIn](https://www.linkedin.com/in/arslanbinjaffar/)
+A modern, performance-focused portfolio showcasing scalable applications, backend architecture, and real-world engineering impact.
 
 ---
 
-Feel free to explore the code, contribute, or reach out for collaboration!
+## 👨‍💻 About Me
+
+I’m Arslan Jaffar, a Senior MERN Stack Engineer with 3.5+ years of experience building high-performance and scalable web applications.
+
+- 🔧 Expert in Node.js, React.js, Next.js  
+- ⚙️ Strong focus on backend architecture & API design  
+- 📈 Experience with scalable systems, microservices & real-time apps  
+- 🧠 Passionate about clean code, performance, and system design  
+
+I build products that are not just functional — but robust, scalable, and production-ready.
+
+---
+
+## ✨ Features
+
+- ⚡ Modern, responsive UI with smooth animations  
+- 🧩 Data-driven project rendering  
+- 🔙 Dedicated backend projects section  
+- 🔗 GitHub & LinkedIn integration  
+- 🎨 Interactive UI (particles, tilt effects)  
+- 🚀 Optimized for performance  
+
+---
+
+## 🧠 Engineering Highlights
+
+- Scalable backend systems using Node.js, Express.js, NestJS  
+- Microservices & event-driven architecture  
+- Message queues: RabbitMQ, BullMQ, Kafka  
+- CI/CD pipelines & cloud deployment  
+- Database design: MongoDB, PostgreSQL, MySQL  
+
+### Core Concepts Applied
+- Load Balancing  
+- Caching  
+- API Gateway  
+- Message Queues  
+- Rate Limiting  
+- Auto Scaling  
+
+---
+
+## 💼 Projects
+
+### 🌐 Web Applications
+
+- **Gigbase** – All-in-one platform for freelancers  
+  🔗 https://gigbase.io/
+
+- **EventBuizz Mobile App**  
+  🔗 https://play.google.com/store/apps/details?id=com.eventbuizz.app
+
+- **AIFA Services**  
+  🔗 https://www.aifaservices.ae/
+
+- **Eventcenter Web App**  
+  🔗 http://my.eventbuizz.com
+
+- **AML Watcher**  
+  🔗 https://amlwatcher.com/
+
+- **Ninja Training App**  
+  🔗 https://ninja-training-alpha.vercel.app/
+
+- **Martial Arts Platform**  
+  🔗 https://martial-art-school-2.vercel.app/
+
+- **AIFA ERP System**  
+  🔗 https://staging.d31px19nsmiqd.amplifyapp.com/
+
+---
+
+## 🔙 Backend Projects
+
+- Islamiya Backend  
+  🔗 https://github.com/Beyondevs/Islamiya-Backend  
+
+- Fleet Management Backend  
+  🔗 https://github.com/Beyondevs/Fleet-Management-Backend  
+
+- Quick Legals Backend  
+  🔗 https://github.com/Beyondevs/Quick-legals-backend  
+
+- Aifa ERP Backend  
+  🔗 https://github.com/Beyondevs/Aifa-ERP-Backend  
+
+---
+
+## ⚙️ Tech Stack
+
+**Frontend**
+- React.js
+- Next.js
+- Redux Toolkit
+- Tailwind CSS / Bootstrap
+
+**Backend**
+- Node.js
+- Express.js
+- NestJS
+
+**Databases**
+- MongoDB
+- PostgreSQL
+- MySQL
+
+**DevOps & Tools**
+- Docker
+- GitHub / GitLab CI-CD
+- AWS / Vercel / Railway
+
+**Messaging & Realtime**
+- RabbitMQ
+- Redis
+- WebSockets
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone repository
+git clone https://github.com/arslanbinjaffar/new-portfolio-2024.git
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
