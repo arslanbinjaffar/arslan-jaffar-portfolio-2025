@@ -8,13 +8,13 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
+  // DiJava,
 } from "react-icons/di";
 import {
   SiRedis,
   SiFirebase,
   SiNextdotjs,
-  SiSolidity,
+  // SiSolidity,
   SiPostgresql,
   SiBitbucket,
   SiVite,
@@ -25,7 +25,7 @@ import {
   SiRabbitmq,
   SiKubernetes,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+// import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (

@@ -9,7 +9,7 @@ import {
   SiJira,
   SiClickup,
 } from "react-icons/si";
-import { TbCursorText } from "react-icons/tb";
+// import { TbCursorText } from "react-icons/tb";
 import { FaCode } from "react-icons/fa";
 import cusorCodeAi from "../../Assets/cusor_code_editor.webp";
 function Toolstack() {
