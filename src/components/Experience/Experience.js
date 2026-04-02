@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import { motion } from "framer-motion";
 import Particle from "../Particle";
 import { experienceData } from "./experienceData";
 
@@ -8,72 +9,61 @@ function Experience() {
     <Container fluid className="experience-section">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Professional <strong className="purple">Experience </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          A timeline of roles, responsibilities, and outcomes from my software
-          engineering journey.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {experienceData.map((experience, index) => (
-            <Col md={6} lg={4} className="experience-card" key={index}>
-              <Card className="experience-card-view">
-                <Card.Img 
-                  variant="top" 
-                  src={experience.companyImage} 
-                  alt="company"
-                  style={{ height: "200px", objectFit: "contain", padding: "20px" }}
-                />
-                <Card.Body>
-                  <Card.Title style={{ color: "#623686" }}>
-                    {experience.role}
-                  </Card.Title>
-                  <Card.Subtitle className="mb-2" style={{ color: "#4db5e8" }}>
-                    {experience.company}
-                  </Card.Subtitle>
-                  <Card.Text style={{ color: "#a588c0", fontSize: "0.9em" }}>
-                    <strong>Designation:</strong> {experience.designation}
-                  </Card.Text>
-                  <Card.Text style={{ color: "#a588c0", fontSize: "0.9em" }}>
-                    <strong>Duration:</strong> {experience.duration}
-                  </Card.Text>
-                  <Card.Text style={{ textAlign: "justify", color: "white" }}>
-                    {experience.description}
-                  </Card.Text>
-                  {experience.highlights?.length > 0 && (
-                    <ul style={{ color: "#d9d9d9", textAlign: "left", paddingLeft: "18px" }}>
-                      {experience.highlights.map((point, pointIndex) => (
-                        <li key={`${experience.company}-point-${pointIndex}`} style={{ marginBottom: "8px" }}>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                  {experience.tech?.length > 0 && (
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "10px" }}>
-                      {experience.tech.map((techItem) => (
-                        <span
-                          key={`${experience.company}-${techItem}`}
-                          style={{
-                            background: "rgba(98, 54, 134, 0.25)",
-                            border: "1px solid rgba(163, 122, 201, 0.35)",
-                            color: "#f2dcff",
-                            borderRadius: "999px",
-                            fontSize: "0.76em",
-                            padding: "5px 10px",
-                          }}
-                        >
-                          {techItem}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </Card.Body>
-              </Card>
-            </Col>
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+        >
+          <h1 className="project-heading">
+            My Professional <strong className="purple">Experience</strong>
+          </h1>
+          <p style={{ color: "#9d9dc7", marginBottom: "50px" }}>
+            A timeline of roles, responsibilities, and outcomes from my engineering journey.
+          </p>
+        </motion.div>
+
+        <div className="timeline">
+          {experienceData.map((exp, index) => (
+            <motion.div
+              key={index}
+              className="timeline-item"
+              initial={{ opacity: 0, x: index % 2 === 0 ? -40 : 40 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.25 }}
+              transition={{ duration: 0.55, delay: 0.1 }}
+            >
+              <div className="timeline-dot" />
+              <div className="timeline-content">
+                <div className="timeline-header">
+                  <div className="timeline-company-logo">
+                    <img src={exp.companyImage} alt={exp.company} />
+                  </div>
+                  <div>
+                    <h4 className="timeline-role">{exp.role}</h4>
+                    <span className="timeline-company">{exp.company}</span>
+                    <span className="timeline-duration">{exp.duration}</span>
+                  </div>
+                </div>
+                <p className="timeline-desc">{exp.description}</p>
+                {exp.highlights?.length > 0 && (
+                  <ul className="timeline-highlights">
+                    {exp.highlights.map((point, pi) => (
+                      <li key={pi}>{point}</li>
+                    ))}
+                  </ul>
+                )}
+                {exp.tech?.length > 0 && (
+                  <div className="timeline-tech">
+                    {exp.tech.map((t) => (
+                      <span key={t} className="timeline-tech-tag">{t}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </motion.div>
           ))}
-        </Row>
+        </div>
       </Container>
     </Container>
   );

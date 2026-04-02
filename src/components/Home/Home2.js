@@ -1,11 +1,10 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
-  // AiOutlineTwitter,
-  // AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -45,6 +44,21 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
+            <motion.div
+              className="identity-statement"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <p className="identity-quote">
+                I don't just build apps.
+                <br />
+                <span className="purple">I design systems that scale.</span>
+                <br />
+                <span className="identity-sub">From idea → architecture → production.</span>
+              </p>
+            </motion.div>
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me

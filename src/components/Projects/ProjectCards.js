@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
-import placeholderImg from "../../Assets/Projects/placeholder.png"; // Add a placeholder image in your assets
+import placeholderImg from "../../Assets/Projects/placeholder.png";
 
 function ProjectCards({
   imgPath,
@@ -13,22 +13,17 @@ function ProjectCards({
   description,
   ghLink,
   demoLink,
-  isBackend, // New prop to indicate backend project
+  isBackend,
+  role,
+  impact,
+  techStack,
 }) {
-  // Handle newline characters in description
-  const formattedDescription = description
-    ? description.split("\n").map((line, index) => (
-        <p key={index} style={{ margin: "0.5em 0" }}>
-          {line}
-        </p>
-      ))
-    : "No description available.";
+  const [expanded, setExpanded] = useState(false);
 
-  // Truncate description if too long (optional)
-  const maxLength = 150;
-  const isLongDescription = description && description.length > maxLength;
-  const shortDescription = isLongDescription
-    ? `${description.slice(0, maxLength)}...`
+  const maxLength = 160;
+  const isLong = description && description.length > maxLength;
+  const displayDesc = isLong && !expanded
+    ? description.slice(0, maxLength) + "…"
     : description;
 
   return (
@@ -39,36 +34,44 @@ function ProjectCards({
           src={imgPath || placeholderImg}
           alt={`${title} project screenshot`}
           loading="lazy"
-          onError={(e) => {
-            e.target.src = placeholderImg; // Fallback image on error
-          }}
+          onError={(e) => { e.target.src = placeholderImg; }}
         />
-        {isBackend && (
-          <span className="backend-badge">Backend Project</span>
+        {(isBackend || role) && (
+          <span className="backend-badge">{role || "Backend Project"}</span>
         )}
       </div>
       <Card.Body>
         <Card.Title id={`project-title-${title}`}>{title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
-          {isLongDescription ? shortDescription : formattedDescription}
-          {isLongDescription && (
+
+        {impact && (
+          <p className="project-impact">⚡ {impact}</p>
+        )}
+
+        <Card.Text style={{ textAlign: "justify", color: "#d0d0d0", fontSize: "0.9em" }}>
+          {displayDesc}
+          {isLong && (
             <Button
               variant="link"
               className="read-more"
-              onClick={() => alert(description)} // Replace with modal or tooltip for full description
+              onClick={() => setExpanded(!expanded)}
+              style={{ padding: "0 4px", fontSize: "0.85em" }}
             >
-              Read More
+              {expanded ? "Show less" : "Read more"}
             </Button>
           )}
         </Card.Text>
+
+        {techStack?.length > 0 && (
+          <div className="project-tech-row">
+            {techStack.map((t) => (
+              <span key={t} className="project-tech-tag">{t}</span>
+            ))}
+          </div>
+        )}
+
         <div className="project-card-buttons">
           {ghLink && (
-            <Button
-              variant="primary"
-              href={ghLink}
-              target="_blank"
-              aria-label={`View ${title} on GitHub`}
-            >
+            <Button variant="primary" href={ghLink} target="_blank" aria-label={`View ${title} on GitHub`}>
               <BsGithub /> &nbsp; {isBlog ? "Blog" : "GitHub"}
             </Button>
           )}
@@ -89,7 +92,6 @@ function ProjectCards({
   );
 }
 
-// PropTypes for type checking
 ProjectCards.propTypes = {
   imgPath: PropTypes.string,
   isBlog: PropTypes.bool.isRequired,
@@ -98,16 +100,22 @@ ProjectCards.propTypes = {
   ghLink: PropTypes.string,
   demoLink: PropTypes.string,
   isBackend: PropTypes.bool,
+  role: PropTypes.string,
+  impact: PropTypes.string,
+  techStack: PropTypes.arrayOf(PropTypes.string),
 };
 
-// Default props
 ProjectCards.defaultProps = {
   imgPath: null,
   description: "",
   ghLink: null,
   demoLink: null,
   isBackend: false,
+  role: null,
+  impact: null,
+  techStack: [],
 };
+
 
 // Memoize to prevent unnecessary re-renders
 export default React.memo(ProjectCards);

@@ -775,3 +775,399 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* --------- */
+/* Hero Tag Strip */
+/* --------- */
+.hero-tag-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 50px;
+  margin-top: 16px;
+}
+
+.hero-tag {
+  background: rgba(199, 112, 240, 0.12);
+  border: 1px solid rgba(199, 112, 240, 0.4);
+  color: #c770f0;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.78em;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  backdrop-filter: blur(6px);
+}
+
+@media (max-width: 767px) {
+  .hero-tag-strip {
+    padding-left: 15px;
+  }
+}
+
+/* --------- */
+/* Stats Section */
+/* --------- */
+.stats-section {
+  padding: 50px 0 20px;
+  background: transparent;
+}
+
+.stats-row {
+  justify-content: center;
+  gap: 0;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 28px 16px;
+  margin: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(199, 112, 240, 0.25);
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.stat-card:hover {
+  border-color: rgba(199, 112, 240, 0.6);
+  transform: translateY(-4px);
+}
+
+.stat-value {
+  font-size: 2.6em;
+  font-weight: 800;
+  color: #c770f0;
+  line-height: 1.1;
+}
+
+.stat-label {
+  font-size: 0.85em;
+  color: #9d9dc7;
+  margin-top: 8px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+/* --------- */
+/* Engineering Section */
+/* --------- */
+.engineering-section {
+  padding: 70px 0 50px;
+  background: transparent;
+}
+
+.engineering-subtitle {
+  color: #9d9dc7;
+  font-size: 1em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.eng-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(199, 112, 240, 0.2);
+  border-radius: 16px;
+  padding: 28px 22px;
+  height: 100%;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.eng-card:hover {
+  border-color: rgba(199, 112, 240, 0.55);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(199, 112, 240, 0.12);
+}
+
+.eng-card-icon {
+  margin-bottom: 16px;
+}
+
+.eng-card-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.05em;
+  margin-bottom: 10px;
+}
+
+.eng-card-desc {
+  color: #a0a0c0;
+  font-size: 0.88em;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.eng-card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.eng-tag {
+  background: rgba(199, 112, 240, 0.1);
+  border: 1px solid rgba(199, 112, 240, 0.3);
+  color: #c770f0;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 0.72em;
+  font-weight: 600;
+}
+
+/* --------- */
+/* Identity Statement */
+/* --------- */
+.identity-statement {
+  margin-bottom: 30px;
+}
+
+.identity-quote {
+  font-size: 1.3em;
+  font-weight: 600;
+  font-style: italic;
+  color: #d0d0e8;
+  line-height: 1.7;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 12px;
+}
+
+.identity-quote::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #c770f0, transparent);
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.identity-sub {
+  font-size: 0.75em;
+  color: #9d9dc7;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.5px;
+}
+
+/* --------- */
+/* Timeline (Experience) */
+/* --------- */
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #c770f0, rgba(199, 112, 240, 0.1));
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 54px;
+  margin-bottom: 48px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #c770f0;
+  border: 3px solid #0c0513;
+  box-shadow: 0 0 10px rgba(199, 112, 240, 0.6);
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(199, 112, 240, 0.2);
+  border-radius: 14px;
+  padding: 24px 26px;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+  border-color: rgba(199, 112, 240, 0.5);
+}
+
+.timeline-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.timeline-company-logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-company-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 4px;
+}
+
+.timeline-role {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+
+.timeline-company {
+  color: #c770f0;
+  font-size: 0.88em;
+  font-weight: 600;
+  margin-right: 12px;
+}
+
+.timeline-duration {
+  color: #7a7a9a;
+  font-size: 0.82em;
+}
+
+.timeline-desc {
+  color: #a0a0be;
+  font-size: 0.9em;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.timeline-highlights {
+  padding-left: 18px;
+  margin-bottom: 14px;
+}
+
+.timeline-highlights li {
+  color: #c0c0d8;
+  font-size: 0.875em;
+  line-height: 1.7;
+  margin-bottom: 4px;
+}
+
+.timeline-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.timeline-tech-tag {
+  background: rgba(199, 112, 240, 0.1);
+  border: 1px solid rgba(199, 112, 240, 0.3);
+  color: #c770f0;
+  padding: 3px 11px;
+  border-radius: 12px;
+  font-size: 0.72em;
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .timeline::before {
+    left: 12px;
+  }
+  .timeline-item {
+    padding-left: 38px;
+  }
+  .timeline-dot {
+    left: 4px;
+  }
+}
+
+/* --------- */
+/* Project Cards — Case Study Enhancements */
+/* --------- */
+.project-impact {
+  font-size: 0.82em;
+  color: #c770f0;
+  font-weight: 600;
+  margin-bottom: 8px;
+  letter-spacing: 0.2px;
+}
+
+.project-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.project-tech-tag {
+  background: rgba(199, 112, 240, 0.1);
+  border: 1px solid rgba(199, 112, 240, 0.3);
+  color: #c770f0;
+  padding: 2px 9px;
+  border-radius: 10px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+/* --------- */
+/* Core Engineering Values (About) */
+/* --------- */
+.core-values-section {
+  padding: 50px 0 30px;
+}
+
+.core-values-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 24px;
+}
+
+.core-value-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(199, 112, 240, 0.2);
+  border-radius: 14px;
+  padding: 24px 20px;
+  flex: 1 1 220px;
+  max-width: 280px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.core-value-card:hover {
+  border-color: rgba(199, 112, 240, 0.55);
+  transform: translateY(-4px);
+}
+
+.core-value-icon {
+  font-size: 2em;
+  margin-bottom: 12px;
+  color: #c770f0;
+}
+
+.core-value-title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.95em;
+  margin-bottom: 6px;
+}
+
+.core-value-desc {
+  color: #9a9ab8;
+  font-size: 0.82em;
+  line-height: 1.5;
+}
