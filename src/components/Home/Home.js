@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
@@ -34,10 +35,16 @@ const buttonHover = {
 };
 
 function Home() {
-  // Scroll to projects section
-  const handleScrollToProjects = () => {
-    const element = document.getElementById("projects");
-    element?.scrollIntoView({ behavior: "smooth" });
+  const navigate = useNavigate();
+
+  // Navigate to resume page
+  const handleDownloadResume = () => {
+    navigate("/resume");
+  };
+
+  // Navigate to projects page
+  const handleViewProjects = () => {
+    navigate("/project");
   };
 
   return (
@@ -128,9 +135,7 @@ function Home() {
                 >
                   <Button
                     className="cta-button download-resume"
-                    href="https://drive.google.com/file/d/1vL8Wj8V8X8X8X8X8X8X8X8X8X8X8X8X/view"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    onClick={handleDownloadResume}
                   >
                     📄 Download Resume
                   </Button>
@@ -142,7 +147,7 @@ function Home() {
                 >
                   <Button
                     className="cta-button view-projects"
-                    onClick={handleScrollToProjects}
+                    onClick={handleViewProjects}
                   >
                     🚀 View My Projects
                   </Button>
