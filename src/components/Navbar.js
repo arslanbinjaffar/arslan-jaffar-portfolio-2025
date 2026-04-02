@@ -1,26 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-// import logo from "../Assets/logo.png";
-// import Button from "react-bootstrap/Button";
+import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-// import { CgGitFork } from "react-icons/cg";
-// import { ImBlog } from "react-icons/im";
+import { motion } from "framer-motion";
+import { ThemeContext } from "../App";
 import {
-  // AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
-import { MdWork } from "react-icons/md";
-
+import { MdWork, MdMail } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
+import { MdDarkMode, MdLightMode } from "react-icons/md";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -32,6 +30,12 @@ function NavBar() {
 
   window.addEventListener("scroll", scrollHandler);
 
+  // Navbar link animation variants
+  const linkVariants = {
+    hover: { scale: 1.05, color: "#c770f0", transition: { duration: 0.2 } },
+    tap: { scale: 0.95 },
+  };
+
   return (
     <Navbar
       expanded={expand}
@@ -40,10 +44,17 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
-          <h1 style={{ fontWeight: "bolder", color: "purple" }}>AJ.</h1>
+        <Navbar.Brand href="/" className="d-flex align-items-center navbar-brand-custom">
+          {/* Modern Logo */}
+          <motion.h1
+            style={{ fontWeight: "bolder", color: "var(--imp-text-color)", margin: 0 }}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            AJ.
+          </motion.h1>
         </Navbar.Brand>
+
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
           onClick={() => {
@@ -54,77 +65,126 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
+            {/* Navigation Links */}
             <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
+              <motion.div
+                variants={linkVariants}
+                whileHover="hover"
+                whileTap="tap"
+              >
+                <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                  <AiOutlineHome style={{ marginRight: "6px" }} /> Home
+                </Nav.Link>
+              </motion.div>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
+              <motion.div
+                variants={linkVariants}
+                whileHover="hover"
+                whileTap="tap"
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/about"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineUser style={{ marginRight: "6px" }} /> About
+                </Nav.Link>
+              </motion.div>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
+              <motion.div
+                variants={linkVariants}
+                whileHover="hover"
+                whileTap="tap"
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/project"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineFundProjectionScreen
+                    style={{ marginRight: "6px" }}
+                  />
+                  Projects
+                </Nav.Link>
+              </motion.div>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/experience"
-                onClick={() => updateExpanded(false)}
+              <motion.div
+                variants={linkVariants}
+                whileHover="hover"
+                whileTap="tap"
               >
-                <MdWork style={{ marginBottom: "2px" }} /> Experience
-              </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/experience"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <MdWork style={{ marginRight: "6px" }} /> Experience
+                </Nav.Link>
+              </motion.div>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
+              <motion.div
+                variants={linkVariants}
+                whileHover="hover"
+                whileTap="tap"
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
+                <Nav.Link
+                  as={Link}
+                  to="/contact"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <MdMail style={{ marginRight: "6px" }} /> Contact
+                </Nav.Link>
+              </motion.div>
             </Nav.Item>
 
-            {/* <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
+            <Nav.Item>
+              <motion.div
+                variants={linkVariants}
+                whileHover="hover"
+                whileTap="tap"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item> */}
+                <Nav.Link
+                  as={Link}
+                  to="/resume"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <CgFileDocument style={{ marginRight: "6px" }} /> Resume
+                </Nav.Link>
+              </motion.div>
+            </Nav.Item>
 
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
+            {/* Theme Toggle Button */}
+            <Nav.Item className="ms-2">
+              <motion.div
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+                <Button
+                  variant="outline-light"
+                  size="sm"
+                  onClick={toggleTheme}
+                  className="theme-toggle-btn"
+                  title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
+                >
+                  {theme === "dark" ? (
+                    <MdLightMode size={20} />
+                  ) : (
+                    <MdDarkMode size={20} />
+                  )}
+                </Button>
+              </motion.div>
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>
@@ -133,3 +193,4 @@ function NavBar() {
 }
 
 export default NavBar;
+              

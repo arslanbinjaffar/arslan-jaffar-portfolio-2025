@@ -40,30 +40,68 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              style={{ fontSize: "2.1em", paddingBottom: "20px" }}
+            >
               Know Who <strong className="purple">I'M</strong>
-            </h1>
-            <Aboutcard />
+            </motion.h1>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+            >
+              <Aboutcard />
+            </motion.div>
           </Col>
           <Col
             md={5}
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <motion.img
+              src={laptopImg}
+              alt="about"
+              className="img-fluid"
+              initial={{ opacity: 0, scale: 0.9, x: 50 }}
+              whileInView={{ opacity: 1, scale: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7 }}
+            />
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
 
-        <Techstack />
+        {/* Techstack Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h1 className="project-heading">
+            Professional <strong className="purple">Skillset </strong>
+          </h1>
+          <Techstack />
+        </motion.div>
 
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
+        {/* Toolstack Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          <h1 className="project-heading">
+            <strong className="purple">Tools</strong> I use
+          </h1>
+          <Toolstack />
+        </motion.div>
 
+        {/* Core Values Section */}
         <motion.div
           className="core-values-section"
           initial={{ opacity: 0, y: 24 }}
@@ -83,6 +121,10 @@ function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.12 }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 8px 30px rgba(199, 112, 240, 0.25)",
+                }}
               >
                 <div className="core-value-icon">{v.icon}</div>
                 <div className="core-value-title">{v.title}</div>

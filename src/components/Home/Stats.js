@@ -2,11 +2,12 @@ import React, { useEffect, useRef, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { motion, useInView } from "framer-motion";
 
+// Updated stats with realistic numbers based on recruiter feedback
 const stats = [
   { value: 4, suffix: "+", label: "Years Experience" },
-  { value: 10, suffix: "+", label: "Products Shipped" },
-  { value: 3, suffix: "", label: "Companies" },
-  { value: 35, suffix: "%", label: "API Performance Gain" },
+  { value: 8, suffix: "+", label: "Products Shipped" },
+  { value: 4, suffix: "+", label: "Companies" },
+  { value: 300, suffix: "%+", label: "API Performance Gain" },
 ];
 
 function AnimatedCounter({ target, suffix }) {
@@ -52,6 +53,7 @@ function Stats() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
+                whileHover={{ scale: 1.03, boxShadow: "0 8px 30px rgba(199, 112, 240, 0.25)" }}
               >
                 <div className="stat-value">
                   <AnimatedCounter target={stat.value} suffix={stat.suffix} />
