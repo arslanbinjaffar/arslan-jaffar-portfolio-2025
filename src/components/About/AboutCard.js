@@ -15,38 +15,46 @@ function AboutCard() {
             <span className="purple">Senior Software Engineer (MERN)</span> and
             Team Lead at Beyond Technologies.
             <br />
-            With over 3.5+ years of professional experience, I specialize in
-            building scalable and high-performance web applications. My core
-            expertise lies in <span className="purple">React.js</span> and
-            modern JavaScript frameworks, with strong skills in{" "}
-            <span className="purple">backend integration and API development</span>.
+            With over <span className="purple">4+ years of professional experience</span>,
+            I specialize in building scalable and high-performance products
+            across <span className="purple">web, backend, and cloud environments</span>.
             <br />
             <br />
-            I have led teams on enterprise-level projects such as{" "}
-            <span className="purple">EventCenter</span> and{" "}
-            <span className="purple">ERP Systems</span>, ensuring high-quality
-            delivery, code reviews, and best practices. My responsibilities
-            include designing backend services with{" "}
-            <span className="purple">NestJS, Node.js, Express.js</span>, working
-            with databases like <span className="purple">MySQL</span> and{" "}
-            <span className="purple">PostgreSQL</span>, and setting up{" "}
-            <span className="purple">GitLab CI/CD pipelines</span> for automated
-            testing and deployments.
+            I have led engineering delivery on enterprise-scale platforms such as{" "}
+            <span className="purple">EventCenter</span>,{" "}
+            <span className="purple">AI Fleet Management ERP</span>, and{" "}
+            <span className="purple">operations-focused business systems</span>.
+            My day-to-day work includes architecture decisions, mentoring, PR
+            reviews, and building reliable features end-to-end.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            My core strengths include{" "}
+            <span className="purple">Node.js, NestJS, Express.js, React.js, Next.js</span>,{" "}
+            <span className="purple">PostgreSQL, MongoDB, Redis</span>, and modern DevOps
+            workflows with <span className="purple">Docker, Kubernetes, and CI/CD</span>.
+            I also work with asynchronous architecture using{" "}
+            <span className="purple">RabbitMQ and BullMQ</span> to design performant
+            and maintainable systems.
+            <br />
+            <br />
+            Outside of development, I enjoy learning new technologies,
+            collaborating with teams, and building products that solve real
+            business problems.
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> System Design and Architecture Research
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> Mentoring and Team Collaboration
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Building Side Projects and Learning
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "Build systems that scale, teams that grow, and products that matter."{" "}
           </p>
           <footer className="blockquote-footer">Arslan Jaffar</footer>
         </blockquote>

@@ -6,7 +6,29 @@ const experienceData = [
     duration: "October 2023 - Present",
     companyImage: require("../../Assets/logo.png"),
     description:
-      "Leading end-to-end MERN stack and PostgreSQL applications with NestJS/Express.js, building secure REST & GraphQL APIs, optimizing SQL/NoSQL queries, implementing Redis caching, RabbitMQ/BullMQ message queues, and microservices. Built CI/CD pipelines, deployed Dockerized apps on AWS/GCP with auto-scaling. Mentoring developers, performing code reviews, and ensuring high-performance, scalable, and maintainable systems for EventCenter and AI Fleet Management ERP projects."
+      "Leading end-to-end engineering for ERP and event management platforms, with ownership of architecture, delivery planning, and production reliability.",
+    highlights: [
+      "Designed and delivered scalable backend services using Node.js, NestJS, and Express.js.",
+      "Built secure REST and GraphQL APIs with role-based access and robust validation.",
+      "Improved application performance through query optimization, Redis caching, and queue-based processing.",
+      "Implemented CI/CD pipelines and deployed Dockerized services on cloud infrastructure.",
+      "Mentored engineers, reviewed pull requests, and drove engineering best practices across teams."
+    ],
+    tech: [
+      "Node.js",
+      "NestJS",
+      "Express.js",
+      "React.js",
+      "PostgreSQL",
+      "MongoDB",
+      "Redis",
+      "RabbitMQ",
+      "BullMQ",
+      "Docker",
+      "Kubernetes",
+      "AWS",
+      "GCP"
+    ]
   },
   {
     role: "Midlevel React.js / Full-Stack Developer",
@@ -15,7 +37,26 @@ const experienceData = [
     duration: "February 2022 - October 2023",
     companyImage: require("../../Assets/Projects/eventbuizz.png"),
     description:
-      "Developed responsive web and mobile applications with React.js, React Native, Node.js, Express.js, Vue.js, MongoDB/PostgreSQL, and Redux. Integrated REST & GraphQL APIs, ensured authentication, optimized frontend performance with Next.js, and implemented CI/CD, Docker deployments, and cloud hosting on AWS/GCP. Led a small frontend team, performed code reviews, and delivered scalable, secure, high-quality applications."
+      "Contributed to multiple web and mobile products with a full-stack approach, focusing on user experience, API integration, and delivery speed.",
+    highlights: [
+      "Built responsive user interfaces with React.js and reusable component-driven architecture.",
+      "Integrated REST and GraphQL APIs with secure authentication and data flow handling.",
+      "Worked across React Native, Node.js, and Express.js for cross-platform delivery.",
+      "Optimized frontend performance and SEO on key pages using Next.js techniques.",
+      "Collaborated closely with product and QA teams to ensure stable production releases."
+    ],
+    tech: [
+      "React.js",
+      "React Native",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "Vue.js",
+      "Redux",
+      "MongoDB",
+      "PostgreSQL",
+      "Docker"
+    ]
   },
   {
     role: "Frontend / Full-Stack Developer",
@@ -24,7 +65,23 @@ const experienceData = [
     duration: "March 2021 - February 2022",
     companyImage: require("../../Assets/Projects/aml-watcher.png"),
     description:
-      "Built dynamic, responsive React.js and Vue.js applications integrated with backend REST APIs. Managed state with Redux, optimized UI performance, and ensured cross-browser compatibility. Contributed to AML Watcher project with real-time features, analytics, backend integrations, and deployment automation using Docker and cloud platforms."
+      "Worked on dynamic product modules with a focus on usability, maintainable frontend architecture, and smooth backend integration.",
+    highlights: [
+      "Developed modern interfaces using React.js and Vue.js with reusable patterns.",
+      "Integrated backend APIs and managed complex client-side state efficiently.",
+      "Delivered analytics and real-time interaction features for AML Watcher workflows.",
+      "Improved UI consistency, cross-browser compatibility, and performance baselines.",
+      "Supported deployment automation and quality checks in team release cycles."
+    ],
+    tech: [
+      "React.js",
+      "Vue.js",
+      "Redux",
+      "JavaScript",
+      "REST APIs",
+      "Docker",
+      "Cloud Deployment"
+    ]
   },
   {
     role: "Full-Stack & Freelance Developer",
@@ -33,7 +90,27 @@ const experienceData = [
     duration: "Jan 2021 - Feb 2022",
     companyImage: require("../../Assets/logo.png"),
     description:
-      "Delivered full-stack web applications with React.js, Node.js, Express.js, MongoDB/PostgreSQL, Redux, and Next.js. Implemented DevOps best practices including Docker, CI/CD pipelines, cloud deployment (AWS/GCP/Firebase), automated testing, and secure, maintainable code. Managed complete project lifecycles from requirement gathering to deployment for multiple clients."
+      "Delivered client projects independently from discovery to deployment, balancing product needs, engineering quality, and timelines.",
+    highlights: [
+      "Built complete full-stack applications with modern JavaScript frameworks and APIs.",
+      "Managed project lifecycles including requirement analysis, implementation, and deployment.",
+      "Implemented CI/CD and containerized deployment workflows for faster delivery.",
+      "Designed secure and maintainable codebases with practical architecture choices.",
+      "Collaborated with clients directly and translated business goals into technical solutions."
+    ],
+    tech: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "PostgreSQL",
+      "Redux",
+      "Docker",
+      "Firebase",
+      "AWS",
+      "GCP"
+    ]
   },
   {
     role: "Junior Web Developer / Trainee",
@@ -42,7 +119,22 @@ const experienceData = [
     duration: "Sep 2020 - Dec 2020",
     companyImage: require("../../Assets/avatar.svg"),
     description:
-      "Started professional career learning frontend and basic full-stack development with HTML, CSS, JavaScript, and React.js. Gained hands-on experience with version control, Agile workflows, backend integration basics, testing, and deployment, establishing foundation for scalable application development."
+      "Started my professional journey by building frontend and basic full-stack features while learning software delivery fundamentals.",
+    highlights: [
+      "Built early-stage UI modules using HTML, CSS, JavaScript, and React.js.",
+      "Learned version control, agile collaboration, and pull-request based workflows.",
+      "Supported backend integration and testing across staging environments.",
+      "Improved debugging and problem-solving skills through production support tasks.",
+      "Developed a strong foundation for scalable engineering practices."
+    ],
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React.js",
+      "Git",
+      "Agile"
+    ]
   }
 ];
 

@@ -9,10 +9,11 @@ function Experience() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Work Experience </strong>
+          My Professional <strong className="purple">Experience </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few companies I've worked with recently.
+          A timeline of roles, responsibilities, and outcomes from my software
+          engineering journey.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {experienceData.map((experience, index) => (
@@ -40,6 +41,34 @@ function Experience() {
                   <Card.Text style={{ textAlign: "justify", color: "white" }}>
                     {experience.description}
                   </Card.Text>
+                  {experience.highlights?.length > 0 && (
+                    <ul style={{ color: "#d9d9d9", textAlign: "left", paddingLeft: "18px" }}>
+                      {experience.highlights.map((point, pointIndex) => (
+                        <li key={`${experience.company}-point-${pointIndex}`} style={{ marginBottom: "8px" }}>
+                          {point}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  {experience.tech?.length > 0 && (
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: "8px", marginTop: "10px" }}>
+                      {experience.tech.map((techItem) => (
+                        <span
+                          key={`${experience.company}-${techItem}`}
+                          style={{
+                            background: "rgba(98, 54, 134, 0.25)",
+                            border: "1px solid rgba(163, 122, 201, 0.35)",
+                            color: "#f2dcff",
+                            borderRadius: "999px",
+                            fontSize: "0.76em",
+                            padding: "5px 10px",
+                          }}
+                        >
+                          {techItem}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </Card.Body>
               </Card>
             </Col>
