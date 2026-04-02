@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import {
   SiNodedotjs,
   SiRabbitmq,
-  SiDocker,
+//   SiDocker,
   SiReact,
 } from "react-icons/si";
-import { MdOutlineArchitecture } from "react-icons/md";
+// import { MdOutlineArchitecture } from "react-icons/md";
 import { AiOutlineCloudServer } from "react-icons/ai";
 
 const cards = [
