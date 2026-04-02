@@ -170,7 +170,7 @@ function Contact() {
                     <div>
                       <p className="contact-label">Email</p>
                       <a href="mailto:arslan@example.com" className="contact-info-text">
-                        arslan.jaffar@gmail.com
+                     arslanbinjaffar12000@gmail.com
                       </a>
                     </div>
                   </div>
@@ -202,7 +202,7 @@ function Contact() {
                 </h5>
                 <div className="contact-social-links">
                   <motion.a
-                    href="https://linkedin.com/in/arslan-jaffar"
+                    href="https://www.linkedin.com/in/arslanbinjaffar"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-link-btn linkedin"
@@ -212,7 +212,7 @@ function Contact() {
                     <FaLinkedin />
                   </motion.a>
                   <motion.a
-                    href="https://github.com/arslan-jaffar"
+                    href="https://github.com/arslanbinjaffar"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="social-link-btn github"
