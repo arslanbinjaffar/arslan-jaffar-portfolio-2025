@@ -2,13 +2,13 @@ const projects = [
   {
     imgPath: require("../../Assets/Projects/gigbase.png"),
     isBlog: false,
-    title: "VoxtAsia — Audio Streaming Admin",
+    title: "VoxtAsia Admin panel",
     role: "Backend Engineer",
     impact: "Event-driven microservices handling real-time audio streaming at scale",
     techStack: ["Node.js", "Express.js", "RabbitMQ", "Redis", "MongoDB", "AWS S3"],
     description:
       "VoxtAsia Admin is the central dashboard for managing our audio streaming platform. Admins can upload and organize audio content, manage stories, episodes, categories, and genres, track user engagement, and monitor analytics in real-time. The platform is designed to streamline content management, optimize user experience, and provide actionable insights — all in one intuitive interface. With role-based access and advanced moderation tools, running the backend of a large-scale audio streaming service has never been easier.",
-    demoLink: "https://admin.voxt.asia/signin",
+    demoLink: "https://admin.voxtasia.com/signin",
     ghLink: "https://github.com/VoxtAsia/Vox-Front",
 },
 {
@@ -32,7 +32,7 @@ const projects = [
     techStack: ["React.js", "Next.js", "Node.js", "Redis", "MongoDB", "AWS"],
     description:
       "VoxtAsia Web is the frontend of the audio streaming platform providing seamless browser-based access to stories, podcasts, and audio content. Users browse categories, follow creators, track listening history, and engage through likes and playlists. Built for high-quality audio playback, personalized recommendations, and SEO-optimized delivery.",
-    demoLink: "https://voxt.asia/signin",
+    demoLink: "https://www.voxtasia.com/",
     ghLink: "https://github.com/VoxtAsia/Vox-Admin",
   },
   {
