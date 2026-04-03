@@ -225,6 +225,13 @@ const backendProjects = [
   {
     imgPath: require("../../Assets/Projects/Node.js_logo.png"),
     isBlog: false,
+    title: "Voxtasia Backend",
+    description: "Solo backend project for Voxtasia platform.",
+    ghLink: "https://github.com/Beyondevs/Voxtasia-Backend",
+  },
+  {
+    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
+    isBlog: false,
     title: "Islamiya Backend",
     description: "Solo backend project for Islamiya platform.",
     ghLink: "https://github.com/Beyondevs/Islamiya-Backend",
