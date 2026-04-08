@@ -1,0 +1,143 @@
+/* Rating Modal Styles */
+.rating-modal .modal-content {
+  background: rgba(15, 10, 30, 0.95) !important;
+  border: 1px solid rgba(199, 112, 240, 0.3) !important;
+  border-radius: 16px !important;
+  backdrop-filter: blur(12px);
+}
+
+.rating-modal-header {
+  border-bottom: 1px solid rgba(199, 112, 240, 0.2) !important;
+  background: rgba(199, 112, 240, 0.05) !important;
+  padding: 24px !important;
+}
+
+.rating-modal-title {
+  color: #ffffff !important;
+  font-weight: 700 !important;
+  font-size: 1.4rem !important;
+}
+
+.rating-modal-body {
+  padding: 32px 24px !important;
+  text-align: center;
+}
+
+.rating-description {
+  color: #9d9dc7;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.star-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-size: 2.5rem;
+}
+
+.star-filled {
+  color: #ffc107 !important;
+  filter: drop-shadow(0 0 8px rgba(255, 193, 7, 0.3));
+}
+
+.star-empty {
+  color: rgba(255, 193, 7, 0.3);
+  transition: all 0.2s ease;
+}
+
+.star-button:hover .star-empty {
+  color: rgba(255, 193, 7, 0.6);
+}
+
+.rating-feedback {
+  color: #c770f0;
+  font-weight: 600;
+  margin-top: 16px;
+  font-size: 1rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.rating-modal-footer {
+  border-top: 1px solid rgba(199, 112, 240, 0.2) !important;
+  background: rgba(199, 112, 240, 0.02) !important;
+  padding: 16px 24px !important;
+  gap: 12px;
+}
+
+.skip-btn {
+  color: #9d9dc7 !important;
+  border-color: #9d9dc7 !important;
+  font-weight: 600;
+  padding: 8px 20px !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+}
+
+.skip-btn:hover {
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.submit-rating-btn {
+  background: linear-gradient(135deg, #c770f0, #e8a3ff) !important;
+  border: none !important;
+  color: #0c0513 !important;
+  font-weight: 700;
+  padding: 8px 24px !important;
+  border-radius: 6px !important;
+  transition: all 0.3s ease !important;
+}
+
+.submit-rating-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(199, 112, 240, 0.4) !important;
+}
+
+.submit-rating-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Modal Close Button Styling */
+.rating-modal .btn-close {
+  filter: invert(1) !important;
+}
+
+@media (max-width: 576px) {
+  .rating-modal-title {
+    font-size: 1.2rem !important;
+  }
+
+  .star-button {
+    font-size: 2rem;
+  }
+
+  .rating-modal-body {
+    padding: 24px 16px !important;
+  }
+}

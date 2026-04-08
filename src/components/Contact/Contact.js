@@ -39,7 +39,21 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form submitted:", formData);
+      // Save to localStorage
+      const existingSubmissions = JSON.parse(
+        localStorage.getItem("contact_submissions") || "[]"
+      );
+      const newSubmission = {
+        ...formData,
+        timestamp: new Date().toISOString(),
+        id: Date.now(),
+      };
+      existingSubmissions.push(newSubmission);
+      localStorage.setItem(
+        "contact_submissions",
+        JSON.stringify(existingSubmissions)
+      );
+      console.log("Form submitted and saved:", formData);
       setSubmitted(true);
       setFormData({ name: "", email: "", message: "" });
       setTimeout(() => setSubmitted(false), 3000);

@@ -8,6 +8,7 @@ import Experience from "./components/Experience/Experience";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
+import RatingModal from "./components/RatingModal";
 import {
   BrowserRouter as Router,
   Route,
@@ -55,6 +56,7 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
+      <RatingModal />
       <Router>
         <Preloader load={load} />
         <div className="App" id={load ? "no-scroll" : "scroll"}>

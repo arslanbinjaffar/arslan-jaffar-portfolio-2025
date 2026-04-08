@@ -1582,6 +1582,7 @@ button:focus {
   border-radius: 16px;
   padding: 40px;
   backdrop-filter: blur(12px);
+  text-align: center;
 }
 
 /* Contact Form Input Fields */
@@ -1654,6 +1655,7 @@ button:focus {
   border-radius: 16px;
   padding: 40px;
   backdrop-filter: blur(12px);
+  text-align: center;
 }
 
 /* Contact Info Items */
