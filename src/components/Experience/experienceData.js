@@ -2,6 +2,34 @@ import freelanceLogo from "../../Assets/Projects/freelance logo.jpg";
 
 const experienceData = [
   {
+    role: "Full-Stack Engineer / AI Product Engineer",
+    company: "PixelPK Technologies",
+    designation: "Senior Software Engineer",
+    duration: "Present",
+    companyImage: new URL("../../Assets/Projects/pixel tech logo.jpeg", import.meta.url).href,
+    description:
+      "Building own-product legal technology at PixelPK Technologies, with end-to-end ownership across frontend and backend for Pakistan Lawbot — Pakistan's first AI-powered legal research, drafting, and lawyer marketplace platform.",
+    highlights: [
+      "Developed AI legal research and chat grounded in Pakistani statutes, court judgments, and citations.",
+      "Built instant legal document drafting, lawyer marketplace, and bilingual (English/Urdu) user experiences.",
+      "Delivered scalable APIs and web interfaces serving 15,000+ advocates, firms, and citizens.",
+      "Integrated LLM and RAG workflows with verified legal data sources for cited, production-ready answers.",
+      "Shipped features across research, drafting, marketplace booking, and WhatsApp-based legal assistance.",
+    ],
+    tech: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "RAG",
+      "LLM",
+      "LangChain",
+      "REST APIs",
+      "Redis",
+      "AWS",
+    ],
+  },
+  {
     role: "AI Systems Engineer — AI Engineering Projects",
     company: "Beyond Technologies",
     designation: "AI Systems Engineer",
@@ -67,34 +95,7 @@ const experienceData = [
       "Python",
     ],
   },
-  {
-    role: "Full-Stack Engineer / AI Product Engineer",
-    company: "PixelPK Technologies",
-    designation: "Senior Software Engineer",
-    duration: "Present",
-    companyImage: new URL("../../Assets/Projects/pixel tech logo.jpeg", import.meta.url).href,
-    description:
-      "Building own-product legal technology at PixelPK Technologies, with end-to-end ownership across frontend and backend for Pakistan Lawbot — Pakistan's first AI-powered legal research, drafting, and lawyer marketplace platform.",
-    highlights: [
-      "Developed AI legal research and chat grounded in Pakistani statutes, court judgments, and citations.",
-      "Built instant legal document drafting, lawyer marketplace, and bilingual (English/Urdu) user experiences.",
-      "Delivered scalable APIs and web interfaces serving 15,000+ advocates, firms, and citizens.",
-      "Integrated LLM and RAG workflows with verified legal data sources for cited, production-ready answers.",
-      "Shipped features across research, drafting, marketplace booking, and WhatsApp-based legal assistance.",
-    ],
-    tech: [
-      "React.js",
-      "Next.js",
-      "Node.js",
-      "MongoDB",
-      "RAG",
-      "LLM",
-      "LangChain",
-      "REST APIs",
-      "Redis",
-      "AWS",
-    ],
-  },
+ 
   {
     role: "Midlevel React.js / Full-Stack Developer",
     company: "Eventbuizz",
