@@ -11,6 +11,7 @@ import {
 } from "react-icons/ai";
 import { MdWork, MdMail, MdDarkMode, MdLightMode, MdEmojiEvents } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
+import BrandLogo from "./BrandLogo";
 
 const navLinks = [
   { to: "/", icon: AiOutlineHome, label: "Home" },
@@ -50,13 +51,9 @@ function NavBar() {
     >
       <Container className="relative flex items-center justify-between py-3 lg:py-2">
         <Link to="/" className="flex items-center shrink-0" onClick={closeMenu}>
-          <motion.h1
-            className="text-xl sm:text-2xl font-extrabold text-accent m-0"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            AJ.
-          </motion.h1>
+          <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+            <BrandLogo className="h-9 sm:h-10 w-auto" />
+          </motion.div>
         </Link>
 
         <button

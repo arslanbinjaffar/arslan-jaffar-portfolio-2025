@@ -10,12 +10,14 @@ import Section from "../ui/Section";
 import { Button } from "@/components/ui/button";
 import Seo from "../Seo";
 import { routeSeo } from "@/config/seo";
+import ResumeSkeleton from "../skeletons/ResumeSkeleton";
 
 pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
   const [numPages, setNumPages] = useState(null);
+  const [pdfLoading, setPdfLoading] = useState(true);
 
   useEffect(() => {
     setWidth(window.innerWidth);
@@ -41,9 +43,16 @@ function ResumeNew() {
         </div>
 
         <div className="flex flex-col items-center gap-8">
+          {pdfLoading && <ResumeSkeleton />}
           <Document
             file={ResumePdf}
-            onLoadSuccess={({ numPages }) => setNumPages(numPages)}
+            onLoadSuccess={({ numPages: pages }) => {
+              setNumPages(pages);
+              setPdfLoading(false);
+            }}
+            onLoadError={() => setPdfLoading(false)}
+            loading=""
+            className={pdfLoading ? "sr-only" : ""}
           >
             {Array.from({ length: numPages ?? 0 }, (_, i) => (
               <div

@@ -4,19 +4,28 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
 const productionSiteUrl = "https://arslan-jaffar-portfolio.vercel.app";
+const localSiteUrl = "http://localhost:3000";
 const vercelUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : undefined;
-const isStagingBranch = process.env.VERCEL_GIT_COMMIT_REF === "staging";
+const vercelEnv = process.env.VERCEL_ENV;
+const branch = process.env.VERCEL_GIT_COMMIT_REF;
+const isLocalDev = !vercelEnv;
+const isStaging = branch === "staging";
+const isProduction = vercelEnv === "production" || branch === "main";
 
 const siteUrl =
   process.env.VITE_SITE_URL?.replace(/\/$/, "") ||
-  (isStagingBranch && vercelUrl) ||
+  (isLocalDev && localSiteUrl) ||
+  (isStaging && vercelUrl) ||
+  (isProduction && productionSiteUrl) ||
   vercelUrl ||
   productionSiteUrl;
 
 const noIndex =
-  process.env.VITE_NOINDEX === "true" || isStagingBranch ? "true" : "false";
+  process.env.VITE_NOINDEX === "true" || isLocalDev || isStaging
+    ? "true"
+    : "false";
 
 export default defineConfig({
   define: {
