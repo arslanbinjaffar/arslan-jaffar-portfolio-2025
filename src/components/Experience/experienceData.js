@@ -2,9 +2,9 @@ import freelanceLogo from "../../Assets/Projects/freelance logo.jpg";
 
 const experienceData = [
   {
-    role: "Full-Stack Engineer",
+    role: "Full-Stack Engineer / AI Product Engineer",
     company: "PixelPK Technologies",
-    designation: "Full-Stack Engineer",
+    designation: "Senior Software Engineer",
     duration: "Present",
     companyImage: new URL("../../Assets/Projects/pixel tech logo.jpeg", import.meta.url).href,
     description:
@@ -13,19 +13,53 @@ const experienceData = [
       "Developed AI legal research and chat grounded in Pakistani statutes, court judgments, and citations.",
       "Built instant legal document drafting, lawyer marketplace, and bilingual (English/Urdu) user experiences.",
       "Delivered scalable APIs and web interfaces serving 15,000+ advocates, firms, and citizens.",
-      "Integrated LLM workflows with verified legal data sources for cited, production-ready answers.",
-      "Shipped features across research, drafting, marketplace booking, and WhatsApp-based legal assistance."
+      "Integrated LLM and RAG workflows with verified legal data sources for cited, production-ready answers.",
+      "Shipped features across research, drafting, marketplace booking, and WhatsApp-based legal assistance.",
     ],
     tech: [
       "React.js",
       "Next.js",
       "Node.js",
       "MongoDB",
-      "AI/LLM",
+      "RAG",
+      "LLM",
+      "LangChain",
       "REST APIs",
       "Redis",
-      "AWS"
-    ]
+      "AWS",
+    ],
+  },
+  {
+    role: "AI Systems Engineer — AI Engineering Projects",
+    company: "Beyond Technologies",
+    designation: "AI Systems Engineer",
+    duration: "December 2024 - Present",
+    companyImage: new URL("../../Assets/Projects/beyond tech logo.png", import.meta.url).href,
+    description:
+      "Leading enterprise AI assistant and production AI backend architecture — building multi-agent workflows, RAG pipelines, and intelligent request routing for next-generation AI-powered platforms.",
+    highlights: [
+      "Built multi-agent workflows using LangGraph and LangChain.",
+      "Designed Retrieval-Augmented Generation pipeline using Qdrant vector database.",
+      "Integrated Gemini and local LLMs using Ollama.",
+      "Built memory-aware conversational workflows and tool-calling agents.",
+      "Implemented MCP-based external tool integrations.",
+      "Designed intelligent request routing between LLM, Agent, and RAG execution layers.",
+      "Implemented chunking, embeddings, retrieval, reranking, and contextual memory.",
+      "Built stateful agent orchestration with observability and retry mechanisms.",
+    ],
+    tech: [
+      "LangGraph",
+      "LangChain",
+      "RAG",
+      "Qdrant",
+      "Gemini",
+      "Ollama",
+      "MCP",
+      "CrewAI",
+      "Prompt Engineering",
+      "Python",
+      "NestJS",
+    ],
   },
   {
     role: "Senior Software Engineer - MERN / Backend Architect",
@@ -34,19 +68,21 @@ const experienceData = [
     duration: "October 2023 - Present",
     companyImage: new URL("../../Assets/Projects/beyond tech logo.png", import.meta.url).href,
     description:
-      "Leading end-to-end engineering for ERP and event management platforms, with ownership of architecture, delivery planning, and production reliability.",
+      "Architecting scalable backend platforms and leading cross-functional engineering teams delivering enterprise ERP platforms, high-traffic SaaS applications, and mission-critical backend services.",
     highlights: [
-      "Designed and delivered scalable backend services using Node.js, NestJS, and Express.js.",
-      "Built secure REST and GraphQL APIs with role-based access and robust validation.",
-      "Improved application performance through query optimization, Redis caching, and queue-based processing.",
-      "Implemented CI/CD pipelines and deployed Dockerized services on cloud infrastructure.",
-      "Mentored engineers, reviewed pull requests, and drove engineering best practices across teams."
+      "Architect scalable backend platforms using Node.js and NestJS with modular microservices and event-driven workflows.",
+      "Lead multiple cross-functional teams delivering enterprise ERP platforms and high-traffic SaaS applications.",
+      "Improved API response times by 35% through SQL optimization, indexing strategies, caching layers, and database tuning.",
+      "Designed automated Docker-based GitLab CI/CD pipelines, reducing release failures and accelerating delivery.",
+      "Built end-to-end data-intensive platforms integrating PostgreSQL/MySQL with Next.js real-time dashboards and analytics.",
+      "Extending backend architectures with LLM integrations, RAG pipelines, vector search, and agent orchestration.",
     ],
     tech: [
       "Node.js",
       "NestJS",
       "Express.js",
       "React.js",
+      "Microservices",
       "PostgreSQL",
       "MongoDB",
       "Redis",
@@ -55,9 +91,11 @@ const experienceData = [
       "Docker",
       "Kubernetes",
       "AWS",
-      "GCP"
-    ]
+      "GCP",
+      "Python",
+    ],
   },
+ 
   {
     role: "Midlevel React.js / Full-Stack Developer",
     company: "Eventbuizz",
@@ -71,7 +109,7 @@ const experienceData = [
       "Integrated REST and GraphQL APIs with secure authentication and data flow handling.",
       "Worked across React Native, Node.js, and Express.js for cross-platform delivery.",
       "Optimized frontend performance and SEO on key pages using Next.js techniques.",
-      "Collaborated closely with product and QA teams to ensure stable production releases."
+      "Collaborated closely with product and QA teams to ensure stable production releases.",
     ],
     tech: [
       "React.js",
@@ -83,8 +121,8 @@ const experienceData = [
       "Redux",
       "MongoDB",
       "PostgreSQL",
-      "Docker"
-    ]
+      "Docker",
+    ],
   },
   {
     role: "Frontend / Full-Stack Developer",
@@ -99,7 +137,7 @@ const experienceData = [
       "Integrated backend APIs and managed complex client-side state efficiently.",
       "Delivered analytics and real-time interaction features for AML Watcher workflows.",
       "Improved UI consistency, cross-browser compatibility, and performance baselines.",
-      "Supported deployment automation and quality checks in team release cycles."
+      "Supported deployment automation and quality checks in team release cycles.",
     ],
     tech: [
       "React.js",
@@ -108,8 +146,8 @@ const experienceData = [
       "JavaScript",
       "REST APIs",
       "Docker",
-      "Cloud Deployment"
-    ]
+      "Cloud Deployment",
+    ],
   },
   {
     role: "Full-Stack & Freelance Developer",
@@ -119,12 +157,13 @@ const experienceData = [
     companyImage: freelanceLogo,
     openForWork: true,
     description:
-      "Delivering remote freelance and part-time contracts for clients worldwide through Fiverr and Upwork — alongside full-time product work. I take on MVPs, API integrations, legacy refactors, and production support with async-friendly communication across time zones.",
+      "Delivering remote freelance and part-time contracts for clients worldwide through Fiverr and Upwork — alongside full-time product work. I take on MVPs, API integrations, AI features (RAG, agents, assistants), legacy refactors, and production support with async-friendly communication across time zones.",
     highlights: [
       "Currently open for remote freelance, part-time, and fixed-scope contract work.",
       "Flexible engagement: project-based sprints, ongoing part-time (20–40 hrs/week), or milestone delivery.",
-      "Built and shipped full-stack applications for international clients from discovery through deployment.",
-      "Managed requirements, timelines, and client communication independently on Upwork and Fiverr.",
+      "Built RAG pipelines, AI workflows, and AI assistants with LLM API orchestration in production apps.",
+      "Designed agent-style flows and model-backed API integrations for chat, search, and document Q&A.",
+      "Preparing for dedicated AI engineering — growing Python skills and hands-on work with AI models.",
       "Delivered React/Next.js frontends, Node.js/NestJS APIs, database design, and cloud deployments.",
     ],
     tech: [
@@ -132,10 +171,12 @@ const experienceData = [
       "Next.js",
       "Node.js",
       "NestJS",
-      "Express.js",
+      "Python",
+      "RAG",
+      "AI Agents",
+      "LLM APIs",
       "MongoDB",
       "PostgreSQL",
-      "REST APIs",
       "Docker",
       "AWS",
       "Remote / Async",
@@ -154,7 +195,7 @@ const experienceData = [
       "Learned version control, agile collaboration, and pull-request based workflows.",
       "Supported backend integration and testing across staging environments.",
       "Improved debugging and problem-solving skills through production support tasks.",
-      "Developed a strong foundation for scalable engineering practices."
+      "Developed a strong foundation for scalable engineering practices.",
     ],
     tech: [
       "HTML",
@@ -162,9 +203,42 @@ const experienceData = [
       "JavaScript",
       "React.js",
       "Git",
-      "Agile"
-    ]
-  }
+      "Agile",
+    ],
+  },
 ];
 
-export { experienceData };
+const homeHighlights = [
+  {
+    company: "Beyond Technologies",
+    text: "Built multi-agent workflows with LangGraph and production RAG pipelines using Qdrant.",
+    tech: "LangGraph",
+  },
+  {
+    company: "Beyond Technologies",
+    text: "Designed intelligent routing between LLM, Agent, and RAG execution layers with observability.",
+    tech: "RAG",
+  },
+  {
+    company: "Beyond Technologies",
+    text: "Improved API response times by 35% through SQL optimization, caching, and indexing.",
+    tech: "NestJS",
+  },
+  {
+    company: "Beyond Technologies",
+    text: "Lead cross-functional teams delivering enterprise ERP platforms and high-traffic SaaS applications.",
+    tech: "Microservices",
+  },
+  {
+    company: "PixelPK Technologies",
+    text: "Shipped Pakistan Lawbot — AI legal research and drafting serving 15,000+ users.",
+    tech: "LLM",
+  },
+  {
+    company: "PixelPK Technologies",
+    text: "Integrated MCP-based tool calling and memory-aware conversational AI workflows.",
+    tech: "MCP",
+  },
+];
+
+export { experienceData, homeHighlights };

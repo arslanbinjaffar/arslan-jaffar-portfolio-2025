@@ -6,9 +6,12 @@ import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
 import Stats from "./Stats";
+import ExperienceHighlights from "./ExperienceHighlights";
 import Engineering from "./Engineering";
 import Container from "../ui/Container";
 import { Button } from "@/components/ui/button";
+import Seo from "../Seo";
+import { routeSeo } from "@/config/seo";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -32,12 +35,13 @@ const buttonHover = { scale: 1.05, transition: { duration: 0.2 } };
 
 const techStack = [
   "NestJS",
+  "RAG",
+  "LangGraph",
+  "LLM",
+  "MCP",
+  "Python",
   "Microservices",
-  "React.js",
-  "Redis",
-  "RabbitMQ",
   "AWS",
-  "Docker",
 ];
 
 function Home() {
@@ -45,6 +49,7 @@ function Home() {
 
   return (
     <section>
+      <Seo {...routeSeo["/"]} path="/" />
       <div className="relative bg-home-hero pt-20 pb-16" id="home">
         <Particle />
         <Container>
@@ -145,6 +150,7 @@ function Home() {
 
       <Home2 />
       <Stats />
+      <ExperienceHighlights />
       <Engineering />
     </section>
   );

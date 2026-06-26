@@ -13,6 +13,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import Seo from "../Seo";
+import { routeSeo } from "@/config/seo";
 
 function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -32,6 +34,7 @@ function Gallery() {
 
   return (
     <Section className="relative">
+      <Seo {...routeSeo["/gallery"]} path="/gallery" />
       <Particle />
       <Container>
         <PageHeading

@@ -5,6 +5,8 @@ import { projects, backendProjects } from "./projectsData";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
+import Seo from "../Seo";
+import { routeSeo } from "@/config/seo";
 
 function Projects() {
   const allProjects = useMemo(
@@ -28,6 +30,7 @@ function Projects() {
 
   return (
     <Section className="relative">
+      <Seo {...routeSeo["/project"]} path="/project" />
       <Particle />
       <Container>
         <PageHeading

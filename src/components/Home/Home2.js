@@ -17,22 +17,22 @@ function Home2() {
               LET ME <span className="text-accent">INTRODUCE</span> MYSELF
             </h1>
             <p className="text-text-secondary text-base leading-relaxed">
-              Hi, I am Arslan Jaffar, a Senior MERN Stack Engineer with 4+ years
-              of experience building scalable, production-ready web platforms.
-              I focus on designing robust backend systems with Node.js, NestJS,
-              and Express.js while delivering clean frontend experiences with
-              React.js and Next.js.
+              Hi, I am Arslan Jaffar — Senior Software Engineer at PixelPK and
+              AI Systems Engineer / Team Lead at Beyond Technologies, with 4+
+              years building scalable, production-ready platforms.
               <br />
               <br />
-              I have hands-on experience in microservices, distributed systems,
-              caching, and asynchronous processing using PostgreSQL, MongoDB,
-              Redis, RabbitMQ, and BullMQ. I enjoy turning complex product
-              requirements into practical and maintainable architecture.
+              I architect backend systems with Node.js, NestJS, and Python —
+              microservices, event-driven workflows, and cloud-native deployments
+              on AWS. I also build AI systems: RAG pipelines, LangGraph
+              multi-agent workflows, vector search with Qdrant, and MCP-based
+              tool integrations using Gemini and Ollama.
               <br />
               <br />
-              Currently, I lead development for ERP and event management
-              products, where I contribute to system design, engineering
-              standards, CI/CD, and team mentorship.
+              Currently I lead cross-functional teams on enterprise ERP and SaaS
+              products while shipping Pakistan Lawbot and enterprise AI assistant
+              platforms — from architecture and CI/CD through production AI
+              orchestration.
             </p>
           </div>
           <div className="md:col-span-4 flex justify-center">

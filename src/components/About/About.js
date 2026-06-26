@@ -9,6 +9,8 @@ import Toolstack from "./Toolstack";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
+import Seo from "../Seo";
+import { routeSeo } from "@/config/seo";
 
 const values = [
   {
@@ -26,11 +28,17 @@ const values = [
     title: "Clean Architecture",
     desc: "Modular, testable, and maintainable code that teams can confidently extend.",
   },
+  {
+    icon: "🤖",
+    title: "AI-First Systems",
+    desc: "Intelligent workflows with RAG, multi-agent orchestration, and production-grade LLM integrations at scale.",
+  },
 ];
 
 function About() {
   return (
     <Section className="relative">
+      <Seo {...routeSeo["/about"]} path="/about" />
       <Particle />
       <Container>
         <div className="grid md:grid-cols-12 gap-8 items-start">
@@ -96,7 +104,7 @@ function About() {
           className="mt-12"
         >
           <PageHeading accent="Engineering Values">Core</PageHeading>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((v, i) => (
               <motion.div
                 key={v.title}

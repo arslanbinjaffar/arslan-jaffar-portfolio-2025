@@ -1,15 +1,43 @@
 {
   "short_name": "Arslan Jaffar",
   "name": "Arslan Jaffar Portfolio",
+  "description": "Portfolio of Arslan Jaffar — Senior MERN Stack Developer building scalable web and SaaS applications.",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "AI Projects",
+      "short_name": "AI",
+      "url": "/project",
+      "icons": [{ "src": "ai-chip.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Generative AI",
+      "short_name": "Gen AI",
+      "url": "/project",
+      "icons": [{ "src": "generative.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Backend Systems",
+      "short_name": "Backend",
+      "url": "/experience",
+      "icons": [{ "src": "microchip.png", "sizes": "192x192" }]
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a"
 }
