@@ -1,4 +1,5 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useTransition } from "react";
+import { motion } from "framer-motion";
 import Particle from "../Particle";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
@@ -15,10 +16,13 @@ import {
 } from "@/components/ui/dialog";
 import Seo from "../Seo";
 import { routeSeo } from "@/config/seo";
+import { staggerContainer } from "@/lib/motion";
+import GalleryCardSkeleton from "../skeletons/GalleryCardSkeleton";
 
 function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selected, setSelected] = useState(null);
+  const [isPending, startTransition] = useTransition();
 
   const categories = useMemo(() => {
     const used = new Set(galleryItems.map((item) => item.category).filter(Boolean));
@@ -31,6 +35,12 @@ function Gallery() {
   }, [activeCategory]);
 
   const showFilters = galleryItems.length > 0 && categories.length > 1;
+
+  const handleCategoryChange = (category) => {
+    startTransition(() => {
+      setActiveCategory(category);
+    });
+  };
 
   return (
     <Section className="relative">
@@ -50,7 +60,7 @@ function Gallery() {
               <button
                 key={category}
                 type="button"
-                onClick={() => setActiveCategory(category)}
+                onClick={() => handleCategoryChange(category)}
                 className={`px-4 py-1.5 text-sm font-medium rounded-full border transition-colors ${
                   activeCategory === category
                     ? "bg-accent text-bg-primary border-accent"
@@ -75,8 +85,24 @@ function Gallery() {
               Awards, certificates, and event highlights will appear here once added.
             </p>
           </div>
+        ) : isPending ? (
+          <div
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            aria-busy="true"
+            aria-label="Loading gallery"
+          >
+            {Array.from({ length: 3 }).map((_, i) => (
+              <GalleryCardSkeleton key={i} />
+            ))}
+          </div>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <motion.div
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
+            variants={staggerContainer}
+            initial="hidden"
+            animate="visible"
+            key={activeCategory}
+          >
             {filteredItems.map((item) =>
               item.embedSrc ? (
                 <div key={item.id} className="sm:col-span-2 lg:col-span-1 flex justify-center">
@@ -86,7 +112,7 @@ function Gallery() {
                 <AchievementCard key={item.id} item={item} onSelect={setSelected} />
               )
             )}
-          </div>
+          </motion.div>
         )}
       </Container>
 

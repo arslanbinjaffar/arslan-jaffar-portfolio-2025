@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useTransition } from "react";
+import { motion } from "framer-motion";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { projects, backendProjects } from "./projectsData";
@@ -7,6 +8,7 @@ import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
 import Seo from "../Seo";
 import { routeSeo } from "@/config/seo";
+import { staggerContainer, staggerItem } from "@/lib/motion";
 
 function Projects() {
   const allProjects = useMemo(
@@ -20,10 +22,13 @@ function Projects() {
   const [displayProjects, setDisplayProjects] = useState(() =>
     [...allProjects].sort(() => Math.random() - 0.5)
   );
+  const [isPending, startTransition] = useTransition();
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setDisplayProjects([...allProjects].sort(() => Math.random() - 0.5));
+      startTransition(() => {
+        setDisplayProjects([...allProjects].sort(() => Math.random() - 0.5));
+      });
     }, 600000);
     return () => clearInterval(interval);
   }, [allProjects]);
@@ -39,13 +44,19 @@ function Projects() {
         >
           My Recent
         </PageHeading>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
+        <motion.div
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center"
+          variants={staggerContainer}
+          initial="hidden"
+          animate="visible"
+          aria-busy={isPending}
+        >
           {displayProjects.map((project, idx) => (
-            <div key={`${project.title}-${idx}`}>
+            <motion.div key={`${project.title}-${idx}`} variants={staggerItem}>
               <ProjectCard {...project} />
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </Container>
     </Section>
   );

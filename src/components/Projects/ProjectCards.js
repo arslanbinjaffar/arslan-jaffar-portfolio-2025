@@ -4,6 +4,8 @@ import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
+import ImageWithSkeleton from "../ImageWithSkeleton";
+import { buttonHover } from "@/lib/motion";
 import placeholderImg from "../../Assets/Projects/placeholder.png";
 import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -35,24 +37,19 @@ function ProjectCards({
       scale={1.02}
       transitionSpeed={400}
     >
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        whileHover={{ y: -5 }}
-      >
+      <motion.div whileHover={{ y: -5 }}>
         <Card
           className="h-full gap-0 py-0 hover:shadow-xl hover:shadow-accent/10 transition-shadow overflow-hidden"
           role="article"
           aria-labelledby={`project-title-${title}`}
         >
           <div className="relative">
-            <img
+            <ImageWithSkeleton
               src={imgPath || placeholderImg}
               alt={`${title} project screenshot`}
               loading="lazy"
-              className="w-full object-cover h-[200px]"
+              className="h-[200px] w-full"
+              imgClassName="w-full object-cover h-[200px]"
               onError={(e) => {
                 e.target.src = placeholderImg;
               }}

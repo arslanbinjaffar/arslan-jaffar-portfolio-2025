@@ -13,25 +13,7 @@ import { Button } from "@/components/ui/button";
 import Seo from "../Seo";
 import { routeSeo } from "@/config/seo";
 
-const fadeUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (delay) => ({
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.6, delay: delay || 0 },
-  }),
-};
-
-const slideInRight = {
-  hidden: { opacity: 0, x: 50 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.7, delay: 0.3 },
-  },
-};
-
-const buttonHover = { scale: 1.05, transition: { duration: 0.2 } };
+import { fadeUp, slideInRight, buttonHover } from "@/lib/motion";
 
 const techStack = [
   "NestJS",

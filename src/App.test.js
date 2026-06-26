@@ -3,6 +3,6 @@ import App from "./App";
 
 test("renders portfolio navbar brand", () => {
   render(<App />);
-  const brandElement = screen.getByText("AJ.");
-  expect(brandElement).toBeInTheDocument();
+  const brandElements = screen.getAllByAltText("Arslan Jaffar");
+  expect(brandElements.length).toBeGreaterThan(0);
 });

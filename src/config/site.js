@@ -1,6 +1,6 @@
 const siteUrl =
   import.meta.env.VITE_SITE_URL?.replace(/\/$/, "") ||
-  "https://arslan-jaffar-portfolio-2025.vercel.app";
+  "https://arslan-jaffar-portfolio.vercel.app";
 
 export const siteConfig = {
   siteUrl,

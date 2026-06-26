@@ -154,6 +154,17 @@ const projects = [
     demoLink: "https://pakistanlawbot.com/",
   },
   {
+    imgPath: new URL("../../Assets/Projects/aitube.png", import.meta.url).href,
+    isBlog: false,
+    title: "AITube — AI Video Platform",
+    role: "Full-Stack Engineer",
+    impact: "AI-powered video platform for text-to-video creation, discovery, and sharing",
+    techStack: ["React.js", "Next.js", "Node.js", "AI/ML", "FFmpeg", "AWS"],
+    description:
+      "AITube is an own product of PixelPK Technologies — an AI-powered video platform for watching and creating content. Users can turn text and scripts into video, discover AI-generated clips across categories, upload and share content, and explore community features such as Shorts, Battle Arena, and AI Creator Studio. Built as a next-gen streaming experience with evolving content discovery and creator-focused tooling.",
+    demoLink: "http://aivideostube.com/",
+  },
+  {
     imgPath: new URL("../../Assets/Projects/quick_legals.png", import.meta.url).href,
     isBlog: false,
     title: "QuickLegals Website & User Portal",
