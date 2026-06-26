@@ -36,6 +36,26 @@ const projects = [
     ghLink: "https://github.com/VoxtAsia/Vox-Admin",
   },
   {
+    imgPath: new URL("../../Assets/Projects/pixel tech logo.jpeg", import.meta.url).href,
+    isBlog: false,
+    title: "Enterprise AI Assistant Platform",
+    role: "AI Systems Engineer",
+    impact: "Multi-agent enterprise assistant with RAG, tool-calling, and MCP integrations",
+    techStack: [
+      "LangGraph",
+      "LangChain",
+      "RAG",
+      "Qdrant",
+      "Gemini",
+      "Ollama",
+      "MCP",
+      "NestJS",
+      "Python",
+    ],
+    description:
+      "Enterprise AI Assistant Platform at PixelPK / Beyond Technologies — a production AI system combining multi-agent orchestration with retrieval-augmented generation. Built multi-agent workflows using LangGraph and LangChain, designed RAG pipelines with Qdrant vector database, and integrated Gemini plus local LLMs via Ollama. Delivered memory-aware conversational workflows, tool-calling agents, and MCP-based external tool integrations. Production AI Backend Architecture includes intelligent request routing between LLM, Agent, and RAG layers, chunking, embeddings, retrieval, reranking, contextual memory, and stateful agent orchestration with observability and retry mechanisms.",
+  },
+  {
     imgPath: new URL("../../Assets/Projects/gigbase.png", import.meta.url).href,
     isBlog: false,
     title: "Gigbase — Freelancer Platform",
@@ -128,7 +148,7 @@ const projects = [
     title: "Pakistan Lawbot — AI Legal Platform",
     role: "Full-Stack Engineer",
     impact: "Pakistan's first AI legal research, drafting & lawyer marketplace — 15,000+ users",
-    techStack: ["React.js", "Next.js", "Node.js", "MongoDB", "AI/LLM", "REST APIs"],
+    techStack: ["React.js", "Next.js", "Node.js", "MongoDB", "RAG", "LLM", "LangChain", "Vector Search", "REST APIs"],
     description:
       "Pakistan Lawbot is an own product of PixelPK Technologies — Pakistan's first lawyer marketplace and AI-powered legal assistance platform. I contributed across frontend and backend to deliver AI legal research grounded in Pakistani statutes and court judgments, instant document drafting, a verified advocate marketplace, and bilingual (English/Urdu) chat. The platform serves 15,000+ advocates, firms, and citizens with cited answers, case search, and lawyer booking — built specifically for Pakistani law and courts.",
     demoLink: "https://pakistanlawbot.com/",

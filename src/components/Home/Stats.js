@@ -6,8 +6,8 @@ import Section from "../ui/Section";
 const stats = [
   { value: 4, suffix: "+", label: "Years Experience" },
   { value: 8, suffix: "+", label: "Products Shipped" },
-  { value: 4, suffix: "+", label: "Companies" },
-  { value: 300, suffix: "%+", label: "API Performance Gain" },
+  { value: 15, suffix: "K+", label: "Lawbot Users" },
+  { value: 35, suffix: "%", label: "API Response Improvement" },
 ];
 
 function AnimatedCounter({ target, suffix }) {

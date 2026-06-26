@@ -20,6 +20,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-github-calendar": "^3.2.2",
+    "react-helmet-async": "^3.0.0",
     "react-icons": "^4.8.0",
     "react-parallax-tilt": "^1.7.42",
     "react-pdf": "^5.7.1",
@@ -33,6 +34,8 @@
     "@tailwindcss/vite": "^4.3.1",
     "@vitejs/plugin-react": "^4.3.4",
     "jsdom": "^25.0.1",
+    "png-to-ico": "^3.0.1",
+    "sharp": "^0.35.2",
     "tailwindcss": "^4.3.1",
     "vite": "^6.0.3",
     "vitest": "^2.1.8"
@@ -42,7 +45,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "generate:favicons": "node scripts/generate-favicons.mjs"
   },
   "browserslist": {
     "production": [

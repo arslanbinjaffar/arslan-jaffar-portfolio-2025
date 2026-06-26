@@ -7,6 +7,8 @@ import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
 import { Button } from "@/components/ui/button";
+import Seo from "../Seo";
+import { routeSeo } from "@/config/seo";
 
 import freelanceLogo from "../../Assets/Projects/freelance logo.jpg";
 
@@ -15,6 +17,7 @@ function Experience() {
 
   return (
     <Section className="relative">
+      <Seo {...routeSeo["/experience"]} path="/experience" />
       <Particle />
       <Container>
         <PageHeading

@@ -6,11 +6,24 @@ import {
   SiReact,
 } from "react-icons/si";
 import { AiOutlineCloudServer } from "react-icons/ai";
+import { Brain, Bot } from "lucide-react";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
 
 const cards = [
+  {
+    icon: Brain,
+    title: "AI Agents & RAG Systems",
+    desc: "Multi-agent workflows with LangGraph and LangChain. Qdrant vector retrieval, Gemini and Ollama LLMs, memory-aware conversations, tool-calling, and MCP integrations.",
+    tags: ["RAG", "LangGraph", "Qdrant", "MCP"],
+  },
+  {
+    icon: Bot,
+    title: "Production AI Backend",
+    desc: "Intelligent routing across LLM, Agent, and RAG layers. Chunking, embeddings, reranking, contextual memory, and stateful orchestration with observability and retries.",
+    tags: ["NestJS", "Python", "Vector Search", "Agents"],
+  },
   {
     icon: SiNodedotjs,
     title: "Backend Systems & APIs",
@@ -48,7 +61,7 @@ function Engineering() {
           What I
         </PageHeading>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
           {cards.map((card, i) => (
             <motion.div
               key={card.title}
@@ -56,7 +69,7 @@ function Engineering() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.2 }}
-              transition={{ duration: 0.55, delay: i * 0.15 }}
+              transition={{ duration: 0.55, delay: i * 0.1 }}
             >
               <card.icon className="text-4xl text-accent mb-4" />
               <h5 className="text-lg font-bold text-text-primary mb-2">{card.title}</h5>

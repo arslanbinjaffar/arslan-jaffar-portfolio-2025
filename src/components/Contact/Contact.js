@@ -10,6 +10,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
+import Seo from "../Seo";
+import { routeSeo } from "@/config/seo";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -61,6 +63,7 @@ function Contact() {
 
   return (
     <Section className="relative">
+      <Seo {...routeSeo["/contact"]} path="/contact" />
       <Particle />
       <Container>
         <PageHeading
