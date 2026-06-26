@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 
-const productionSiteUrl = "https://arslan-jaffar-portfolio-2025.vercel.app";
+const productionSiteUrl = "https://arslan-jaffar-portfolio.vercel.app";
 const vercelUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : undefined;
@@ -48,6 +48,51 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: false,
+    chunkSizeWarningLimit: 600,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (!id.includes("node_modules")) return;
+
+          if (
+            id.includes("react-pdf") ||
+            id.includes("pdfjs-dist") ||
+            id.includes("@react-pdf")
+          ) {
+            return "pdf";
+          }
+
+          if (id.includes("tsparticles") || id.includes("react-tsparticles")) {
+            return "particles";
+          }
+
+          if (id.includes("framer-motion")) {
+            return "motion";
+          }
+
+          if (id.includes("react-icons")) {
+            return "icons";
+          }
+
+          if (id.includes("react-github-calendar")) {
+            return "github-calendar";
+          }
+
+          if (
+            id.includes("react-dom") ||
+            id.includes("react-router") ||
+            id.includes("scheduler") ||
+            /[/\\]react[/\\]/.test(id)
+          ) {
+            return "react-vendor";
+          }
+
+          if (id.includes("@radix-ui") || id.includes("/radix-ui/")) {
+            return "radix";
+          }
+        },
+      },
+    },
   },
   test: {
     globals: true,
