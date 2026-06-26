@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { Modal, Button } from "react-bootstrap";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { motion } from "framer-motion";
-import "./RatingModal.css";
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 function RatingModal() {
   const [showRating, setShowRating] = useState(false);
@@ -11,92 +17,71 @@ function RatingModal() {
   const [hasRatedBefore, setHasRatedBefore] = useState(false);
 
   useEffect(() => {
-    // Check if user has already rated
     const previousRating = localStorage.getItem("portfolio_rating");
     if (previousRating) {
       setHasRatedBefore(true);
     }
 
-    // Set up beforeunload listener for exit-intent
-    const handleBeforeUnload = () => {
-      if (!hasRatedBefore && !previousRating) {
-        setShowRating(true);
-        return false; // Show browser's default "leaving site" dialog
-      }
-    };
-
-    // Check after 5 seconds if user tries to leave
-    let exitIntentTimeout;
-
     const handleMouseLeave = (e) => {
-      if (e.clientY <= 0 && !hasRatedBefore) {
+      if (e.clientY <= 0 && !hasRatedBefore && !previousRating) {
         setShowRating(true);
       }
     };
 
     document.addEventListener("mouseleave", handleMouseLeave);
-
-    return () => {
-      document.removeEventListener("mouseleave", handleMouseLeave);
-      clearTimeout(exitIntentTimeout);
-    };
+    return () => document.removeEventListener("mouseleave", handleMouseLeave);
   }, [hasRatedBefore]);
-
-  const handleRating = (value) => {
-    setRating(value);
-  };
 
   const handleSubmitRating = () => {
     if (rating > 0) {
-      // Save rating to localStorage
-      const ratingData = {
-        rating: rating,
-        timestamp: new Date().toISOString(),
-        userAgent: navigator.userAgent,
-      };
-      localStorage.setItem("portfolio_rating", JSON.stringify(ratingData));
+      localStorage.setItem(
+        "portfolio_rating",
+        JSON.stringify({
+          rating,
+          timestamp: new Date().toISOString(),
+          userAgent: navigator.userAgent,
+        })
+      );
       setHasRatedBefore(true);
       setShowRating(false);
     }
   };
 
-  const handleSkip = () => {
-    setShowRating(false);
+  const feedbackMessages = {
+    1: "😞 I'd love to hear what I can improve!",
+    2: "😐 Please share your feedback for improvement.",
+    3: "😊 Glad you liked it! Any suggestions?",
+    4: "😄 Great! Happy to hear that!",
+    5: "🎉 Awesome! Thank you so much!",
   };
 
   return (
-    <Modal
-      show={showRating}
-      onHide={handleSkip}
-      centered
-      className="rating-modal"
-      backdrop="static"
-    >
-      <Modal.Header closeButton className="rating-modal-header">
-        <Modal.Title className="rating-modal-title">
-          How did you like my portfolio?
-        </Modal.Title>
-      </Modal.Header>
-      <Modal.Body className="rating-modal-body">
-        <p className="rating-description">
+    <Dialog open={showRating} onOpenChange={setShowRating}>
+      <DialogContent className="rounded-2xl sm:max-w-md">
+        <DialogHeader>
+          <DialogTitle>How did you like my portfolio?</DialogTitle>
+        </DialogHeader>
+
+        <p className="text-text-secondary text-center mb-6">
           Your feedback helps me improve my work and showcase projects better.
         </p>
 
-        <div className="star-rating-container">
+        <div className="flex justify-center gap-2">
           {[1, 2, 3, 4, 5].map((star) => (
             <motion.button
               key={star}
-              className="star-button"
+              type="button"
+              className="text-3xl bg-transparent border-0 cursor-pointer p-1"
               onMouseEnter={() => setHoverRating(star)}
               onMouseLeave={() => setHoverRating(0)}
-              onClick={() => handleRating(star)}
+              onClick={() => setRating(star)}
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.95 }}
             >
               {star <= (hoverRating || rating) ? (
-                <AiFillStar className="star-filled" />
+                <AiFillStar className="text-star" />
               ) : (
-                <AiOutlineStar className="star-empty" />
+                <AiOutlineStar className="text-text-secondary" />
               )}
             </motion.button>
           ))}
@@ -104,35 +89,24 @@ function RatingModal() {
 
         {rating > 0 && (
           <motion.p
-            className="rating-feedback"
+            className="text-center text-text-secondary mt-4"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            {rating === 1 && "😞 I'd love to hear what I can improve!"}
-            {rating === 2 && "😐 Please share your feedback for improvement."}
-            {rating === 3 && "😊 Glad you liked it! Any suggestions?"}
-            {rating === 4 && "😄 Great! Happy to hear that!"}
-            {rating === 5 && "🎉 Awesome! Thank you so much!"}
+            {feedbackMessages[rating]}
           </motion.p>
         )}
-      </Modal.Body>
-      <Modal.Footer className="rating-modal-footer">
-        <Button
-          variant="outline-secondary"
-          onClick={handleSkip}
-          className="skip-btn"
-        >
-          Skip
-        </Button>
-        <Button
-          onClick={handleSubmitRating}
-          disabled={rating === 0}
-          className="submit-rating-btn"
-        >
-          {rating > 0 ? "Submit Rating" : "Select a rating"}
-        </Button>
-      </Modal.Footer>
-    </Modal>
+
+        <DialogFooter>
+          <Button variant="outline" onClick={() => setShowRating(false)}>
+            Skip
+          </Button>
+          <Button onClick={handleSubmitRating} disabled={rating === 0}>
+            {rating > 0 ? "Submit Rating" : "Select a rating"}
+          </Button>
+        </DialogFooter>
+      </DialogContent>
+    </Dialog>
   );
 }
 

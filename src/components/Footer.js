@@ -1,70 +1,46 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {
-  AiFillGithub,
-  // AiOutlineTwitter,
-  // AiFillInstagram,
-} from "react-icons/ai";
+import Container from "./ui/Container";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
-  let date = new Date();
-  let year = date.getFullYear();
+  const year = new Date().getFullYear();
+
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Arslan Jaffar</h3>
-        </Col>
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SB</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-            <li className="social-icons">
+    <footer className="bg-bg-secondary border-t border-border py-8 mt-auto">
+      <Container>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-center text-center md:text-left">
+          <h3 className="text-sm text-text-secondary font-medium">
+            Designed and Developed by Arslan Jaffar
+          </h3>
+          <h3 className="text-sm text-text-secondary font-medium">
+            Copyright &copy; {year} SB
+          </h3>
+          <ul className="flex justify-center md:justify-end gap-4 list-none m-0 p-0">
+            <li>
               <a
                 href="https://github.com/arslanbinjaffar"
-                style={{ color: "white" }}
+                className="text-2xl text-text-primary hover:text-social-github transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
               </a>
             </li>
-            {/* <li className="social-icons">
-              <a
-                href="https://twitter.com/Soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <AiOutlineTwitter />
-              </a>
-            </li> */}
-            <li className="social-icons">
+            <li>
               <a
                 href="https://www.linkedin.com/in/arslanbinjaffar"
-                style={{ color: "white" }}
+                className="text-2xl text-text-primary hover:text-social-linkedin transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
               </a>
             </li>
-            {/* <li className="social-icons">
-              <a
-                href="https://www.instagram.com/soumyajit4419"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li> */}
           </ul>
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </Container>
+    </footer>
   );
 }
 

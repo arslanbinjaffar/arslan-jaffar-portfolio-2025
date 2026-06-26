@@ -98,7 +98,7 @@ I build products that are not just functional — but robust, scalable, and prod
 - React.js
 - Next.js
 - Redux Toolkit
-- Tailwind CSS / Bootstrap
+- Tailwind CSS / shadcn/ui
 
 **Backend**
 - Node.js

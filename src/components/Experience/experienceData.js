@@ -1,10 +1,38 @@
+import freelanceLogo from "../../Assets/Projects/freelance logo.jpg";
+
 const experienceData = [
+  {
+    role: "Full-Stack Engineer",
+    company: "PixelPK Technologies",
+    designation: "Full-Stack Engineer",
+    duration: "Present",
+    companyImage: new URL("../../Assets/Projects/pixel tech logo.jpeg", import.meta.url).href,
+    description:
+      "Building own-product legal technology at PixelPK Technologies, with end-to-end ownership across frontend and backend for Pakistan Lawbot — Pakistan's first AI-powered legal research, drafting, and lawyer marketplace platform.",
+    highlights: [
+      "Developed AI legal research and chat grounded in Pakistani statutes, court judgments, and citations.",
+      "Built instant legal document drafting, lawyer marketplace, and bilingual (English/Urdu) user experiences.",
+      "Delivered scalable APIs and web interfaces serving 15,000+ advocates, firms, and citizens.",
+      "Integrated LLM workflows with verified legal data sources for cited, production-ready answers.",
+      "Shipped features across research, drafting, marketplace booking, and WhatsApp-based legal assistance."
+    ],
+    tech: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "AI/LLM",
+      "REST APIs",
+      "Redis",
+      "AWS"
+    ]
+  },
   {
     role: "Senior Software Engineer - MERN / Backend Architect",
     company: "Beyond Technologies",
     designation: "Senior Software Engineer",
     duration: "October 2023 - Present",
-    companyImage: require("../../Assets/logo.png"),
+    companyImage: new URL("../../Assets/Projects/beyond tech logo.png", import.meta.url).href,
     description:
       "Leading end-to-end engineering for ERP and event management platforms, with ownership of architecture, delivery planning, and production reliability.",
     highlights: [
@@ -35,7 +63,7 @@ const experienceData = [
     company: "Eventbuizz",
     designation: "React.js Developer",
     duration: "February 2022 - October 2023",
-    companyImage: require("../../Assets/Projects/eventbuizz.png"),
+    companyImage: new URL("../../Assets/Projects/eventbuizz logo.jpg", import.meta.url).href,
     description:
       "Contributed to multiple web and mobile products with a full-stack approach, focusing on user experience, API integration, and delivery speed.",
     highlights: [
@@ -63,7 +91,7 @@ const experienceData = [
     company: "Enlatics",
     designation: "React/Vue.js Developer",
     duration: "March 2021 - February 2022",
-    companyImage: require("../../Assets/Projects/aml-watcher.png"),
+    companyImage: new URL("../../Assets/Projects/enlatics logo.jpg", import.meta.url).href,
     description:
       "Worked on dynamic product modules with a focus on usability, maintainable frontend architecture, and smooth backend integration.",
     highlights: [
@@ -85,39 +113,40 @@ const experienceData = [
   },
   {
     role: "Full-Stack & Freelance Developer",
-    company: "Freelance / Independent Contractor",
-    designation: "Web Developer",
-    duration: "Jan 2021 - Feb 2022",
-    companyImage: require("../../Assets/logo.png"),
+    company: "Freelance / Remote (Fiverr & Upwork)",
+    designation: "Independent Contractor",
+    duration: "2021 - Present",
+    companyImage: freelanceLogo,
+    openForWork: true,
     description:
-      "Delivered client projects independently from discovery to deployment, balancing product needs, engineering quality, and timelines.",
+      "Delivering remote freelance and part-time contracts for clients worldwide through Fiverr and Upwork — alongside full-time product work. I take on MVPs, API integrations, legacy refactors, and production support with async-friendly communication across time zones.",
     highlights: [
-      "Built complete full-stack applications with modern JavaScript frameworks and APIs.",
-      "Managed project lifecycles including requirement analysis, implementation, and deployment.",
-      "Implemented CI/CD and containerized deployment workflows for faster delivery.",
-      "Designed secure and maintainable codebases with practical architecture choices.",
-      "Collaborated with clients directly and translated business goals into technical solutions."
+      "Currently open for remote freelance, part-time, and fixed-scope contract work.",
+      "Flexible engagement: project-based sprints, ongoing part-time (20–40 hrs/week), or milestone delivery.",
+      "Built and shipped full-stack applications for international clients from discovery through deployment.",
+      "Managed requirements, timelines, and client communication independently on Upwork and Fiverr.",
+      "Delivered React/Next.js frontends, Node.js/NestJS APIs, database design, and cloud deployments.",
     ],
     tech: [
       "React.js",
       "Next.js",
       "Node.js",
+      "NestJS",
       "Express.js",
       "MongoDB",
       "PostgreSQL",
-      "Redux",
+      "REST APIs",
       "Docker",
-      "Firebase",
       "AWS",
-      "GCP"
-    ]
+      "Remote / Async",
+    ],
   },
   {
     role: "Junior Web Developer / Trainee",
     company: "Tech Startup",
     designation: "Trainee Developer",
     duration: "Sep 2020 - Dec 2020",
-    companyImage: require("../../Assets/avatar.svg"),
+    companyImage: new URL("../../Assets/avatar.svg", import.meta.url).href,
     description:
       "Started my professional journey by building frontend and basic full-stack features while learning software delivery fundamentals.",
     highlights: [

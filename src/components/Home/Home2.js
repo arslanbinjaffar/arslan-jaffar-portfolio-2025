@@ -1,23 +1,22 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import {
-  AiFillGithub,
-} from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Container from "../ui/Container";
+import Section from "../ui/Section";
 
 function Home2() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Section id="about" className="!py-12">
       <Container>
-        <Row>
-          <Col md={8} className="home-about-description">
-            <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+        <div className="grid md:grid-cols-12 gap-8 items-center">
+          <div className="md:col-span-8">
+            <h1 className="text-3xl md:text-4xl font-bold text-text-primary mb-6">
+              LET ME <span className="text-accent">INTRODUCE</span> MYSELF
             </h1>
-            <p className="home-about-body">
+            <p className="text-text-secondary text-base leading-relaxed">
               Hi, I am Arslan Jaffar, a Senior MERN Stack Engineer with 4+ years
               of experience building scalable, production-ready web platforms.
               I focus on designing robust backend systems with Node.js, NestJS,
@@ -35,60 +34,65 @@ function Home2() {
               products, where I contribute to system design, engineering
               standards, CI/CD, and team mentorship.
             </p>
-          </Col>
-          <Col md={4} className="myAvtar">
+          </div>
+          <div className="md:col-span-4 flex justify-center">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="max-w-[280px] w-full" alt="avatar" />
             </Tilt>
-          </Col>
-        </Row>
-        <Row>
-          <Col md={12} className="home-about-social">
-            <motion.div
-              className="identity-statement"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <p className="identity-quote">
-                I don't just build apps.
-                <br />
-                <span className="purple">I design systems that scale.</span>
-                <br />
-                <span className="identity-sub">From idea → architecture → production.</span>
-              </p>
-            </motion.div>
-            <h1>FIND ME ON</h1>
-            <p>
-              Feel free to <span className="purple">connect </span>with me
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="mb-8"
+          >
+            <p className="text-xl text-text-secondary leading-relaxed">
+              I don&apos;t just build apps.
+              <br />
+              <span className="text-accent font-semibold">
+                I design systems that scale.
+              </span>
+              <br />
+              <span className="text-text-secondary text-base">
+                From idea → architecture → production.
+              </span>
             </p>
-            <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/arslanbinjaffar"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/arslanbinjaffar/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-            </ul>
-          </Col>
-        </Row>
+          </motion.div>
+
+          <h1 className="text-2xl font-bold text-text-primary">FIND ME ON</h1>
+          <p className="text-text-secondary mt-2">
+            Feel free to <span className="text-accent">connect</span> with me
+          </p>
+          <ul className="flex justify-center gap-4 mt-6 list-none p-0">
+            <li>
+              <a
+                href="https://github.com/arslanbinjaffar"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border text-text-primary hover:text-accent hover:border-accent transition-colors text-xl"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/arslanbinjaffar/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border text-text-primary hover:text-social-linkedin hover:border-social-linkedin transition-colors text-xl"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+          </ul>
+        </div>
       </Container>
-    </Container>
+    </Section>
   );
 }
+
 export default Home2;

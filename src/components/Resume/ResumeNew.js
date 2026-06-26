@@ -1,71 +1,72 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row } from "react-bootstrap";
-import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import IndeedResume from "../../Assets/Arslan-Jaffar_indeed_sep_2025.pdf";
 import MyResume from "../../Assets/MyResume.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
+import pdfWorker from "pdfjs-dist/build/pdf.worker.min.js?url";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+import Container from "../ui/Container";
+import Section from "../ui/Section";
+import { Button } from "@/components/ui/button";
+
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
     setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const scale = width > 786 ? 1.2 : 0.6;
+  const singleScale = width > 786 ? 1.7 : 0.6;
+
   return (
-    <div>
-      <Container fluid className="resume-section">
-        <Particle />
-
-        {/* Indeed Resume Section (multi-page) */}
-        <Row style={{ justifyContent: "center", position: "relative", marginBottom: 40 }}>
-          <Button
-            variant="primary"
-            href={IndeedResume}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download Indeed Resume
+    <Section className="relative !pt-24">
+      <Particle />
+      <Container>
+        <div className="flex justify-center mb-10">
+          <Button asChild className="max-w-xs">
+            <a href={IndeedResume} target="_blank" rel="noopener noreferrer">
+              <AiOutlineDownload className="inline mr-2" />
+              Download Indeed Resume
+            </a>
           </Button>
-        </Row>
-          <Row className="resume" style={{ justifyContent: "center" }}>
-            <Document file={IndeedResume}>
-              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "30px" }}>
-                <div style={{ boxShadow: "0 4px 16px rgba(0,0,0,0.12)", borderRadius: 8, background: "#fff", padding: 16, maxWidth: 900, width: "100%" }}>
-                  <Page pageNumber={1} scale={width > 786 ? 1.2 : 0.6} />
-                </div>
-                <div style={{ boxShadow: "0 4px 16px rgba(0,0,0,0.12)", borderRadius: 8, background: "#fff", padding: 16, maxWidth: 900, width: "100%" }}>
-                  <Page pageNumber={2} scale={width > 786 ? 1.2 : 0.6} />
-                </div>
-                {/* Add more <div><Page /></div> if IndeedResume has more pages */}
+        </div>
+
+        <div className="flex flex-col items-center gap-8 mb-10">
+          <Document file={IndeedResume}>
+            {[1, 2].map((pageNum) => (
+              <div
+                key={pageNum}
+                className="rounded-lg bg-pdf-page p-4 max-w-[900px] w-full shadow-lg"
+              >
+                <Page pageNumber={pageNum} scale={scale} />
               </div>
-            </Document>
-          </Row>
-
-        {/* My Resume Section (single-page) */}
-        <Row style={{ justifyContent: "center", position: "relative", marginTop: 40 }}>
-          <Button
-            variant="primary"
-            href={MyResume}
-            target="_blank"
-            style={{ maxWidth: "250px" }}
-          >
-            <AiOutlineDownload />
-            &nbsp;Download My Resume
-          </Button>
-        </Row>
-        <Row className="resume">
-          <Document file={MyResume} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+            ))}
           </Document>
-        </Row>
+        </div>
+
+        <div className="flex justify-center mt-10 mb-10">
+          <Button asChild className="max-w-xs">
+            <a href={MyResume} target="_blank" rel="noopener noreferrer">
+              <AiOutlineDownload className="inline mr-2" />
+              Download My Resume
+            </a>
+          </Button>
+        </div>
+
+        <div className="flex justify-center">
+          <Document file={MyResume}>
+            <Page pageNumber={1} scale={singleScale} />
+          </Document>
+        </div>
       </Container>
-    </div>
+    </Section>
   );
 }
 

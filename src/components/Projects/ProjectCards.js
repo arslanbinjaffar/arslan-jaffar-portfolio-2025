@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsGithub } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 import placeholderImg from "../../Assets/Projects/placeholder.png";
+import { Card, CardContent, CardTitle, CardDescription } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 function ProjectCards({
   imgPath,
@@ -24,9 +24,8 @@ function ProjectCards({
 
   const maxLength = 160;
   const isLong = description && description.length > maxLength;
-  const displayDesc = isLong && !expanded
-    ? description.slice(0, maxLength) + "…"
-    : description;
+  const displayDesc =
+    isLong && !expanded ? description.slice(0, maxLength) + "…" : description;
 
   return (
     <Tilt
@@ -44,62 +43,58 @@ function ProjectCards({
         whileHover={{ y: -5 }}
       >
         <Card
-          className="project-card-view"
+          className="h-full gap-0 py-0 hover:shadow-xl hover:shadow-accent/10 transition-shadow overflow-hidden"
           role="article"
           aria-labelledby={`project-title-${title}`}
         >
-          <div className="project-card-img-wrapper">
-            <Card.Img
-              variant="top"
+          <div className="relative">
+            <img
               src={imgPath || placeholderImg}
               alt={`${title} project screenshot`}
               loading="lazy"
+              className="w-full object-cover h-[200px]"
               onError={(e) => {
                 e.target.src = placeholderImg;
               }}
             />
             {(isBackend || role) && (
-              <span className="backend-badge">{role || "Backend Project"}</span>
+              <span className="absolute top-2.5 right-2.5 bg-accent text-bg-primary text-xs font-bold px-2.5 py-1 rounded-xl">
+                {role || "Backend Project"}
+              </span>
             )}
           </div>
-          <Card.Body>
-            <Card.Title id={`project-title-${title}`}>{title}</Card.Title>
+          <CardContent className="p-5">
+            <CardTitle
+              id={`project-title-${title}`}
+              className="text-lg font-bold text-text-primary mb-2"
+            >
+              {title}
+            </CardTitle>
 
             {impact && (
-              <p className="project-impact">⚡ {impact}</p>
+              <p className="text-sm text-accent mb-2">⚡ {impact}</p>
             )}
 
-            <Card.Text
-              style={{
-                textAlign: "justify",
-                color: "#d0d0d0",
-                fontSize: "0.9em",
-              }}
-            >
+            <CardDescription className="text-justify text-text-secondary">
               {displayDesc}
               {isLong && (
                 <Button
                   variant="link"
-                  className="read-more"
                   onClick={() => setExpanded(!expanded)}
-                  style={{ padding: "0 4px", fontSize: "0.85em" }}
+                  className="inline h-auto p-0 text-sm ml-1"
                 >
                   {expanded ? "Show less" : "Read more"}
                 </Button>
               )}
-            </Card.Text>
+            </CardDescription>
 
             {techStack?.length > 0 && (
-              <div className="project-tech-row">
+              <div className="flex flex-wrap gap-2 my-3">
                 {techStack.map((t) => (
                   <motion.span
                     key={t}
-                    className="project-tech-tag"
-                    whileHover={{
-                      scale: 1.08,
-                      backgroundColor: "#c770f0",
-                      color: "#0c0513",
-                    }}
+                    className="text-xs px-2 py-1 rounded-full border border-border text-text-secondary hover:bg-accent hover:text-bg-primary transition-colors"
+                    whileHover={{ scale: 1.08 }}
                   >
                     {t}
                   </motion.span>
@@ -107,34 +102,29 @@ function ProjectCards({
               </div>
             )}
 
-            <div className="project-card-buttons">
+            <div className="flex flex-wrap gap-2 mt-3">
               {ghLink && (
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button
-                    variant="primary"
-                    href={ghLink}
-                    target="_blank"
-                    aria-label={`View ${title} on GitHub`}
-                  >
-                    <BsGithub /> &nbsp; {isBlog ? "Blog" : "GitHub"}
+                  <Button asChild className="text-sm px-4 py-2">
+                    <a href={ghLink} target="_blank" rel="noopener noreferrer">
+                      <BsGithub className="inline mr-1" />
+                      {isBlog ? "Blog" : "GitHub"}
+                    </a>
                   </Button>
                 </motion.div>
               )}
               {!isBlog && demoLink && (
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button
-                    variant="primary"
-                    href={demoLink}
-                    target="_blank"
-                    style={{ marginLeft: ghLink ? "10px" : "0" }}
-                    aria-label={`View demo of ${title}`}
-                  >
-                    <CgWebsite /> &nbsp; Demo
+                  <Button asChild className="text-sm px-4 py-2">
+                    <a href={demoLink} target="_blank" rel="noopener noreferrer">
+                      <CgWebsite className="inline mr-1" />
+                      Demo
+                    </a>
                   </Button>
                 </motion.div>
               )}
             </div>
-          </Card.Body>
+          </CardContent>
         </Card>
       </motion.div>
     </Tilt>
@@ -165,6 +155,4 @@ ProjectCards.defaultProps = {
   techStack: [],
 };
 
-
-// Memoize to prevent unnecessary re-renders
 export default React.memo(ProjectCards);

@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import homeLogo from "../../Assets/home-main.svg";
@@ -8,8 +7,9 @@ import Home2 from "./Home2";
 import Type from "./Type";
 import Stats from "./Stats";
 import Engineering from "./Engineering";
+import Container from "../ui/Container";
+import { Button } from "@/components/ui/button";
 
-// Animation variants for staggered entrance
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: (delay) => ({
@@ -28,159 +28,121 @@ const slideInRight = {
   },
 };
 
-// Button hover animation
-const buttonHover = {
-  scale: 1.05,
-  transition: { duration: 0.2 },
-};
+const buttonHover = { scale: 1.05, transition: { duration: 0.2 } };
+
+const techStack = [
+  "NestJS",
+  "Microservices",
+  "React.js",
+  "Redis",
+  "RabbitMQ",
+  "AWS",
+  "Docker",
+];
 
 function Home() {
   const navigate = useNavigate();
 
-  // Navigate to resume page
-  const handleDownloadResume = () => {
-    navigate("/resume");
-  };
-
-  // Navigate to projects page
-  const handleViewProjects = () => {
-    navigate("/project");
-  };
-
   return (
     <section>
-      <Container fluid className="home-section" id="home">
+      <div className="relative bg-home-hero pt-20 pb-16" id="home">
         <Particle />
-        <Container className="home-content">
-          {/* Hero Section - Two Column Layout */}
-          <Row className="hero-row" style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}>
-            {/* Left Column - Text Content */}
-            <Col lg={6} className="hero-content-col">
-              {/* Greeting */}
-              <motion.div
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                custom={0.1}
-              >
-                <h5 className="hero-greeting">Welcome to my portfolio</h5>
+        <Container>
+          <div className="grid lg:grid-cols-2 gap-8 min-h-[calc(100vh-5rem)] items-center">
+            <div className="z-10">
+              <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.1}>
+                <h5 className="text-accent text-lg font-medium mb-2">Welcome to my portfolio</h5>
               </motion.div>
 
-              {/* Main Heading */}
-              <motion.div
-                variants={fadeUp}
-                initial="hidden"
-                animate="visible"
-                custom={0.2}
-              >
-                <h1 className="hero-title">
-                  Hi, I'm <span className="accent-text">Arslan Jaffar</span>
+              <motion.div variants={fadeUp} initial="hidden" animate="visible" custom={0.2}>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-text-primary leading-tight">
+                  Hi, I&apos;m{" "}
+                  <span className="bg-gradient-to-br from-accent to-accent-light bg-clip-text text-transparent">
+                    Arslan Jaffar
+                  </span>
                 </h1>
               </motion.div>
 
-              {/* Typewriter Effect Subtitle */}
               <motion.div
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 custom={0.35}
-                className="hero-subtitle-container"
+                className="text-xl md:text-2xl text-text-secondary mt-4 min-h-[2.5rem]"
               >
                 <Type />
               </motion.div>
 
-              {/* Tagline */}
               <motion.p
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 custom={0.5}
-                className="hero-tagline"
+                className="text-text-secondary text-lg mt-4 max-w-lg"
               >
-                I don't just build apps. I design systems that scale.
+                I don&apos;t just build apps. I design systems that scale.
               </motion.p>
 
-              {/* Tech Stack Tags */}
               <motion.div
-                className="hero-tech-stack"
+                className="flex flex-wrap gap-2 mt-6"
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 custom={0.65}
               >
-                {["NestJS", "Microservices", "React.js", "Redis", "RabbitMQ", "AWS", "Docker"].map(
-                  (tech) => (
-                    <motion.span
-                      key={tech}
-                      className="tech-badge"
-                      whileHover={{ scale: 1.08, backgroundColor: "var(--imp-text-color)" }}
-                    >
-                      {tech}
-                    </motion.span>
-                  )
-                )}
+                {techStack.map((tech) => (
+                  <motion.span
+                    key={tech}
+                    className="px-3 py-1 text-sm rounded-full border border-border text-text-secondary hover:bg-accent hover:text-bg-primary transition-colors cursor-default"
+                    whileHover={{ scale: 1.08 }}
+                  >
+                    {tech}
+                  </motion.span>
+                ))}
               </motion.div>
 
-              {/* CTA Buttons */}
               <motion.div
-                className="hero-cta-buttons"
+                className="flex flex-wrap gap-4 mt-8"
                 variants={fadeUp}
                 initial="hidden"
                 animate="visible"
                 custom={0.8}
               >
-                <motion.div
-                  whileHover={buttonHover}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Button
-                    className="cta-button download-resume"
-                    onClick={handleDownloadResume}
-                  >
+                <motion.div whileHover={buttonHover} whileTap={{ scale: 0.95 }}>
+                  <Button onClick={() => navigate("/resume")}>
                     📄 Download Resume
                   </Button>
                 </motion.div>
-
-                <motion.div
-                  whileHover={buttonHover}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Button
-                    className="cta-button view-projects"
-                    onClick={handleViewProjects}
-                  >
+                <motion.div whileHover={buttonHover} whileTap={{ scale: 0.95 }}>
+                  <Button variant="outline" onClick={() => navigate("/project")}>
                     🚀 View My Projects
                   </Button>
                 </motion.div>
               </motion.div>
-            </Col>
+            </div>
 
-            {/* Right Column - Profile Image or Placeholder */}
-            <Col lg={6} className="hero-image-col">
-              <motion.div
-                className="profile-image-container"
-                variants={slideInRight}
-                initial="hidden"
-                animate="visible"
-              >
-                {/* Profile placeholder - user will replace with actual image */}
+            <motion.div
+              className="relative flex justify-center items-center"
+              variants={slideInRight}
+              initial="hidden"
+              animate="visible"
+            >
+              <div className="relative">
                 <img
                   src="/profile_placeholder.jpg"
                   alt="Arslan Jaffar"
-                  className="profile-image"
+                  className="relative z-10 w-64 h-64 md:w-80 md:h-80 rounded-full object-cover border-4 border-accent shadow-2xl"
                   onError={(e) => {
-                    e.target.src = homeLogo; // Fallback to SVG if image not found
+                    e.target.src = homeLogo;
                   }}
                 />
-                {/* Floating animation background circle */}
-                <div className="profile-glow"></div>
-              </motion.div>
-            </Col>
-          </Row>
+                <div className="absolute inset-0 rounded-full bg-accent/20 blur-3xl scale-110" />
+              </div>
+            </motion.div>
+          </div>
         </Container>
-      </Container>
+      </div>
 
-      {/* Sections below Hero */}
       <Home2 />
       <Stats />
       <Engineering />

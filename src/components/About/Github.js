@@ -1,21 +1,34 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
 import GitHubCalendar from "react-github-calendar";
-import { Row } from "react-bootstrap";
+import PageHeading from "../ui/PageHeading";
+import { ThemeContext } from "../../App";
 
 function Github() {
+  const { theme } = useContext(ThemeContext);
+  const [calendarColor, setCalendarColor] = useState("");
+
+  useEffect(() => {
+    const color = getComputedStyle(document.documentElement)
+      .getPropertyValue("--github-calendar")
+      .trim();
+    setCalendarColor(color);
+  }, [theme]);
+
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
-      </h1>
-      <GitHubCalendar
-        username="arslanbinjaffar"
-        blockSize={15}
-        blockMargin={5}
-        color="#008000"
-        fontSize={16}
-      />
-    </Row>
+    <div className="flex flex-col items-center py-8">
+      <PageHeading accent="Code" className="!mb-6">
+        Days I
+      </PageHeading>
+      {calendarColor && (
+        <GitHubCalendar
+          username="arslanbinjaffar"
+          blockSize={15}
+          blockMargin={5}
+          color={calendarColor}
+          fontSize={16}
+        />
+      )}
+    </div>
   );
 }
 

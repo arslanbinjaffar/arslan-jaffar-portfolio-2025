@@ -1,8 +1,10 @@
 import React, { useEffect, useState, useMemo } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import { projects, backendProjects } from "./projectsData";
+import Container from "../ui/Container";
+import Section from "../ui/Section";
+import PageHeading from "../ui/PageHeading";
 
 function Projects() {
   const allProjects = useMemo(
@@ -10,44 +12,39 @@ function Projects() {
       ...projects.map((project) => ({ ...project, isBackend: false })),
       ...backendProjects.map((project) => ({ ...project, isBackend: true })),
     ],
-    [] // Empty dependency array - projects and backendProjects are static imports
+    []
   );
 
-  const [displayProjects, setDisplayProjects] = useState(() => {
-    // Shuffle projects on initial load
-    const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
-    return shuffled;
-  });
+  const [displayProjects, setDisplayProjects] = useState(() =>
+    [...allProjects].sort(() => Math.random() - 0.5)
+  );
 
   useEffect(() => {
-    // Re-shuffle every 10 minutes
     const interval = setInterval(() => {
-      const shuffled = [...allProjects].sort(() => Math.random() - 0.5);
-      setDisplayProjects(shuffled);
-    }, 600000); // 10 minutes
-
+      setDisplayProjects([...allProjects].sort(() => Math.random() - 0.5));
+    }, 600000);
     return () => clearInterval(interval);
   }, [allProjects]);
 
   return (
-    <Container fluid className="project-section">
+    <Section className="relative">
       <Particle />
       <Container>
-        <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
-        </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <PageHeading
+          accent="Works"
+          subtitle="Here are a few projects I've worked on recently."
+        >
+          My Recent
+        </PageHeading>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
           {displayProjects.map((project, idx) => (
-            <Col md={4} className="project-card" key={`${project.title}-${idx}`}>
+            <div key={`${project.title}-${idx}`}>
               <ProjectCard {...project} />
-            </Col>
+            </div>
           ))}
-        </Row>
+        </div>
       </Container>
-    </Container>
+    </Section>
   );
 }
 

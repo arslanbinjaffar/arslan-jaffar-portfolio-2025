@@ -1,95 +1,81 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import { motion } from "framer-motion";
 import {
   SiNodedotjs,
   SiRabbitmq,
-//   SiDocker,
   SiReact,
 } from "react-icons/si";
-// import { MdOutlineArchitecture } from "react-icons/md";
 import { AiOutlineCloudServer } from "react-icons/ai";
+import Container from "../ui/Container";
+import Section from "../ui/Section";
+import PageHeading from "../ui/PageHeading";
 
 const cards = [
   {
-    icon: <SiNodedotjs size={36} color="#c770f0" />,
+    icon: SiNodedotjs,
     title: "Backend Systems & APIs",
     desc: "Production-grade REST and GraphQL APIs built with Node.js, NestJS, and Express.js. Focus on security, validation, and performance at scale.",
     tags: ["Node.js", "NestJS", "REST", "GraphQL"],
   },
   {
-    icon: <SiRabbitmq size={36} color="#c770f0" />,
+    icon: SiRabbitmq,
     title: "Microservices & Queues",
     desc: "Distributed architectures with event-driven communication using RabbitMQ and BullMQ. Redis caching to cut latency and improve throughput.",
     tags: ["Microservices", "RabbitMQ", "BullMQ", "Redis"],
   },
   {
-    icon: <AiOutlineCloudServer size={36} color="#c770f0" />,
+    icon: AiOutlineCloudServer,
     title: "Cloud & DevOps",
     desc: "Dockerized deployments on AWS and GCP. CI/CD pipelines with GitLab and GitHub Actions. Kubernetes orchestration for scalable infrastructure.",
     tags: ["Docker", "AWS", "GCP", "CI/CD", "Kubernetes"],
   },
   {
-    icon: <SiReact size={36} color="#c770f0" />,
+    icon: SiReact,
     title: "Frontend Engineering",
     desc: "Clean and responsive UIs with React.js and Next.js. State management via Redux. Optimised for performance, accessibility, and SEO.",
     tags: ["React.js", "Next.js", "Redux", "TypeScript"],
   },
 ];
 
-const containerVariants = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.15 } },
-};
-
-const cardVariants = {
-  hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.55 } },
-};
-
 function Engineering() {
   return (
-    <Container fluid className="engineering-section">
+    <Section>
       <Container>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+        <PageHeading
+          accent="Actually Build"
+          subtitle="Beyond writing code — designing systems that handle real-world scale and complexity."
         >
-          <h1 className="project-heading" style={{ marginBottom: "8px" }}>
-            What I <strong className="purple">Actually Build</strong>
-          </h1>
-          <p className="engineering-subtitle">
-            Beyond writing code — designing systems that handle real-world scale and complexity.
-          </p>
-        </motion.div>
+          What I
+        </PageHeading>
 
-        <motion.div
-          variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          <Row style={{ justifyContent: "center", marginTop: "30px" }}>
-            {cards.map((card) => (
-              <Col md={6} lg={3} key={card.title} style={{ marginBottom: "24px" }}>
-                <motion.div className="eng-card" variants={cardVariants}>
-                  <div className="eng-card-icon">{card.icon}</div>
-                  <h5 className="eng-card-title">{card.title}</h5>
-                  <p className="eng-card-desc">{card.desc}</p>
-                  <div className="eng-card-tags">
-                    {card.tags.map((t) => (
-                      <span key={t} className="eng-tag">{t}</span>
-                    ))}
-                  </div>
-                </motion.div>
-              </Col>
-            ))}
-          </Row>
-        </motion.div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          {cards.map((card, i) => (
+            <motion.div
+              key={card.title}
+              className="bg-card border border-border rounded-2xl p-6 backdrop-blur-sm hover:border-accent/50 transition-colors h-full flex flex-col"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.55, delay: i * 0.15 }}
+            >
+              <card.icon className="text-4xl text-accent mb-4" />
+              <h5 className="text-lg font-bold text-text-primary mb-2">{card.title}</h5>
+              <p className="text-sm text-text-secondary flex-1 mb-4">{card.desc}</p>
+              <div className="flex flex-wrap gap-2">
+                {card.tags.map((t) => (
+                  <span
+                    key={t}
+                    className="text-xs px-2 py-1 rounded-full border border-border text-text-secondary"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </Container>
-    </Container>
+    </Section>
   );
 }
 

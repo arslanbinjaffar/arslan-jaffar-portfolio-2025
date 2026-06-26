@@ -1,0 +1,188 @@
+/* ===================================== */
+/* Design tokens — edit colors only here */
+/* ===================================== */
+
+:root {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e2e8f0;
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --accent: #2563eb;
+  --accent-light: #60a5fa;
+  --border: #e2e8f0;
+  --card: rgba(255, 255, 255, 0.8);
+
+  /* shadcn/ui semantic tokens (mapped to portfolio palette) */
+  --background: var(--bg-primary);
+  --foreground: var(--text-primary);
+  --card-foreground: var(--text-primary);
+  --popover: var(--bg-secondary);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--accent);
+  --primary-foreground: var(--bg-primary);
+  --secondary: var(--bg-secondary);
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--bg-tertiary);
+  --muted-foreground: var(--text-secondary);
+  --accent-foreground: var(--text-primary);
+  --destructive: var(--error);
+  --destructive-foreground: #ffffff;
+  --input: var(--border);
+  --ring: var(--accent);
+  --radius: 0.75rem;
+  --section-bg: linear-gradient(
+    to bottom left,
+    rgba(248, 250, 252, 0.95),
+    rgba(226, 232, 240, 0.9)
+  );
+  --hero-overlay: linear-gradient(
+    to bottom left,
+    rgba(248, 250, 252, 0.7),
+    rgba(226, 232, 240, 0.85)
+  );
+  --social-github: #333333;
+  --social-linkedin: #0077b5;
+  --social-twitter: #1da1f2;
+  --social-email: #ea4335;
+  --star: #fbbf24;
+  --error: #f87171;
+  --pdf-page: #ffffff;
+  --github-calendar: #2563eb;
+}
+
+.dark {
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --accent: #38bdf8;
+  --accent-light: #7dd3fc;
+  --border: rgba(56, 189, 248, 0.3);
+  --card: rgba(30, 41, 59, 0.6);
+
+  --background: var(--bg-primary);
+  --foreground: var(--text-primary);
+  --card-foreground: var(--text-primary);
+  --popover: var(--bg-secondary);
+  --popover-foreground: var(--text-primary);
+  --primary: var(--accent);
+  --primary-foreground: var(--bg-primary);
+  --secondary: var(--bg-secondary);
+  --secondary-foreground: var(--text-primary);
+  --muted: var(--bg-tertiary);
+  --muted-foreground: var(--text-secondary);
+  --accent-foreground: var(--text-primary);
+  --destructive: var(--error);
+  --destructive-foreground: #ffffff;
+  --input: var(--border);
+  --ring: var(--accent);
+  --section-bg: linear-gradient(
+    to bottom left,
+    rgba(15, 23, 42, 0.9),
+    rgba(30, 41, 59, 0.85)
+  );
+  --hero-overlay: linear-gradient(
+    to bottom left,
+    rgba(15, 23, 42, 0.75),
+    rgba(30, 41, 59, 0.88)
+  );
+  --github-calendar: #38bdf8;
+}
+
+@theme inline {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-secondary: var(--bg-secondary);
+  --color-bg-tertiary: var(--bg-tertiary);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.2);
+  --color-social-github: var(--social-github);
+  --color-social-linkedin: var(--social-linkedin);
+  --color-social-twitter: var(--social-twitter);
+  --color-social-email: var(--social-email);
+  --color-star: var(--star);
+  --color-error: var(--error);
+  --color-pdf-page: var(--pdf-page);
+  --color-github-calendar: var(--github-calendar);
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@utility bg-section {
+  background-image: var(--section-bg);
+}
+
+@utility bg-hero-overlay {
+  background-image: var(--hero-overlay);
+}
+
+@utility bg-home-hero {
+  background-image: var(--hero-overlay), url("../Assets/home-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-light);
+}
+
+/* Typewriter cursor */
+.Typewriter__cursor {
+  color: var(--accent) !important;
+}
+
+/* Navbar — collapsed menu touch targets & scroll lock */
+@media (max-width: 1023px) {
+  #navbar-menu a,
+  #navbar-menu button {
+    min-height: 44px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  #navbar-menu a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 0.8125rem;
+  }
+}

@@ -1,6 +1,6 @@
 const projects = [
   {
-    imgPath: require("../../Assets/Projects/gigbase.png"),
+    imgPath: new URL("../../Assets/Projects/gigbase.png", import.meta.url).href,
     isBlog: false,
     title: "VoxtAsia Admin panel",
     role: "Backend Engineer",
@@ -12,7 +12,7 @@ const projects = [
     ghLink: "https://github.com/VoxtAsia/Vox-Front",
 },
 {
-    imgPath: require("../../Assets/Projects/voxtasia-mobile-app.jpeg"),
+    imgPath: new URL("../../Assets/Projects/voxtasia-mobile-app.jpeg", import.meta.url).href,
     isBlog: false,
     title: "VoxtAsia — Mobile App",
     role: "Full-Stack Engineer",
@@ -24,7 +24,7 @@ const projects = [
     ghLink: "https://github.com/VoxtAsia/Vox-Mobile",
 },
 {
-    imgPath: require("../../Assets/Projects/voxtasia-web.png"),
+    imgPath: new URL("../../Assets/Projects/voxtasia-web.png", import.meta.url).href,
     isBlog: false,
     title: "VoxtAsia — Web Platform",
     role: "Full-Stack Engineer",
@@ -36,7 +36,7 @@ const projects = [
     ghLink: "https://github.com/VoxtAsia/Vox-Admin",
   },
   {
-    imgPath: require("../../Assets/Projects/gigbase.png"),
+    imgPath: new URL("../../Assets/Projects/gigbase.png", import.meta.url).href,
     isBlog: false,
     title: "Gigbase — Freelancer Platform",
     role: "Full-Stack Engineer",
@@ -48,7 +48,7 @@ const projects = [
     ghLink: "https://www.app.gigbase.io/auth/login",
   },
  {
-    imgPath: require("../../Assets/Projects/aml-watcher.png"),
+    imgPath: new URL("../../Assets/Projects/aml-watcher.png", import.meta.url).href,
     isBlog: false,
     title: "AML Watcher — Compliance Platform",
     role: "MERN Stack Developer",
@@ -59,7 +59,7 @@ const projects = [
     demoLink: "https://amlwatcher.com/",
   },
    {
-    imgPath: require("../../Assets/Projects/fleet.png"),
+    imgPath: new URL("../../Assets/Projects/fleet.png", import.meta.url).href,
     isBlog: false,
     title: "AI Fleet Management ERP",
     role: "Lead Backend Engineer",
@@ -71,7 +71,7 @@ const projects = [
     ghLink: "https://github.com/Beyondevs/Fleet-Management-Frontend"
   },
   {
-    imgPath: require("../../Assets/Projects/afiawebsite.png"),
+    imgPath: new URL("../../Assets/Projects/afiawebsite.png", import.meta.url).href,
     isBlog: false,
     title: "AIFA Services — Company Website",
     role: "Frontend Developer",
@@ -83,7 +83,7 @@ const projects = [
     ghLink: "https://github.com/Beyondevs/aifaWebsite",
   },
     {
-    imgPath: require("../../Assets/Projects/FeedDrop.png"),
+    imgPath: new URL("../../Assets/Projects/FeedDrop.png", import.meta.url).href,
     isBlog: false,
     title: "FeedDrop — AI Video Generation",
     role: "Full-Stack Engineer",
@@ -95,7 +95,7 @@ const projects = [
     ghLink: "https://www.feeddrop.com/portal",
   },
    {
-    imgPath: require("../../Assets/Projects/orkhontech-web.png"),
+    imgPath: new URL("../../Assets/Projects/orkhontech-web.png", import.meta.url).href,
     isBlog: false,
     title: "PATCO — Software Development Co.",
     role: "Frontend Developer",
@@ -108,7 +108,7 @@ const projects = [
   },
  
   {
-    imgPath: require("../../Assets/Projects/aifaERPsystem.png"),
+    imgPath: new URL("../../Assets/Projects/aifaERPsystem.png", import.meta.url).href,
     isBlog: false,
     title: "Aifa ERP System",
     role: "Lead Full-Stack Engineer",
@@ -123,7 +123,18 @@ const projects = [
  
 
   {
-    imgPath: require("../../Assets/Projects/quick_legals.png"),
+    imgPath: new URL("../../Assets/Projects/pakistanLawbot.png", import.meta.url).href,
+    isBlog: false,
+    title: "Pakistan Lawbot — AI Legal Platform",
+    role: "Full-Stack Engineer",
+    impact: "Pakistan's first AI legal research, drafting & lawyer marketplace — 15,000+ users",
+    techStack: ["React.js", "Next.js", "Node.js", "MongoDB", "AI/LLM", "REST APIs"],
+    description:
+      "Pakistan Lawbot is an own product of PixelPK Technologies — Pakistan's first lawyer marketplace and AI-powered legal assistance platform. I contributed across frontend and backend to deliver AI legal research grounded in Pakistani statutes and court judgments, instant document drafting, a verified advocate marketplace, and bilingual (English/Urdu) chat. The platform serves 15,000+ advocates, firms, and citizens with cited answers, case search, and lawyer booking — built specifically for Pakistani law and courts.",
+    demoLink: "https://pakistanlawbot.com/",
+  },
+  {
+    imgPath: new URL("../../Assets/Projects/quick_legals.png", import.meta.url).href,
     isBlog: false,
     title: "QuickLegals Website & User Portal",
     role: "Full-Stack Engineer",
@@ -135,7 +146,7 @@ const projects = [
     ghLink: "https://github.com/Beyondevs/Quick-Legals-web"
   },
   {
-    imgPath: require("../../Assets/Projects/admin_quick_legals.png"),
+    imgPath: new URL("../../Assets/Projects/admin_quick_legals.png", import.meta.url).href,
     isBlog: false,
     title: "QuickLegals Admin Portal",
     description:
@@ -144,7 +155,7 @@ const projects = [
     ghLink: "https://github.com/Beyondevs/Quick-Legals-Admin-Portal"
   },
   {
-    imgPath: require("../../Assets/Projects/islamiya.png"),
+    imgPath: new URL("../../Assets/Projects/islamiya.png", import.meta.url).href,
     isBlog: false,
     title: "Islamiyya — Shari'ah-Compliant Wills",
     role: "Full-Stack Engineer",
@@ -156,7 +167,7 @@ const projects = [
     ghLink: "https://github.com/Beyondevs/Islamiya-FE"
   },
   {
-    imgPath: require("../../Assets/Projects/adminIslamiya.png"),
+    imgPath: new URL("../../Assets/Projects/adminIslamiya.png", import.meta.url).href,
     isBlog: false,
     title: "Islamiyya Admin Panel",
     description:
@@ -165,7 +176,7 @@ const projects = [
     ghLink: "https://github.com/Beyondevs/Islamiya-admin-panel-fe"
   },
   {
-    imgPath: require("../../Assets/Projects/eventbuizz mobile.png"),
+    imgPath: new URL("../../Assets/Projects/eventbuizz mobile.png", import.meta.url).href,
     isBlog: false,
     title: "EventBuizz Mobile App",
     description:
@@ -201,7 +212,7 @@ const projects = [
     ghLink: "https://github.com/arslanbinjaffar/hasty-next-app",
   },
   {
-    imgPath: require("../../Assets/Projects/ninja-training.png"),
+    imgPath: new URL("../../Assets/Projects/ninja-training.png", import.meta.url).href,
     isBlog: false,
     title: "Ninja Training App",
     description:
@@ -209,7 +220,7 @@ const projects = [
     demoLink: "https://ninja-training-alpha.vercel.app/",
   },
    {
-    imgPath: require("../../Assets/Projects/eventbuizz.png"),
+    imgPath: new URL("../../Assets/Projects/eventbuizz.png", import.meta.url).href,
     isBlog: false,
     title: "Eventcenter Web-app",
     role: "React.js Developer",
@@ -223,28 +234,28 @@ const projects = [
 
 const backendProjects = [
   {
-    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
+    imgPath: new URL("../../Assets/Projects/Node.js_logo.png", import.meta.url).href,
     isBlog: false,
     title: "Islamiya Backend",
     description: "Solo backend project for Islamiya platform.",
     ghLink: "https://github.com/Beyondevs/Islamiya-Backend",
   },
   {
-    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
+    imgPath: new URL("../../Assets/Projects/Node.js_logo.png", import.meta.url).href,
     isBlog: false,
     title: "Fleet Management Backend",
     description: "Solo backend project for Fleet Management system.",
     ghLink: "https://github.com/Beyondevs/Fleet-Management-Backend",
   },
   {
-    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
+    imgPath: new URL("../../Assets/Projects/Node.js_logo.png", import.meta.url).href,
     isBlog: false,
     title: "Quick Legals Backend",
     description: "Solo backend project for Quick Legals platform.",
     ghLink: "https://github.com/Beyondevs/Quick-legals-backend",
   },
   {
-    imgPath: require("../../Assets/Projects/Node.js_logo.png"),
+    imgPath: new URL("../../Assets/Projects/Node.js_logo.png", import.meta.url).href,
     isBlog: false,
     title: "Aifa ERP Backend",
     description: "Solo backend project for Aifa ERP system.",
