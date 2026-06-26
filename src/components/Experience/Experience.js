@@ -124,15 +124,24 @@ function Experience() {
                 </h3>
                 <p className="text-text-secondary text-sm leading-relaxed mb-4">
                   I&apos;m open to remote freelance and part-time contracts — ideal for startups,
-                  agencies, and founders who need a senior MERN engineer without a full-time hire.
-                  I work across US, EU, and APAC time zones with clear async updates and milestone
-                  delivery.
+                  agencies, and founders who need a senior MERN engineer (and growing AI integration
+                  specialist) without a full-time hire. I work across US, EU, and APAC time zones
+                  with clear async updates and milestone delivery.
                 </p>
-                <ul className="space-y-1.5 text-sm text-text-secondary mb-5">
+                <ul className="space-y-1.5 text-sm text-text-secondary mb-4">
                   <li>• Part-time retainers (20–40 hrs/week) or fixed-scope project contracts</li>
                   <li>• Full-stack development: React, Next.js, Node.js, NestJS, APIs, databases</li>
                   <li>• MVP builds, feature delivery, performance tuning, and production support</li>
                   <li>• Experienced on Fiverr &amp; Upwork — comfortable with remote client workflows</li>
+                </ul>
+                <p className="text-sm font-semibold text-text-primary mb-2">
+                  AI engineering &amp; intelligent product work
+                </p>
+                <ul className="space-y-1.5 text-sm text-text-secondary mb-5">
+                  <li>• RAG pipelines, AI workflows, and AI agents integrated into real products</li>
+                  <li>• LLM API flows, model orchestration, and production-ready AI assistants</li>
+                  <li>• Chatbots, document Q&amp;A, and grounded answers over custom knowledge bases</li>
+                  <li>• Actively preparing for AI engineering — deepening Python, models, and MLOps-style delivery</li>
                 </ul>
                 <Button onClick={() => navigate("/contact")}>
                   Discuss a remote engagement
