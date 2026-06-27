@@ -1,4 +1,14 @@
 {
+  "educationHeading": "تعلیم",
+  "educationAccent": "اور پس منظر",
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "institution": "University of Management & Technology, Lahore",
+      "period": "2018 – 2022",
+      "detail": "Software engineering، data structures، اور web development پر توجہ۔"
+    }
+  ],
   "knowWho": "جانیں",
   "knowAccent": "میں کون",
   "skillsetHeading": "Professional",

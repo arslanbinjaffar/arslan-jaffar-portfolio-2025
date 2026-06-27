@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import { useTranslation } from "react-i18next";
-import { Check } from "lucide-react";
+import { Check, ChevronDown, Globe } from "lucide-react";
 import { useLocale } from "@/context/LocaleContext";
 import { LOCALE_CODES, LOCALES } from "@/i18n/locales";
 import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
-function LanguageSwitcher({ compact = false }) {
+function LanguageSwitcher({ compact = false, onSelect, className }) {
   const { locale, setLocale } = useLocale();
   const { t } = useTranslation("common");
   const [open, setOpen] = useState(false);
@@ -19,6 +20,7 @@ function LanguageSwitcher({ compact = false }) {
     code,
     flag: LOCALES[code].flag,
     label: t(`language.${code}`),
+    shortCode: code.toUpperCase(),
   }));
 
   const current = options.find((o) => o.code === locale) ?? options[0];
@@ -77,6 +79,7 @@ function LanguageSwitcher({ compact = false }) {
       setLocale(code);
     }
     setOpen(false);
+    onSelect?.();
   };
 
   const menu = open ? (
@@ -84,13 +87,13 @@ function LanguageSwitcher({ compact = false }) {
       ref={menuRef}
       role="listbox"
       style={menuStyle}
-      className="rounded-lg border border-border bg-card shadow-lg py-1 list-none m-0 p-0"
+      className="rounded-xl border border-border/60 bg-card/95 backdrop-blur-xl shadow-xl py-1 list-none m-0 p-0"
     >
       {options.map(({ code, flag, label }) => (
         <li key={code} role="option" aria-selected={locale === code}>
           <button
             type="button"
-            className={`flex w-full items-center gap-2 px-3 py-2 text-sm text-start hover:bg-accent/10 transition-colors ${
+            className={`flex w-full items-center gap-2 px-3 py-2.5 text-sm text-start hover:bg-accent/10 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent ${
               locale === code ? "text-accent font-medium" : "text-text-primary"
             }`}
             onClick={() => handleSelect(code)}
@@ -105,19 +108,26 @@ function LanguageSwitcher({ compact = false }) {
   ) : null;
 
   return (
-    <div ref={containerRef} className="relative">
+    <div ref={containerRef} className={cn("relative", className)}>
       <div ref={buttonRef}>
         <Button
           variant="outline"
           type="button"
-          className={`!px-3 !py-2 gap-2 ${compact ? "w-full justify-center" : ""}`}
+          className={cn(
+            "!px-2.5 !py-2 gap-1.5 min-w-[4.5rem] justify-center",
+            compact && "w-full"
+          )}
           onClick={() => setOpen((prev) => !prev)}
           aria-expanded={open}
           aria-haspopup="listbox"
           aria-label={t("language.label")}
         >
-          <span>{current.flag}</span>
-          {!compact && <span className="text-sm">{current.label}</span>}
+          <Globe className="h-4 w-4 shrink-0" aria-hidden />
+          <span className="text-xs font-semibold tracking-wide">{current.shortCode}</span>
+          <ChevronDown
+            className={cn("h-3 w-3 shrink-0 opacity-70 transition-transform", open && "rotate-180")}
+            aria-hidden
+          />
         </Button>
       </div>
 

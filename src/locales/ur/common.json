@@ -2,7 +2,7 @@
   "nav": {
     "home": "ہوم",
     "about": "میرے بارے میں",
-    "experience": "تجربہ ⭐",
+    "experience": "تجربہ",
     "projects": "پروجیکٹس",
     "skills": "مہارتیں",
     "services": "خدمات",
@@ -10,7 +10,24 @@
     "contact": "رابطہ",
     "resume": "ریزیومے",
     "gallery": "گیلری",
-    "hireMe": "ملازمت دیں"
+    "hireMe": "ملازمت دیں",
+    "groups": {
+      "about": "میرے بارے میں",
+      "portfolio": "پورٹ فولیو",
+      "resources": "وسائل"
+    },
+    "aboutMe": "میرے بارے میں",
+    "education": "تعلیم",
+    "certifications": "سرٹیفیکیشنز",
+    "caseStudies": "کیس اسٹڈیز",
+    "openSource": "اوپن سورس",
+    "github": "GitHub",
+    "awards": "ایوارڈز",
+    "techStack": "ٹیک اسٹیک",
+    "faqs": "سوالات",
+    "menu": "مینو",
+    "openMenu": "نیویگیشن مینو کھولیں",
+    "closeMenu": "نیویگیشن مینو بند کریں"
   },
   "badge": {
     "available": "کام کے لیے دستیاب"
@@ -18,6 +35,9 @@
   "footer": {
     "tagline": "سینior MERN اور AI انجینئر — scalable ویب پلیٹ فارمز، SaaS پروڈکٹس، اور production AI سسٹمز بناتا ہوں۔",
     "quickLinks": "فوری لنکس",
+    "explore": "دریافت کریں",
+    "portfolio": "پورٹ فولیو",
+    "legalMeta": "قانونی و میٹا",
     "contact": "رابطہ",
     "connect": "جڑیں",
     "connectText": "ریموٹ freelance، part-time contracts، اور collaboration کے لیے دستیاب۔",
@@ -33,6 +53,7 @@
     "uses": "Uses / Setup",
     "caseStudies": "Case Studies",
     "changelog": "Changelog",
+    "rssFeed": "RSS Feed",
     "legal": "Legal",
     "resources": "Resources",
     "designedBy": "{{author}} نے ڈیزائن اور تیار کیا",

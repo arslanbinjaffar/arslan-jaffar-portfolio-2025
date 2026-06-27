@@ -2,7 +2,7 @@
   "nav": {
     "home": "Home",
     "about": "About",
-    "experience": "Experience ⭐",
+    "experience": "Experience",
     "projects": "Projects",
     "skills": "Skills",
     "services": "Services",
@@ -10,7 +10,24 @@
     "contact": "Contact",
     "resume": "Resume",
     "gallery": "Gallery",
-    "hireMe": "Hire Me"
+    "hireMe": "Hire Me",
+    "groups": {
+      "about": "About",
+      "portfolio": "Portfolio",
+      "resources": "Resources"
+    },
+    "aboutMe": "About Me",
+    "education": "Education",
+    "certifications": "Certifications",
+    "caseStudies": "Case Studies",
+    "openSource": "Open Source",
+    "github": "GitHub",
+    "awards": "Awards",
+    "techStack": "Tech Stack",
+    "faqs": "FAQs",
+    "menu": "Menu",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu"
   },
   "badge": {
     "available": "Available for Work"
@@ -18,6 +35,9 @@
   "footer": {
     "tagline": "Senior MERN & AI engineer building scalable web platforms, SaaS products, and production AI systems.",
     "quickLinks": "Quick Links",
+    "explore": "Explore",
+    "portfolio": "Portfolio",
+    "legalMeta": "Legal & Meta",
     "contact": "Contact",
     "connect": "Connect",
     "connectText": "Open to remote freelance, part-time contracts, and collaboration.",
@@ -33,6 +53,7 @@
     "uses": "Uses / Setup",
     "caseStudies": "Case Studies",
     "changelog": "Changelog",
+    "rssFeed": "RSS Feed",
     "legal": "Legal",
     "resources": "Resources",
     "designedBy": "Designed and Developed by {{author}}",

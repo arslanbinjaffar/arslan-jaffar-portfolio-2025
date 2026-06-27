@@ -24,17 +24,7 @@ import {
 import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
-const NAV_ROUTES = [
-  { path: "/", key: "home" },
-  { path: "/about", key: "about" },
-  { path: "/project", key: "projects" },
-  { path: "/experience", key: "experience" },
-  { path: "/gallery", key: "gallery" },
-  { path: "/blog", key: "blog" },
-  { path: "/services", key: "services" },
-  { path: "/contact", key: "contact" },
-  { path: "/resume", key: "resume" },
-];
+import { flattenNavItems, getNavLabelKey } from "@/config/navigation";
 
 function CommandPalette() {
   const { t } = useTranslation("common");
@@ -59,13 +49,24 @@ function CommandPalette() {
     const q = query.trim().toLowerCase();
     const match = (text) => !q || text.toLowerCase().includes(q);
 
-    const nav = NAV_ROUTES.filter((r) => match(t(`nav.${r.key}`))).map((r) => ({
-      id: `nav-${r.path}`,
-      group: t("commandPalette.groups.navigate"),
-      label: t(`nav.${r.key}`),
-      icon: FaFolderOpen,
-      run: () => navigate(localizePath(r.path)),
-    }));
+    const nav = flattenNavItems()
+      .filter((item) => match(t(getNavLabelKey(item))))
+      .map((item) => ({
+        id: `nav-${item.key}`,
+        group: t("commandPalette.groups.navigate"),
+        label: t(getNavLabelKey(item)),
+        icon: FaFolderOpen,
+        run: () => {
+          if (item.external || item.href) {
+            window.open(item.href, "_blank", "noopener,noreferrer");
+            return;
+          }
+          const path = item.hash
+            ? `${localizePath(item.to || "/")}#${item.hash}`
+            : localizePath(item.to);
+          navigate(path);
+        },
+      }));
 
     const projectCmds = allProjects
       .filter((p) => match(p.title) || match(p.description || ""))

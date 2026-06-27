@@ -184,18 +184,63 @@ body.custom-cursor-active button {
   cursor: none !important;
 }
 
-/* Navbar — collapsed menu touch targets & scroll lock */
-@media (max-width: 1023px) {
-  #navbar-menu a,
-  #navbar-menu button {
-    min-height: 44px;
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1279px) {
-  #navbar-menu a {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    font-size: 0.8125rem;
+/* Mobile nav drawer touch targets */
+#mobile-nav-drawer a,
+#mobile-nav-drawer button {
+  min-height: 44px;
+}
+
+@keyframes collapse-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-collapsible-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes collapse-up {
+  from {
+    height: var(--radix-collapsible-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.animate-collapse-down {
+  animation: collapse-down 0.2s ease-out;
+}
+
+.animate-collapse-up {
+  animation: collapse-up 0.2s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-collapse-down,
+  .animate-collapse-up {
+    animation: none;
   }
 }

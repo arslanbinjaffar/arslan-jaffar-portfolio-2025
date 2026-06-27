@@ -2,7 +2,7 @@
   "nav": {
     "home": "الرئيسية",
     "about": "نبذة عني",
-    "experience": "الخبرة ⭐",
+    "experience": "الخبرة",
     "projects": "المشاريع",
     "skills": "المهارات",
     "services": "الخدمات",
@@ -10,7 +10,24 @@
     "contact": "اتصل",
     "resume": "السيرة الذاتية",
     "gallery": "المعرض",
-    "hireMe": "وظّفني"
+    "hireMe": "وظّفني",
+    "groups": {
+      "about": "نبذة عني",
+      "portfolio": "معرض الأعمال",
+      "resources": "الموارد"
+    },
+    "aboutMe": "نبذة عني",
+    "education": "التعليم",
+    "certifications": "الشهادات",
+    "caseStudies": "دراسات الحالة",
+    "openSource": "مفتوح المصدر",
+    "github": "GitHub",
+    "awards": "الجوائز",
+    "techStack": "التقنيات",
+    "faqs": "الأسئلة الشائعة",
+    "menu": "القائمة",
+    "openMenu": "فتح قائمة التنقل",
+    "closeMenu": "إغلاق قائمة التنقل"
   },
   "badge": {
     "available": "متاح للعمل"
@@ -18,6 +35,9 @@
   "footer": {
     "tagline": "مهندس MERN و AI أبني منصات ويب قابلة للتوسع ومنتجات SaaS وأنظمة AI للإنتاج.",
     "quickLinks": "روابط سريعة",
+    "explore": "استكشف",
+    "portfolio": "معرض الأعمال",
+    "legalMeta": "قانوني ومeta",
     "contact": "اتصل",
     "connect": "تواصل",
     "connectText": "متاح للعمل الحر عن بُعد والعقود بدوام جزئي والتعاون.",
@@ -33,6 +53,7 @@
     "uses": "Uses / Setup",
     "caseStudies": "Case Studies",
     "changelog": "Changelog",
+    "rssFeed": "RSS Feed",
     "legal": "Legal",
     "resources": "Resources",
     "designedBy": "صمم وطور {{author}}",

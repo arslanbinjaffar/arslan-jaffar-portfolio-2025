@@ -67,6 +67,35 @@ function About() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.05 }}
+          className="mt-12 scroll-mt-24"
+          id="education"
+        >
+          <PageHeading accent={t("educationAccent")}>{t("educationHeading")}</PageHeading>
+          <div className="grid gap-4 max-w-3xl">
+            {(Array.isArray(t("education", { returnObjects: true }))
+              ? t("education", { returnObjects: true })
+              : []
+            ).map((entry) => (
+              <div
+                key={`${entry.institution}-${entry.period}`}
+                className="bg-card border border-border rounded-2xl p-6 backdrop-blur-sm"
+              >
+                <h3 className="text-lg font-semibold text-text-primary">{entry.degree}</h3>
+                <p className="text-accent text-sm mt-1">{entry.institution}</p>
+                <p className="text-text-secondary text-sm mt-2">{entry.period}</p>
+                {entry.detail && (
+                  <p className="text-text-secondary text-sm mt-3 leading-relaxed">{entry.detail}</p>
+                )}
+              </div>
+            ))}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
           transition={{ duration: 0.6 }}
           className="mt-12"
         >
