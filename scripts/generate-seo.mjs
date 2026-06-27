@@ -1,8 +1,6 @@
 import sharp from "sharp";
-import matter from "gray-matter";
 import {
   mkdirSync,
-  readdirSync,
   readFileSync,
   writeFileSync,
   existsSync,
@@ -98,32 +96,17 @@ function normalizeDate(value) {
 }
 
 function loadBlogPosts() {
-  if (!existsSync(blogDir)) return [];
+  const postsJsonPath = join(blogDir, "posts.json");
+  if (!existsSync(postsJsonPath)) return [];
 
-  return readdirSync(blogDir)
-    .filter((file) => file.endsWith(".md"))
-    .map((file) => {
-      const raw = readFileSync(join(blogDir, file), "utf8");
-      const { data, content } = matter(raw);
-      const slug = data.slug || file.replace(/\.md$/, "");
-
-      return {
-        slug,
-        title: data.title || slug,
-        description: data.description || truncate(content.replace(/[#*`]/g, ""), 160),
-        publishedAt: normalizeDate(data.publishedAt),
-        updatedAt: normalizeDate(data.updatedAt || data.publishedAt),
-        tags: Array.isArray(data.tags) ? data.tags : [],
-        category: data.category || "",
-        draft: Boolean(data.draft),
-        coverImage: data.coverImage || `/og/blog/${slug}.png`,
-      };
-    })
+  return JSON.parse(readFileSync(postsJsonPath, "utf8"))
     .filter((post) => !post.draft)
-    .sort(
-      (a, b) =>
-        new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime()
-    );
+    .map(({ content, ...post }) => ({
+      ...post,
+      description:
+        post.description ||
+        truncate((content || "").replace(/[#*`]/g, ""), 160),
+    }));
 }
 
 async function createOgImage({ outputPath, title, subtitle, eyebrow }) {

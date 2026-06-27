@@ -1,0 +1,36 @@
+[
+  {
+    "slug": "mern-stack-patterns-production-saas",
+    "title": "MERN Stack Patterns for Production SaaS Apps",
+    "description": "Practical MERN stack patterns for authentication, API design, and deployment that hold up in production SaaS products.",
+    "publishedAt": "2026-06-18",
+    "updatedAt": "2026-06-18",
+    "tags": [
+      "React",
+      "Node.js",
+      "MongoDB",
+      "MERN"
+    ],
+    "category": "Full-Stack Development",
+    "draft": false,
+    "coverImage": "/og/blog/mern-stack-patterns-production-saas.png",
+    "content": "Shipping a MERN app is easy. Shipping one that survives real users, billing, and on-call rotations is a different challenge.\r\n\r\n## Separate concerns early\r\n\r\nKeep your Express or NestJS API focused on business logic. Push UI state to React and persistence to MongoDB or PostgreSQL depending on access patterns.\r\n\r\n## Authentication that scales\r\n\r\n- Use **httpOnly cookies** or short-lived JWT access tokens with refresh rotation.\r\n- Centralize auth middleware and role checks — do not sprinkle guards in every route file.\r\n- Log authentication failures with enough context for security reviews.\r\n\r\n## API design habits\r\n\r\n```javascript\r\n// Good: explicit validation + typed responses\r\napp.post(\"/api/projects\", validate(createProjectSchema), createProject);\r\n```\r\n\r\nReturn consistent error shapes (`code`, `message`, `details`) so the frontend can render helpful feedback.\r\n\r\n## Database patterns\r\n\r\n- Index fields you filter on (`userId`, `status`, `createdAt`).\r\n- Prefer pagination cursors over deep `skip()` offsets.\r\n- Use transactions when money or inventory is involved.\r\n\r\n## Deployment checklist\r\n\r\n1. Environment-specific config via env vars — never commit secrets.\r\n2. Health checks on `/health` for load balancers.\r\n3. Structured logging with request IDs.\r\n4. CI running tests and lint before deploy.\r\n\r\nProduction MERN is less about the stack name and more about disciplined boundaries, observability, and incremental delivery."
+  },
+  {
+    "slug": "building-event-driven-microservices",
+    "title": "Building Event-Driven Microservices with RabbitMQ",
+    "description": "How to design resilient microservices with RabbitMQ, Redis, and Node.js for real-time workloads at scale.",
+    "publishedAt": "2026-06-10",
+    "updatedAt": "2026-06-10",
+    "tags": [
+      "Node.js",
+      "RabbitMQ",
+      "Microservices",
+      "Redis"
+    ],
+    "category": "Backend Architecture",
+    "draft": false,
+    "coverImage": "/og/blog/building-event-driven-microservices.png",
+    "content": "Event-driven architecture helps teams decouple services, absorb traffic spikes, and recover gracefully when downstream dependencies fail.\r\n\r\n## Why event-driven?\r\n\r\nTraditional request/response APIs tightly couple producers and consumers. When one service slows down, the entire chain feels the pain. Message brokers like **RabbitMQ** introduce an asynchronous buffer between services.\r\n\r\n## Core building blocks\r\n\r\n1. **Producers** publish domain events (`audio.uploaded`, `user.registered`).\r\n2. **Exchanges** route messages to the right queues based on routing keys.\r\n3. **Consumers** process messages idempotently and acknowledge only after success.\r\n4. **Redis** caches hot reads and stores short-lived job state.\r\n\r\n## Lessons from production\r\n\r\n- Design for **at-least-once delivery** and make handlers idempotent.\r\n- Use **dead-letter queues** for poison messages instead of silent drops.\r\n- Keep payloads small; store blobs in object storage and pass references in events.\r\n- Instrument queue depth, consumer lag, and retry counts from day one.\r\n\r\n## When to choose RabbitMQ\r\n\r\nRabbitMQ shines when you need flexible routing, durable queues, and predictable delivery semantics. For fire-and-forget telemetry at massive scale, consider Kafka — but for most SaaS backends, RabbitMQ is simpler to operate.\r\n\r\nStart with one bounded context, one exchange, and one queue. Expand routing as your domain grows."
+  }
+]

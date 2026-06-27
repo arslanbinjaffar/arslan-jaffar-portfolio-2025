@@ -47,13 +47,15 @@
     "vitest": "^2.1.8"
   },
   "scripts": {
+    "predev": "node scripts/generate-blog.mjs",
     "dev": "vite",
-    "prebuild": "node scripts/generate-seo.mjs",
+    "prebuild": "node scripts/generate-blog.mjs && node scripts/generate-seo.mjs",
     "build": "vite build",
     "preview": "vite preview",
     "test": "vitest",
     "test:run": "vitest run",
     "generate:favicons": "node scripts/generate-favicons.mjs",
+    "generate:blog": "node scripts/generate-blog.mjs",
     "generate:seo": "node scripts/generate-seo.mjs"
   },
   "browserslist": {
