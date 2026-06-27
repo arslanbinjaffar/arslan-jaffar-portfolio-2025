@@ -44,6 +44,7 @@
   --social-github: #333333;
   --social-linkedin: #0077b5;
   --social-twitter: #1da1f2;
+  --social-whatsapp: #25d366;
   --social-email: #ea4335;
   --star: #fbbf24;
   --error: #f87171;
@@ -124,6 +125,7 @@
   --color-social-github: var(--social-github);
   --color-social-linkedin: var(--social-linkedin);
   --color-social-twitter: var(--social-twitter);
+  --color-social-whatsapp: var(--social-whatsapp);
   --color-social-email: var(--social-email);
   --color-star: var(--star);
   --color-error: var(--error);

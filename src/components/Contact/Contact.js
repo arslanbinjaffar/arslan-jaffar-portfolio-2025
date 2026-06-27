@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Particle from "../Particle";
-import { FaLinkedin, FaGithub, FaEnvelope, FaTwitter } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaEnvelope,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
@@ -12,6 +18,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import Seo from "../Seo";
 import { routeSeo } from "@/config/seo";
+import { contactConfig, socialLinks } from "@/config/site";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -60,6 +67,78 @@ function Contact() {
       setTimeout(() => setSubmitted(false), 3000);
     }
   };
+
+  const contactInfo = [
+    {
+      icon: "📧",
+      label: "Email",
+      value: contactConfig.email,
+      href: `mailto:${contactConfig.email}`,
+    },
+    {
+      icon: "📍",
+      label: "Location",
+      value: contactConfig.location,
+    },
+    {
+      icon: "💼",
+      label: "Availability",
+      value: contactConfig.availability,
+    },
+  ];
+
+  if (socialLinks.whatsapp) {
+    contactInfo.splice(1, 0, {
+      icon: "💬",
+      label: "WhatsApp",
+      value: "Chat on WhatsApp",
+      href: socialLinks.whatsapp,
+    });
+  }
+
+  const chatLinks = [
+    socialLinks.whatsapp && {
+      href: socialLinks.whatsapp,
+      label: "Chat on WhatsApp",
+      icon: FaWhatsapp,
+      hover: "hover:text-social-whatsapp hover:border-social-whatsapp",
+    },
+    {
+      href: socialLinks.linkedin,
+      label: "Message on LinkedIn",
+      icon: FaLinkedin,
+      hover: "hover:text-social-linkedin hover:border-social-linkedin",
+    },
+    {
+      href: socialLinks.github,
+      label: "View on GitHub",
+      icon: FaGithub,
+      hover: "hover:text-social-github hover:border-social-github",
+    },
+  ].filter(Boolean);
+
+  const followLinks = [
+    {
+      href: socialLinks.linkedin,
+      icon: FaLinkedin,
+      hover: "hover:text-social-linkedin",
+    },
+    {
+      href: socialLinks.github,
+      icon: FaGithub,
+      hover: "hover:text-social-github",
+    },
+    {
+      href: socialLinks.twitter,
+      icon: FaTwitter,
+      hover: "hover:text-social-twitter",
+    },
+    {
+      href: `mailto:${contactConfig.email}`,
+      icon: FaEnvelope,
+      hover: "hover:text-social-email",
+    },
+  ];
 
   return (
     <Section className="relative">
@@ -159,17 +238,22 @@ function Contact() {
                   Contact Information
                 </h4>
 
-                {[
-                  { icon: "📧", label: "Email", value: "arslanbinjaffar12000@gmail.com", href: "mailto:arslanbinjaffar12000@gmail.com" },
-                  { icon: "📍", label: "Location", value: "Lahore, Pakistan" },
-                  { icon: "💼", label: "Availability", value: "Open for remote freelance & part-time contracts" },
-                ].map((item) => (
+                {contactInfo.map((item) => (
                   <div key={item.label} className="flex gap-4 mb-6">
                     <div className="text-2xl">{item.icon}</div>
                     <div>
                       <p className="text-sm text-accent font-medium">{item.label}</p>
                       {item.href ? (
-                        <a href={item.href} className="text-text-secondary hover:text-accent transition-colors text-sm">
+                        <a
+                          href={item.href}
+                          target={item.label === "WhatsApp" ? "_blank" : undefined}
+                          rel={
+                            item.label === "WhatsApp"
+                              ? "noopener noreferrer"
+                              : undefined
+                          }
+                          className="text-text-secondary hover:text-accent transition-colors text-sm"
+                        >
                           {item.value}
                         </a>
                       ) : (
@@ -179,14 +263,29 @@ function Contact() {
                   </div>
                 ))}
 
-                <h5 className="text-text-primary font-semibold mt-8 mb-4">Follow Me</h5>
+                <h5 className="text-text-primary font-semibold mt-8 mb-4">
+                  Chat with me
+                </h5>
+                <div className="flex flex-col sm:flex-row gap-3 mb-8">
+                  {chatLinks.map(({ href, label, icon: Icon, hover }) => (
+                    <motion.a
+                      key={label}
+                      href={href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={`flex flex-1 items-center justify-center gap-2 rounded-lg border border-border px-4 py-3 text-sm font-medium text-text-primary transition-colors ${hover}`}
+                      whileHover={{ scale: 1.02 }}
+                      whileTap={{ scale: 0.98 }}
+                    >
+                      <Icon className="text-lg shrink-0" />
+                      <span>{label}</span>
+                    </motion.a>
+                  ))}
+                </div>
+
+                <h5 className="text-text-primary font-semibold mb-4">Follow Me</h5>
                 <div className="flex gap-4">
-                  {[
-                    { href: "https://www.linkedin.com/in/arslanbinjaffar", icon: FaLinkedin, hover: "hover:text-social-linkedin" },
-                    { href: "https://github.com/arslanbinjaffar", icon: FaGithub, hover: "hover:text-social-github" },
-                    { href: "https://twitter.com/arslan_jaffar", icon: FaTwitter, hover: "hover:text-social-twitter" },
-                    { href: "mailto:arslan.jaffar@gmail.com", icon: FaEnvelope, hover: "hover:text-social-email" },
-                  ].map(({ href, icon: Icon, hover }) => (
+                  {followLinks.map(({ href, icon: Icon, hover }) => (
                     <motion.a
                       key={href}
                       href={href}

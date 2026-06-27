@@ -3,10 +3,32 @@ import { Link } from "react-router-dom";
 import Container from "./ui/Container";
 import BrandLogo from "./BrandLogo";
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
+import { socialLinks } from "@/config/site";
 
 function Footer() {
   const year = new Date().getFullYear();
+
+  const footerSocialLinks = [
+    {
+      href: socialLinks.github,
+      icon: AiFillGithub,
+      hover: "hover:text-social-github",
+      label: "GitHub",
+    },
+    {
+      href: socialLinks.linkedin,
+      icon: FaLinkedinIn,
+      hover: "hover:text-social-linkedin",
+      label: "LinkedIn",
+    },
+    socialLinks.whatsapp && {
+      href: socialLinks.whatsapp,
+      icon: FaWhatsapp,
+      hover: "hover:text-social-whatsapp",
+      label: "WhatsApp",
+    },
+  ].filter(Boolean);
 
   return (
     <footer className="bg-bg-secondary border-t border-border py-8 mt-auto">
@@ -23,26 +45,19 @@ function Footer() {
               Copyright &copy; {year} Arslan Jaffar
             </p>
             <ul className="flex justify-center md:justify-end gap-4 list-none m-0 p-0">
-              <li>
-                <a
-                  href="https://github.com/arslanbinjaffar"
-                  className="text-2xl text-text-primary hover:text-social-github transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/arslanbinjaffar"
-                  className="text-2xl text-text-primary hover:text-social-linkedin transition-colors"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
+              {footerSocialLinks.map(({ href, icon: Icon, hover, label }) => (
+                <li key={label}>
+                  <a
+                    href={href}
+                    className={`text-2xl text-text-primary ${hover} transition-colors`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                  >
+                    <Icon />
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

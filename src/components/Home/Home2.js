@@ -3,11 +3,33 @@ import { motion } from "framer-motion";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import { AiFillGithub } from "react-icons/ai";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
+import { socialLinks } from "@/config/site";
 
 function Home2() {
+  const findMeLinks = [
+    {
+      href: socialLinks.github,
+      icon: AiFillGithub,
+      hover: "hover:text-accent hover:border-accent",
+      label: "GitHub",
+    },
+    {
+      href: socialLinks.linkedin,
+      icon: FaLinkedinIn,
+      hover: "hover:text-social-linkedin hover:border-social-linkedin",
+      label: "LinkedIn",
+    },
+    socialLinks.whatsapp && {
+      href: socialLinks.whatsapp,
+      icon: FaWhatsapp,
+      hover: "hover:text-social-whatsapp hover:border-social-whatsapp",
+      label: "WhatsApp",
+    },
+  ].filter(Boolean);
+
   return (
     <Section id="about" className="!py-12">
       <Container>
@@ -68,26 +90,19 @@ function Home2() {
             Feel free to <span className="text-accent">connect</span> with me
           </p>
           <ul className="flex justify-center gap-4 mt-6 list-none p-0">
-            <li>
-              <a
-                href="https://github.com/arslanbinjaffar"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border text-text-primary hover:text-accent hover:border-accent transition-colors text-xl"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/arslanbinjaffar/"
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-border text-text-primary hover:text-social-linkedin hover:border-social-linkedin transition-colors text-xl"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
+            {findMeLinks.map(({ href, icon: Icon, hover, label }) => (
+              <li key={label}>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={label}
+                  className={`inline-flex items-center justify-center w-12 h-12 rounded-full border border-border text-text-primary transition-colors text-xl ${hover}`}
+                >
+                  <Icon />
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </Container>
