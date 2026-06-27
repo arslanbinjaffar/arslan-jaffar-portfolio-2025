@@ -1,0 +1,158 @@
+{
+  "welcome": "Welcome to my portfolio",
+  "greeting": "Hi, I'm",
+  "name": "Arslan Jaffar",
+  "tagline": "I don't just build apps. I design systems that scale.",
+  "taglineLine1": "I don't just build apps.",
+  "taglineLine2": "I design systems that scale.",
+  "taglineLine3": "From idea → architecture → production.",
+  "introTitle": "LET ME",
+  "introAccent": "INTRODUCE",
+  "introTitleEnd": "MYSELF",
+  "introBody": "Hi, I am Arslan Jaffar — Senior Software Engineer at PixelPK and AI Systems Engineer / Team Lead at Beyond Technologies, with 4+ years building scalable, production-ready platforms.\n\nI architect backend systems with Node.js, NestJS, and Python — microservices, event-driven workflows, and cloud-native deployments on AWS. I also build AI systems: RAG pipelines, LangGraph multi-agent workflows, vector search with Qdrant, and MCP-based tool integrations using Gemini and Ollama.\n\nCurrently I lead cross-functional teams on enterprise ERP and SaaS products while shipping Pakistan Lawbot and enterprise AI assistant platforms — from architecture and CI/CD through production AI orchestration.",
+  "findMeOn": "FIND ME ON",
+  "findMeText": "Feel free to <accent>connect</accent> with me",
+  "typewriter": [
+    "AI Systems Engineer",
+    "Senior Software Engineer @ PixelPK",
+    "RAG & LLM Orchestration",
+    "LangGraph Multi-Agent Developer",
+    "Team Lead @ Beyond Technologies",
+    "Backend Architect - Node.js / NestJS",
+    "Microservices and API Specialist",
+    "Cloud-Native Systems Engineer"
+  ],
+  "stats": [
+    {
+      "label": "Years Experience"
+    },
+    {
+      "label": "Products Shipped"
+    },
+    {
+      "label": "Lawbot Users"
+    },
+    {
+      "label": "API Response Improvement"
+    }
+  ],
+  "engineering": {
+    "heading": "What I",
+    "headingAccent": "Actually Build",
+    "subtitle": "Beyond writing code — designing systems that handle real-world scale and complexity.",
+    "cards": [
+      {
+        "title": "AI Agents & RAG Systems",
+        "desc": "Multi-agent workflows with LangGraph and LangChain. Qdrant vector retrieval, Gemini and Ollama LLMs, memory-aware conversations, tool-calling, and MCP integrations."
+      },
+      {
+        "title": "Production AI Backend",
+        "desc": "Intelligent routing across LLM, Agent, and RAG layers. Chunking, embeddings, reranking, contextual memory, and stateful orchestration with observability and retries."
+      },
+      {
+        "title": "Backend Systems & APIs",
+        "desc": "Production-grade REST and GraphQL APIs built with Node.js, NestJS, and Express.js. Focus on security, validation, and performance at scale."
+      },
+      {
+        "title": "Microservices & Queues",
+        "desc": "Distributed architectures with event-driven communication using RabbitMQ and BullMQ. Redis caching to cut latency and improve throughput."
+      },
+      {
+        "title": "Cloud & DevOps",
+        "desc": "Dockerized deployments on AWS and GCP. CI/CD pipelines with GitLab and GitHub Actions. Kubernetes orchestration for scalable infrastructure."
+      },
+      {
+        "title": "Frontend Engineering",
+        "desc": "Clean and responsive UIs with React.js and Next.js. State management via Redux. Optimised for performance, accessibility, and SEO."
+      }
+    ]
+  },
+  "highlights": {
+    "heading": "Career",
+    "headingAccent": "Highlights",
+    "subtitle": "Key outcomes from my recent engineering and AI systems work."
+  },
+  "sections": {
+    "clients": {
+      "heading": "Trusted",
+      "headingAccent": "By",
+      "subtitle": "Companies, startups, and teams I've built products for.",
+      "groups": {
+        "companies": "Companies",
+        "openSource": "Open Source",
+        "freelance": "Freelance",
+        "startups": "Startups"
+      }
+    },
+    "skills": {
+      "heading": "Tech",
+      "headingAccent": "Stack",
+      "subtitle": "Technologies I use daily — with years of hands-on experience.",
+      "years": "yrs",
+      "viewAll": "View full stack on About",
+      "categories": {
+        "frontend": { "label": "Frontend", "skills": [] },
+        "backend": { "label": "Backend", "skills": [] },
+        "database": { "label": "Database", "skills": [] },
+        "cloud": { "label": "Cloud", "skills": [] },
+        "devops": { "label": "DevOps", "skills": [] },
+        "ai": { "label": "AI", "skills": [] },
+        "tools": { "label": "Tools", "skills": [] }
+      }
+    },
+    "projects": {
+      "heading": "Featured",
+      "headingAccent": "Projects",
+      "subtitle": "Impact-focused work — business problems, solutions, and results.",
+      "problem": "Business Problem",
+      "solution": "Solution",
+      "demo": "Live Demo",
+      "caseStudy": "Case Study",
+      "viewAll": "View all projects"
+    },
+    "experience": {
+      "heading": "Experience",
+      "headingAccent": "Timeline",
+      "subtitle": "Current roles, internships, freelance, and open source contributions.",
+      "viewAll": "View full experience"
+    },
+    "services": {
+      "heading": "Services I",
+      "headingAccent": "Offer",
+      "subtitle": "Full-stack development, AI integration, and technical consulting.",
+      "getQuote": "Get a Quote",
+      "viewAll": "View all services"
+    },
+    "github": {
+      "heading": "GitHub",
+      "headingAccent": "Activity",
+      "subtitle": "Contributions, stars, followers, and most-used languages.",
+      "viewAll": "View on About"
+    },
+    "blog": {
+      "heading": "Latest",
+      "headingAccent": "Articles",
+      "subtitle": "Recent posts on engineering, architecture, and AI systems.",
+      "viewAll": "Read all articles"
+    },
+    "certifications": {
+      "heading": "Certifications",
+      "headingAccent": "& Awards",
+      "subtitle": "Credentials and recognitions with verification links.",
+      "viewAll": "View gallery"
+    },
+    "opensource": {
+      "heading": "Open",
+      "headingAccent": "Source",
+      "subtitle": "Pull requests, packages, and backend libraries on GitHub.",
+      "viewRepo": "View Repository",
+      "viewAll": "View all repositories"
+    },
+    "contact": {
+      "heading": "Let's",
+      "headingAccent": "Connect",
+      "subtitle": "Reach out for freelance work, collaborations, or full-time opportunities.",
+      "body": "Prefer a quick chat? Message me on WhatsApp or LinkedIn, book a call, or send a detailed inquiry."
+    }
+  }
+}

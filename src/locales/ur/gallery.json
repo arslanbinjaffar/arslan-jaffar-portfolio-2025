@@ -1,0 +1,20 @@
+{
+  "heading": "کارناموں کی",
+  "headingAccent": "گیلری",
+  "subtitle": "میرے engineering سفر کے awards، certificates، اور milestones۔",
+  "categories": [
+    "Award",
+    "Certificate",
+    "Event",
+    "Recognition"
+  ],
+  "items": [
+    {
+      "title": "LinkedIn Achievement",
+      "date": "2025",
+      "category": "Recognition",
+      "description": "LinkedIn پر شیئر کردہ milestone۔",
+      "embedTitle": "Embedded post"
+    }
+  ]
+}

@@ -29,6 +29,12 @@ const projects = [
     title: "VoxtAsia — Web Platform",
     role: "Full-Stack Engineer",
     impact: "Responsive web streaming platform with real-time content delivery",
+    featured: true,
+    businessProblem:
+      "Audio streaming platforms need a scalable web frontend that handles high traffic, personalized content, and SEO without sacrificing playback quality.",
+    solution:
+      "Built a responsive React/Next.js platform with Redis caching, real-time content delivery, and SEO-optimized pages — enabling seamless browser-based streaming at scale.",
+    caseStudyLink: null,
     techStack: ["React.js", "Next.js", "Node.js", "Redis", "MongoDB", "AWS"],
     description:
       "VoxtAsia Web is the frontend of the audio streaming platform providing seamless browser-based access to stories, podcasts, and audio content. Users browse categories, follow creators, track listening history, and engage through likes and playlists. Built for high-quality audio playback, personalized recommendations, and SEO-optimized delivery.",
@@ -41,6 +47,12 @@ const projects = [
     title: "Enterprise AI Assistant Platform",
     role: "AI Systems Engineer",
     impact: "Multi-agent enterprise assistant with RAG, tool-calling, and MCP integrations",
+    featured: true,
+    businessProblem:
+      "Enterprises need AI assistants that combine accurate retrieval, multi-step reasoning, and secure tool integrations — not just chatbot wrappers.",
+    solution:
+      "Architected a production AI backend with LangGraph multi-agent workflows, Qdrant RAG pipelines, intelligent LLM/Agent/RAG routing, and MCP tool integrations using Gemini and Ollama.",
+    caseStudyLink: null,
     techStack: [
       "LangGraph",
       "LangChain",
@@ -61,6 +73,12 @@ const projects = [
     title: "Gigbase — Freelancer Platform",
     role: "Full-Stack Engineer",
     impact: "AI-assisted freelancer workspace replacing 10+ standalone tools",
+    featured: true,
+    businessProblem:
+      "Freelancers juggle 10+ disconnected tools for invoicing, contracts, client management, and payments — wasting time on admin instead of billable work.",
+    solution:
+      "Delivered an all-in-one SaaS platform with project management, Stripe payments, AI-assisted proposals, and unified client workflows — replacing fragmented toolchains.",
+    caseStudyLink: null,
     techStack: ["React.js", "Node.js", "NestJS", "PostgreSQL", "Stripe", "OpenAI"],
     description:
       "Gigbase is the all-in-one platform for digital freelancers, solopreneurs, and small creative agencies who want to spend more time doing client work — and less time on admin tasks. With Gigbase, you can sell freelance services, manage projects and clients, track time, send invoices and contracts, and get paid — all from one streamlined dashboard. And with your built-in AI Assistant, you’ll have an extra set of hands to automate the busywork: organizing your tasks, drafting client messages, generating proposals, and handling follow-ups — so you can stay focused on what you do best. No more switching between 10 tools. Gigbase gives freelancers everything they need to run and grow their business — faster, smarter, and with less effort.",
@@ -148,6 +166,12 @@ const projects = [
     title: "Pakistan Lawbot — AI Legal Platform",
     role: "Full-Stack Engineer",
     impact: "Pakistan's first AI legal research, drafting & lawyer marketplace — 15,000+ users",
+    featured: true,
+    businessProblem:
+      "Pakistani citizens and advocates lack accessible, cited legal research and a trusted marketplace to connect with verified lawyers.",
+    solution:
+      "Built Pakistan's first AI legal platform with RAG-grounded research, instant document drafting, bilingual chat, and a verified advocate marketplace serving 15,000+ users.",
+    caseStudyLink: null,
     techStack: ["React.js", "Next.js", "Node.js", "MongoDB", "RAG", "LLM", "LangChain", "Vector Search", "REST APIs"],
     description:
       "Pakistan Lawbot is an own product of PixelPK Technologies — Pakistan's first lawyer marketplace and AI-powered legal assistance platform. I contributed across frontend and backend to deliver AI legal research grounded in Pakistani statutes and court judgments, instant document drafting, a verified advocate marketplace, and bilingual (English/Urdu) chat. The platform serves 15,000+ advocates, firms, and citizens with cited answers, case search, and lawyer booking — built specifically for Pakistani law and courts.",

@@ -1,0 +1,36 @@
+{
+  "heading": "Site",
+  "headingAccent": "Changelog",
+  "subtitle": "A record of notable updates and improvements to this portfolio.",
+  "entries": [
+    {
+      "version": "v2.1.0",
+      "date": "June 27, 2026",
+      "items": [
+        "Added Cookies Policy, HTML Sitemap, FAQs, Uses, and Case Studies pages",
+        "Added custom 404 page with helpful navigation",
+        "Activated blog with published engineering articles",
+        "Expanded footer with legal and resource links"
+      ]
+    },
+    {
+      "version": "v2.0.0",
+      "date": "June 2026",
+      "items": [
+        "Redesigned portfolio with i18n support (English, Urdu, Arabic)",
+        "Added Services, Privacy Policy, and Terms & Conditions pages",
+        "Improved SEO with structured data and sitemap generation",
+        "Added sticky action buttons and command palette"
+      ]
+    },
+    {
+      "version": "v1.0.0",
+      "date": "2024",
+      "items": [
+        "Initial portfolio launch with projects, experience, and contact sections",
+        "Resume PDF viewer and download",
+        "Dark/light theme support"
+      ]
+    }
+  ]
+}

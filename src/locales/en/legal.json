@@ -1,0 +1,109 @@
+{
+  "privacy": {
+    "heading": "Privacy",
+    "headingAccent": "Policy",
+    "lastUpdated": "Last updated: June 27, 2026",
+    "sections": [
+      {
+        "title": "Introduction",
+        "body": "This Privacy Policy explains how Arslan Jaffar (\"I\", \"me\", or \"my\") collects, uses, and protects information when you visit this portfolio website."
+      },
+      {
+        "title": "Information I Collect",
+        "body": "When you use the contact form, I collect the name, email address, and message you voluntarily provide. Theme preferences (dark/light mode) may be stored locally in your browser via localStorage."
+      },
+      {
+        "title": "How I Use Your Information",
+        "body": "Contact form submissions are used solely to respond to your inquiry. I do not sell, rent, or share your personal information with third parties for marketing purposes."
+      },
+      {
+        "title": "Cookies & Analytics",
+        "body": "This site uses minimal browser storage for theme preferences. We do not use third-party advertising cookies or analytics at this time.",
+        "linkTo": "/cookies",
+        "linkText": "Read the full Cookies Policy"
+      },
+      {
+        "title": "Data Retention",
+        "body": "Contact form data is retained only as long as necessary to respond to your message and maintain a record of our communication."
+      },
+      {
+        "title": "Your Rights",
+        "body": "You may request access to, correction of, or deletion of your personal data by contacting me at {{email}}."
+      },
+      {
+        "title": "Contact",
+        "body": "For questions about this Privacy Policy, please email {{email}}."
+      }
+    ]
+  },
+  "cookies": {
+    "heading": "Cookies",
+    "headingAccent": "Policy",
+    "lastUpdated": "Last updated: June 27, 2026",
+    "sections": [
+      {
+        "title": "What Are Cookies?",
+        "body": "Cookies are small text files stored on your device when you visit a website. They help sites remember preferences and improve your browsing experience."
+      },
+      {
+        "title": "Cookies We Use",
+        "body": "This portfolio website does not currently set third-party analytics or advertising cookies. No tracking cookies are used to profile visitors."
+      },
+      {
+        "title": "Local Storage & Theme Preferences",
+        "body": "Your dark/light theme preference may be stored in your browser's localStorage so the site remembers your choice on return visits. This data stays on your device and is not transmitted to a server."
+      },
+      {
+        "title": "Future Analytics",
+        "body": "If analytics tools are added in the future, this Cookies Policy and the Privacy Policy will be updated to describe what data is collected and how you can opt out."
+      },
+      {
+        "title": "Managing Cookies",
+        "body": "You can clear cookies and localStorage through your browser settings at any time. Disabling localStorage may reset your theme preference on your next visit."
+      },
+      {
+        "title": "Contact",
+        "body": "For questions about this Cookies Policy, please email {{email}}."
+      }
+    ]
+  },
+  "terms": {
+    "heading": "Terms &",
+    "headingAccent": "Conditions",
+    "lastUpdated": "Last updated: June 27, 2026",
+    "sections": [
+      {
+        "title": "Acceptance of Terms",
+        "body": "By accessing and using this portfolio website, you agree to these Terms & Conditions. If you do not agree, please do not use this site."
+      },
+      {
+        "title": "Use of the Website",
+        "body": "This website is provided for informational purposes to showcase professional work and services. You agree to use the site lawfully and not to attempt to disrupt, damage, or gain unauthorized access to any part of the site or its infrastructure."
+      },
+      {
+        "title": "Intellectual Property",
+        "body": "All content on this site — including text, images, code samples, project descriptions, and design — is the property of Arslan Jaffar unless otherwise stated. You may not reproduce, distribute, or create derivative works without prior written permission."
+      },
+      {
+        "title": "External Links",
+        "body": "This site may contain links to third-party websites (e.g. GitHub, LinkedIn, project demos). I am not responsible for the content or privacy practices of those external sites."
+      },
+      {
+        "title": "Disclaimer",
+        "body": "This website and its content are provided \"as is\" without warranties of any kind. I make no guarantees regarding the accuracy, completeness, or availability of the information presented."
+      },
+      {
+        "title": "Limitation of Liability",
+        "body": "To the fullest extent permitted by law, Arslan Jaffar shall not be liable for any direct, indirect, incidental, or consequential damages arising from your use of this website."
+      },
+      {
+        "title": "Changes to Terms",
+        "body": "I reserve the right to update these Terms & Conditions at any time. Continued use of the site after changes constitutes acceptance of the revised terms."
+      },
+      {
+        "title": "Contact",
+        "body": "For questions about these Terms & Conditions, please email {{email}}."
+      }
+    ]
+  }
+}

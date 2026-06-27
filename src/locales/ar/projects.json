@@ -1,0 +1,174 @@
+{
+  "heading": "مشاريعي",
+  "headingAccent": "الأخيرة",
+  "subtitle": "إليك بعض المشاريع التي عملت عليها مؤخراً.",
+  "searchPlaceholder": "البحث في المشاريع…",
+  "emptyTitle": "لا توجد مشاريع تطابق الفلاتر",
+  "emptyDescription": "جرّب تعديل البحث أو فلاتر التقنية.",
+  "items": [
+    {
+      "title": "لوحة تحكم VoxtAsia",
+      "role": "مهندس Backend",
+      "impact": "خدمات مصغرة قائمة على الأحداث للبث الصوتي في الوقت الفعلي",
+      "description": "VoxtAsia Admin هي لوحة التحكم المركزية لمنصة البث الصوتي."
+    },
+    {
+      "title": "VoxtAsia — تطبيق الجوال",
+      "role": "مهندس Full-Stack",
+      "impact": "تطبيق جوال متعدد المنصات مع تشغيل صوتي offline-first",
+      "description": "VoxtAsia Mobile يجلب تجربة البث الصوتي الكاملة إلى هاتفك."
+    },
+    {
+      "title": "VoxtAsia — منصة الويب",
+      "role": "مهندس Full-Stack",
+      "impact": "منصة بث ويب متجاوبة مع تسليم محتوى في الوقت الفعلي",
+      "description": "VoxtAsia Web هو الواجهة الأمامية لمنصة البث الصوتي."
+    },
+    {
+      "title": "منصة مساعد AI للمؤسسات",
+      "role": "مهندس أنظمة AI",
+      "impact": "مساعد مؤسسي متعدد الوكلاء مع RAG واستدعاء الأدوات وتكامل MCP",
+      "description": "منصة مساعد AI للمؤسسات في PixelPK / Beyond Technologies."
+    },
+    {
+      "title": "Gigbase — منصة Freelancers",
+      "role": "مهندس Full-Stack",
+      "impact": "مساحة عمل freelancers مدعومة بالAI تحل محل 10+ أدوات",
+      "description": "Gigbase هي المنصة الشاملة للfreelancers الرقميين."
+    },
+    {
+      "title": "AML Watcher — منصة الامتثال",
+      "role": "مطور MERN Stack",
+      "impact": "مراقبة AML في الوقت الفعلي عبر تدفقات المعاملات المالية",
+      "description": "عملت كمطور MERN على تطبيق AML Watcher."
+    },
+    {
+      "title": "ERP إدارة الأسطول AI",
+      "role": "مهندس Backend رئيسي",
+      "impact": "ERP مؤسسي يغطي الأسطول والموارد البشرية والمالية والجرage",
+      "description": "نظام Fleet ERP — إدارة دورة حياة الأسطول والجرage والموارد البشرية والمالية."
+    },
+    {
+      "title": "AIFA Services — موقع الشركة",
+      "role": "مطور Frontend",
+      "impact": "موقع مؤسسي يركز على التحويل لشركة FM متعددة الخدمات",
+      "description": "شركتنا تقدم خدمات soft و hard فعالة من حيث التكلفة."
+    },
+    {
+      "title": "FeedDrop — توليد فيديو AI",
+      "role": "مهندس Full-Stack",
+      "impact": "خط أنابيب AI ينشئ فيديوهات اجتماعية قصيرة في أقل من دقيقتين",
+      "description": "FeedDrop منصة مدعومة بالAI لإنشاء فيديوهات مثل TikTok و Instagram reels."
+    },
+    {
+      "title": "PATCO — شركة تطوير البرمجيات",
+      "role": "مطور Frontend",
+      "impact": "موقع مؤسسي موثوق لوكالة دولية بفريق 50+",
+      "description": "PATCO شركة تطوير برمجيات قائمة على AI في باكو، أذربيجان."
+    },
+    {
+      "title": "نظام Aifa ERP",
+      "role": "مهندس Full-Stack رئيسي",
+      "impact": "أتمتة ERP end-to-end تقلل الإدارة اليدوية ~60%",
+      "description": "نظام ERP شامل يدمج جميع وظائف الأعمال الأساسية."
+    },
+    {
+      "title": "Pakistan Lawbot — منصة قانونية AI",
+      "role": "مهندس Full-Stack",
+      "impact": "أول منصة AI قانونية في باكستان — 15,000+ مستخدم",
+      "description": "Pakistan Lawbot منتج PixelPK Technologies — أول منصة AI قانونية في باكستان."
+    },
+    {
+      "title": "AITube — منصة فيديو AI",
+      "role": "مهندس Full-Stack",
+      "impact": "منصة فيديو AI لإنشاء واكتشاف ومشاركة المحتوى",
+      "description": "AITube منصة فيديو مدعومة بالAI من PixelPK Technologies."
+    },
+    {
+      "title": "QuickLegals موقع وبورتال المستخدم",
+      "role": "مهندس Full-Stack",
+      "impact": "منصة توليد مستندات قانونية بدون محامٍ",
+      "description": "QuickLegals منصة إلكترونية لإنشاء مستندات قانونية في دقائق."
+    },
+    {
+      "title": "QuickLegals بورتال الإدارة",
+      "role": "",
+      "impact": "",
+      "description": "بورتال إدارة QuickLegals لإدارة المستخدمين والمستندات والإعدادات."
+    },
+    {
+      "title": "Islamiyya — وصايا متوافقة مع الشريعة",
+      "role": "مهندس Full-Stack",
+      "impact": "أول خدمة كتابة وصايا متوافقة مع الشريعة في اسcotland",
+      "description": "Islamiyya أول خدمة كتابة وصايا متوافقة مع الشريعة في اسcotland."
+    },
+    {
+      "title": "Islamiyya لوحة الإدارة",
+      "role": "",
+      "impact": "",
+      "description": "لوحة إدارة Islamiyya للتحكم في عمليات المنصة."
+    },
+    {
+      "title": "EventBuizz تطبيق الجوال",
+      "role": "",
+      "impact": "",
+      "description": "غرفة دردشة مبنية بـ React.js و Material-UI و Firebase."
+    },
+    {
+      "title": "Facebook Clone",
+      "role": "",
+      "impact": "",
+      "description": "منصة وسائط اجتماعية مبنية بـ React.js."
+    },
+    {
+      "title": "Martial Arts",
+      "role": "",
+      "impact": "",
+      "description": "منصة ديناميكية لمدربي الفنون القتالية."
+    },
+    {
+      "title": "Hasty App",
+      "role": "",
+      "impact": "",
+      "description": "منصة شاملة لإدارة مشاريع العقارات."
+    },
+    {
+      "title": "Ninja Training App",
+      "role": "",
+      "impact": "",
+      "description": "منصة ديناميكية للتدريب كالنinja."
+    },
+    {
+      "title": "Eventcenter تطبيق الويب",
+      "role": "مطور React.js",
+      "impact": "نظام جدولة الأحداث وتسجيل الحضور في Eventbuizz",
+      "description": "عملت كمطور MERN على مشروع Eventcenter."
+    }
+  ],
+  "backendItems": [
+    {
+      "title": "Islamiya Backend",
+      "role": "",
+      "impact": "",
+      "description": "مشروع backend منفرد لمنصة Islamiya."
+    },
+    {
+      "title": "Fleet Management Backend",
+      "role": "",
+      "impact": "",
+      "description": "مشروع backend منفرد لنظام Fleet Management."
+    },
+    {
+      "title": "Quick Legals Backend",
+      "role": "",
+      "impact": "",
+      "description": "مشروع backend منfرد لمنصة Quick Legals."
+    },
+    {
+      "title": "Aifa ERP Backend",
+      "role": "",
+      "impact": "",
+      "description": "مشروع backend منfرد لنظام Aifa ERP."
+    }
+  ]
+}

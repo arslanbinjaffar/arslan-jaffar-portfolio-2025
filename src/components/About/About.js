@@ -1,44 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Particle from "../Particle";
+import Aboutcard from "./AboutCard";
 import Github from "./Github";
 import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import laptopImg from "../../Assets/about.png";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
+import { Button } from "@/components/ui/button";
 import Seo from "../Seo";
-import { routeSeo } from "@/config/seo";
-
-const values = [
-  {
-    icon: "⚙️",
-    title: "Scalability First",
-    desc: "Design systems that handle growth without rewrites — from day one.",
-  },
-  {
-    icon: "🛡️",
-    title: "Production Reliability",
-    desc: "Ship features that stay up. Observability, error handling, and graceful degradation built in.",
-  },
-  {
-    icon: "🏗️",
-    title: "Clean Architecture",
-    desc: "Modular, testable, and maintainable code that teams can confidently extend.",
-  },
-  {
-    icon: "🤖",
-    title: "AI-First Systems",
-    desc: "Intelligent workflows with RAG, multi-agent orchestration, and production-grade LLM integrations at scale.",
-  },
-];
+import { useRouteSeo } from "@/hooks/useRouteSeo";
+import { useLocale } from "@/context/LocaleContext";
+import { buildAboutSchema } from "@/lib/structuredData";
 
 function About() {
+  const { t } = useTranslation("about");
+  const { t: tc } = useTranslation("common");
+  const { localizePath } = useLocale();
+  const seo = useRouteSeo("/about");
+  const values = t("values", { returnObjects: true });
+
   return (
     <Section className="relative">
-      <Seo {...routeSeo["/about"]} path="/about" />
+      <Seo {...seo} path="/about" jsonLd={buildAboutSchema()} />
       <Particle />
       <Container>
         <div className="grid md:grid-cols-12 gap-8 items-start">
@@ -50,7 +38,8 @@ function About() {
               transition={{ duration: 0.6 }}
               className="text-3xl font-bold text-text-primary mb-6"
             >
-              Know Who <span className="text-accent">I&apos;M</span>
+              {t("knowWho")}{" "}
+              <span className="text-accent">{t("knowAccent")}</span>
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -81,7 +70,7 @@ function About() {
           transition={{ duration: 0.6 }}
           className="mt-12"
         >
-          <PageHeading accent="Skillset">Professional</PageHeading>
+          <PageHeading accent={t("skillsetAccent")}>{t("skillsetHeading")}</PageHeading>
           <Techstack />
         </motion.div>
 
@@ -92,8 +81,13 @@ function About() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mt-12"
         >
-          <PageHeading accent="I use">Tools</PageHeading>
+          <PageHeading accent={t("toolsAccent")}>{t("toolsHeading")}</PageHeading>
           <Toolstack />
+          <div className="text-center mt-2">
+            <Button variant="link" asChild className="text-accent">
+              <Link to={localizePath("/uses")}>{tc("about.viewSetup")}</Link>
+            </Button>
+          </div>
         </motion.div>
 
         <motion.div
@@ -103,9 +97,9 @@ function About() {
           transition={{ duration: 0.55 }}
           className="mt-12"
         >
-          <PageHeading accent="Engineering Values">Core</PageHeading>
+          <PageHeading accent={t("valuesAccent")}>{t("valuesHeading")}</PageHeading>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {values.map((v, i) => (
+            {(Array.isArray(values) ? values : []).map((v, i) => (
               <motion.div
                 key={v.title}
                 className="bg-card border border-border rounded-2xl p-6 text-center backdrop-blur-sm"
@@ -115,7 +109,7 @@ function About() {
                 transition={{ duration: 0.4, delay: i * 0.12 }}
                 whileHover={{ scale: 1.05 }}
               >
-                <div className="text-4xl mb-3">{v.icon}</div>
+                <div className="text-4xl mb-3">{["⚙️", "🛡️", "🏗️", "🤖"][i]}</div>
                 <div className="text-lg font-bold text-text-primary mb-2">{v.title}</div>
                 <div className="text-sm text-text-secondary">{v.desc}</div>
               </motion.div>

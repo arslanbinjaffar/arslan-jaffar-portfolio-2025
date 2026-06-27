@@ -1,0 +1,49 @@
+{
+  "heading": "Frequently Asked",
+  "headingAccent": "Questions",
+  "subtitle": "Common questions about my services, availability, and how we can work together.",
+  "ctaText": "Still have a question? I'd love to hear from you.",
+  "ctaButton": "Contact Me",
+  "items": [
+    {
+      "question": "What services do you offer?",
+      "answer": "I offer full-stack web development, backend and API design, AI/LLM integration (RAG, multi-agent systems), and technical consulting — from architecture reviews to production implementation."
+    },
+    {
+      "question": "Are you available for freelance or contract work?",
+      "answer": "Yes. I'm open to remote freelance projects and part-time contracts. Reach out via the contact page or WhatsApp to discuss your timeline and requirements."
+    },
+    {
+      "question": "What technologies do you specialize in?",
+      "answer": "My core stack is React, Next.js, Node.js, and NestJS, with strong experience in MongoDB, PostgreSQL, Redis, RabbitMQ, Docker, AWS, and AI tooling such as LangChain, LangGraph, and RAG pipelines."
+    },
+    {
+      "question": "Do you work with AI and LLM integrations?",
+      "answer": "Yes. I've built production AI systems including RAG pipelines, multi-agent orchestration, tool-calling agents, and MCP integrations for enterprise assistants and SaaS products."
+    },
+    {
+      "question": "How do you typically engage on a project?",
+      "answer": "Engagements usually start with a discovery call to understand goals, scope, and timeline. I then propose a phased approach — MVP delivery, iterative builds, or ongoing contract support depending on your needs."
+    },
+    {
+      "question": "Do you provide fixed-price or hourly billing?",
+      "answer": "Both are possible depending on scope clarity. Fixed-price works well for defined MVPs; hourly or retainer models suit ongoing development, maintenance, or advisory work."
+    },
+    {
+      "question": "Can you join an existing team?",
+      "answer": "Absolutely. I regularly collaborate with in-house teams as a senior engineer — contributing to architecture, backend systems, code reviews, and shipping features in agile sprints."
+    },
+    {
+      "question": "What is your typical response time?",
+      "answer": "I aim to respond to new inquiries within 24–48 hours on business days. For active engagements, communication happens through agreed channels with regular status updates."
+    },
+    {
+      "question": "Do you sign NDAs?",
+      "answer": "Yes. I'm happy to sign NDAs before discussing sensitive project details, architecture, or proprietary business information."
+    },
+    {
+      "question": "How can I get started?",
+      "answer": "Use the contact form on this site, email me directly, or message on WhatsApp/LinkedIn. Share a brief overview of your project and we'll schedule a call to explore fit."
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "welcome": "مرحباً بك في portfolio الخاص بي",
+  "greeting": "مرحباً، أنا",
+  "name": "Arslan Jaffar",
+  "tagline": "لا أبني التطبيقات فقط. أصمم أنظمة قابلة للتوسع.",
+  "taglineLine1": "لا أبني التطبيقات فقط.",
+  "taglineLine2": "أصمم أنظمة قابلة للتوسع.",
+  "taglineLine3": "من الفكرة → الهندسة → الإنتاج.",
+  "introTitle": "دعني",
+  "introAccent": "أعرّف",
+  "introTitleEnd": "نفسي",
+  "introBody": "مرحباً، أنا Arslan Jaffar — Senior Software Engineer في PixelPK و AI Systems Engineer / Team Lead في Beyond Technologies، مع 4+ سنوات في بناء منصات production-ready قابلة للتوسع.\n\nأصمم أنظمة backend بـ Node.js و NestJS و Python — microservices و event-driven workflows ونشر cloud-native على AWS. أبني أيضاً أنظمة AI: RAG pipelines و LangGraph multi-agent workflows و Qdrant vector search و MCP integrations مع Gemini و Ollama.\n\nحالياً أقود فرق cross-functional على ERP مؤسسي ومنتجات SaaS وأطلق Pakistan Lawbot ومنصات AI assistant للمؤسسات.",
+  "findMeOn": "جدني على",
+  "findMeText": "لا تتردد في <accent>التواصل</accent> معي",
+  "typewriter": [
+    "AI Systems Engineer",
+    "Senior Software Engineer @ PixelPK",
+    "RAG & LLM Orchestration",
+    "LangGraph Multi-Agent Developer",
+    "Team Lead @ Beyond Technologies",
+    "Backend Architect - Node.js / NestJS",
+    "Microservices and API Specialist",
+    "Cloud-Native Systems Engineer"
+  ],
+  "stats": [
+    {
+      "label": "سنوات الخبرة"
+    },
+    {
+      "label": "منتجات مطلقة"
+    },
+    {
+      "label": "مستخدمي Lawbot"
+    },
+    {
+      "label": "تحسين استجابة API"
+    }
+  ],
+  "engineering": {
+    "heading": "ما",
+    "headingAccent": "أبنيه فعلاً",
+    "subtitle": "أبعد من كتابة الكود — تصميم أنظمة تتعامل مع scale وتعقيد العالم الحقيقي.",
+    "cards": [
+      {
+        "title": "AI Agents & RAG Systems",
+        "desc": "Multi-agent workflows مع LangGraph و LangChain. Qdrant vector retrieval و Gemini و Ollama LLMs و memory-aware conversations و tool-calling و MCP integrations."
+      },
+      {
+        "title": "Production AI Backend",
+        "desc": "Intelligent routing عبر LLM و Agent و RAG layers. Chunking و embeddings و reranking و contextual memory و stateful orchestration مع observability."
+      },
+      {
+        "title": "Backend Systems & APIs",
+        "desc": "REST و GraphQL APIs production-grade مع Node.js و NestJS و Express.js. التركيز على الأمان والتحقق والأداء."
+      },
+      {
+        "title": "Microservices & Queues",
+        "desc": "Distributed architectures مع RabbitMQ و BullMQ. Redis caching لتقليل latency."
+      },
+      {
+        "title": "Cloud & DevOps",
+        "desc": "Dockerized deployments على AWS و GCP. CI/CD مع GitLab و GitHub Actions. Kubernetes orchestration."
+      },
+      {
+        "title": "Frontend Engineering",
+        "desc": "UIs نظيفة ومتجاوبة مع React.js و Next.js. Redux state management. Performance و accessibility و SEO."
+      }
+    ]
+  },
+  "highlights": {
+    "heading": "أبرز",
+    "headingAccent": "الإنجازات",
+    "subtitle": "نتائج هندسية رئيسية من الأدوار الأخيرة."
+  },
+  "sections": {
+    "clients": {
+      "heading": "موثوق",
+      "headingAccent": "من",
+      "subtitle": "شركات وفرق بنيت لها منتجات.",
+      "groups": {
+        "companies": "Companies",
+        "openSource": "Open Source",
+        "freelance": "Freelance",
+        "startups": "Startups"
+      }
+    },
+    "skills": {
+      "heading": "Tech",
+      "headingAccent": "Stack",
+      "subtitle": "تقنيات أستخدمها يومياً — مع سنوات الخبرة.",
+      "years": "سنوات",
+      "viewAll": "عرض المكدس الكامل في نبذة عني",
+      "categories": {
+        "frontend": { "label": "Frontend", "skills": [] },
+        "backend": { "label": "Backend", "skills": [] },
+        "database": { "label": "Database", "skills": [] },
+        "cloud": { "label": "Cloud", "skills": [] },
+        "devops": { "label": "DevOps", "skills": [] },
+        "ai": { "label": "AI", "skills": [] },
+        "tools": { "label": "Tools", "skills": [] }
+      }
+    },
+    "projects": {
+      "heading": "Featured",
+      "headingAccent": "Projects",
+      "subtitle": "عمل يركز على الأثر — مشاكل، حلول، نتائج.",
+      "problem": "Business Problem",
+      "solution": "Solution",
+      "demo": "Live Demo",
+      "caseStudy": "Case Study",
+      "viewAll": "عرض جميع المشاريع"
+    },
+    "experience": {
+      "heading": "Experience",
+      "headingAccent": "Timeline",
+      "subtitle": "الأدوار الحالية، التدريب، العمل الحر، المصدر المفتوح.",
+      "viewAll": "عرض الخبرة الكاملة"
+    },
+    "services": {
+      "heading": "Services",
+      "headingAccent": "Offer",
+      "subtitle": "تطوير full-stack، تكامل AI، استشارات تقنية.",
+      "getQuote": "طلب عرض",
+      "viewAll": "عرض جميع الخدمات"
+    },
+    "github": {
+      "heading": "GitHub",
+      "headingAccent": "Activity",
+      "subtitle": "المساهمات، النجوم، المتابعون، اللغات.",
+      "viewAll": "عرض في نبذة عني"
+    },
+    "blog": {
+      "heading": "Latest",
+      "headingAccent": "Articles",
+      "subtitle": "مقالات حديثة عن الهندسة والبنية والذكاء الاصطناعي.",
+      "viewAll": "قراءة جميع المقالات"
+    },
+    "certifications": {
+      "heading": "Certifications",
+      "headingAccent": "& Awards",
+      "subtitle": "الشهادات والجوائز.",
+      "viewAll": "عرض المعرض"
+    },
+    "opensource": {
+      "heading": "Open",
+      "headingAccent": "Source",
+      "subtitle": "Pull requests، packages، مكتبات GitHub.",
+      "viewRepo": "عرض المستودع",
+      "viewAll": "عرض جميع المستودعات"
+    },
+    "contact": {
+      "heading": "Let's",
+      "headingAccent": "Connect",
+      "subtitle": "تواصل للعمل الحر أو التعاون أو الفرص بدوام كامل.",
+      "body": "محادثة سريعة؟ راسلني على WhatsApp أو LinkedIn، احجز مكالمة، أو أرسل استفساراً مفصلاً."
+    }
+  }
+}

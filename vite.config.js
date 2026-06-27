@@ -27,12 +27,36 @@ const noIndex =
     ? "true"
     : "false";
 
+const fallbackTitle = "Arslan Jaffar | Senior MERN Stack Developer";
+const fallbackDescription =
+  "Arslan Jaffar is a Senior MERN Stack Developer with 3.5+ years of experience building scalable web and SaaS applications.";
+
+function htmlSeoFallbackPlugin() {
+  return {
+    name: "html-seo-fallback",
+    transformIndexHtml(html) {
+      const robotsMeta =
+        noIndex === "true"
+          ? '<meta name="robots" content="noindex, nofollow" />'
+          : '<meta name="robots" content="index, follow" />';
+
+      const fallbackBlock = `
+    ${robotsMeta}
+    <title>${fallbackTitle}</title>
+    <meta name="description" content="${fallbackDescription}" />
+    <meta name="author" content="Arslan Jaffar" />`;
+
+      return html.replace("<!-- SEO_FALLBACK -->", fallbackBlock);
+    },
+  };
+}
+
 export default defineConfig({
   define: {
     "import.meta.env.VITE_SITE_URL": JSON.stringify(siteUrl),
     "import.meta.env.VITE_NOINDEX": JSON.stringify(noIndex),
   },
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), htmlSeoFallbackPlugin()],
   esbuild: {
     loader: "jsx",
     include: /src\/.*\.jsx?$/,

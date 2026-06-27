@@ -1,0 +1,53 @@
+{
+  "knowWho": "جانیں",
+  "knowAccent": "میں کون",
+  "skillsetHeading": "Professional",
+  "skillsetAccent": "Skillset",
+  "toolsHeading": "Tools",
+  "toolsAccent": "جو میں استعمال کرتا ہوں",
+  "valuesHeading": "Core",
+  "valuesAccent": "Engineering Values",
+  "values": [
+    {
+      "title": "پہلے Scalability",
+      "desc": "Design systems that handle growth without rewrites — from day one."
+    },
+    {
+      "title": "Production Reliability",
+      "desc": "Ship features that stay up. Observability, error handling, and graceful degradation built in."
+    },
+    {
+      "title": "Clean Architecture",
+      "desc": "Modular, testable, and maintainable code that teams can confidently extend."
+    },
+    {
+      "title": "AI-First Systems",
+      "desc": "Intelligent workflows with RAG, multi-agent orchestration, and production-grade LLM integrations at scale."
+    }
+  ],
+  "card": {
+    "intro": "السلام، میں Arslan Jaffar ہوں، Lahore، Pakistan سے۔",
+    "currentRole": "I am currently working as a Senior Software Engineer @ PixelPK and AI Systems Engineer / Team Lead @ Beyond Technologies.",
+    "experience": "With over 4+ years of professional experience, I specialize in building scalable and high-performance products across web, backend, cloud, and AI systems.",
+    "platforms": "I have led engineering delivery on enterprise-scale platforms such as the Enterprise AI Assistant Platform, Pakistan Lawbot, AI Fleet Management ERP, and operations-focused business systems. My day-to-day work includes architecture decisions, AI orchestration, mentoring, PR reviews, and building reliable features end-to-end.",
+    "strengths": "My core strengths include Node.js, NestJS, Python, React.js, Next.js, RAG, LangGraph, LangChain, LLM orchestration, and MCP, PostgreSQL, MongoDB, Redis, Qdrant, and modern DevOps workflows with Docker, Kubernetes, and CI/CD. I also work with asynchronous architecture using RabbitMQ and BullMQ to design performant and maintainable systems.",
+    "outside": "Outside of development, I enjoy collaborating with teams and building products that solve real business problems.",
+    "interests": [
+      "Learning AI Engineering (RAG, agents, LLM orchestration, MCP)",
+      "System Design and Architecture Research",
+      "Mentoring and Team Collaboration"
+    ],
+    "quote": "ایسے systems بنائیں جو scale کریں، teams جو grow کریں، اور products جو matter کریں۔",
+    "quoteAuthor": "— Arslan Jaffar"
+  },
+  "github": {
+    "heading": "دن جو میں",
+    "headingAccent": "Code کرتا ہوں",
+    "subtitle": "میری GitHub contribution activity"
+  },
+  "githubStats": {
+    "followers": "فالوورز",
+    "repos": "Public Repos",
+    "stars": "Total Stars"
+  }
+}

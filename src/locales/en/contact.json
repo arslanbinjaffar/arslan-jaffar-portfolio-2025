@@ -1,0 +1,28 @@
+{
+  "heading": "Get In",
+  "headingAccent": "Touch",
+  "subtitle": "Feel free to reach out for remote freelance, part-time work, or collaboration.",
+  "formTitle": "Send me a message",
+  "nameLabel": "Your Name",
+  "namePlaceholder": "Enter your name",
+  "emailLabel": "Your Email",
+  "emailPlaceholder": "your.email@example.com",
+  "messageLabel": "Message",
+  "messagePlaceholder": "Your message here (min 10 characters)...",
+  "infoTitle": "Contact Information",
+  "chatTitle": "Chat with me",
+  "followTitle": "Follow Me",
+  "labels": {
+    "email": "Email",
+    "location": "Location",
+    "availability": "Availability",
+    "whatsapp": "WhatsApp"
+  },
+  "validation": {
+    "nameRequired": "Name is required",
+    "emailRequired": "Valid email is required",
+    "messageRequired": "Message must be at least 10 characters",
+    "submitFailed": "Could not send your message. Please try again or email me directly."
+  },
+  "calendarTitle": "Book a Call"
+}

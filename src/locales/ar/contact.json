@@ -1,0 +1,28 @@
+{
+  "heading": "تواصل",
+  "headingAccent": "معي",
+  "subtitle": "لا تتردد في التواصل للعمل الحر عن بُعد أو بدوام جزئي أو التعاون.",
+  "formTitle": "أرسل لي رسالة",
+  "nameLabel": "اسمك",
+  "namePlaceholder": "أدخل اسمك",
+  "emailLabel": "بريدك الإلكتروني",
+  "emailPlaceholder": "your.email@example.com",
+  "messageLabel": "الرسالة",
+  "messagePlaceholder": "اكتب رسالتك هنا (10 أحرف على الأقل)...",
+  "infoTitle": "معلومات الاتصال",
+  "chatTitle": "دردش معي",
+  "followTitle": "تابعني",
+  "labels": {
+    "email": "البريد",
+    "location": "الموقع",
+    "availability": "التوفر",
+    "whatsapp": "WhatsApp"
+  },
+  "validation": {
+    "nameRequired": "الاسم مطلوب",
+    "emailRequired": "بريد إلكتروني صالح مطلوب",
+    "messageRequired": "يجب أن تكون الرسالة 10 أحرف على الأقل",
+    "submitFailed": "تعذر إرسال رسالتك. حاول مرة أخرى أو راسلني مباشرة."
+  },
+  "calendarTitle": "حجز مكالمة"
+}

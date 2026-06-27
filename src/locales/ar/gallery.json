@@ -1,0 +1,20 @@
+{
+  "heading": "معرض",
+  "headingAccent": "الإنجازات",
+  "subtitle": "جوائز وشهادات ومعالم من رحلتي الهندسية.",
+  "categories": [
+    "Award",
+    "Certificate",
+    "Event",
+    "Recognition"
+  ],
+  "items": [
+    {
+      "title": "LinkedIn Achievement",
+      "date": "2025",
+      "category": "Recognition",
+      "description": "إنجاز مشارك على LinkedIn.",
+      "embedTitle": "Embedded post"
+    }
+  ]
+}

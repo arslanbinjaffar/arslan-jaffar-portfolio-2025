@@ -1,20 +1,15 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
+import { useTranslation } from "react-i18next";
 
 function Type() {
+  const { t } = useTranslation("home");
+  const strings = t("typewriter", { returnObjects: true });
+
   return (
     <Typewriter
       options={{
-        strings: [
-          "AI Systems Engineer",
-          "Senior Software Engineer @ PixelPK",
-          "RAG & LLM Orchestration",
-          "LangGraph Multi-Agent Developer",
-          "Team Lead @ Beyond Technologies",
-          "Backend Architect - Node.js / NestJS",
-          "Microservices and API Specialist",
-          "Cloud-Native Systems Engineer",
-        ],
+        strings: Array.isArray(strings) ? strings : [],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,

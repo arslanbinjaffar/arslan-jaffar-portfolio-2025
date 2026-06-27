@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "about": "نبذة عني",
+    "experience": "الخبرة ⭐",
+    "projects": "المشاريع",
+    "skills": "المهارات",
+    "services": "الخدمات",
+    "blog": "المدونة",
+    "contact": "اتصل",
+    "resume": "السيرة الذاتية",
+    "gallery": "المعرض",
+    "hireMe": "وظّفني"
+  },
+  "badge": {
+    "available": "متاح للعمل"
+  },
+  "footer": {
+    "tagline": "مهندس MERN و AI أبني منصات ويب قابلة للتوسع ومنتجات SaaS وأنظمة AI للإنتاج.",
+    "quickLinks": "روابط سريعة",
+    "contact": "اتصل",
+    "connect": "تواصل",
+    "connectText": "متاح للعمل الحر عن بُعد والعقود بدوام جزئي والتعاون.",
+    "location": "الموقع",
+    "availability": "التوفر",
+    "chatWhatsApp": "دردشة على WhatsApp",
+    "privacyPolicy": "سياسة الخصوصية",
+    "termsConditions": "الشروط والأحكام",
+    "cookiesPolicy": "Cookies Policy",
+    "sitemap": "Sitemap",
+    "sitemapAccent": "Map",
+    "faqs": "FAQs",
+    "uses": "Uses / Setup",
+    "caseStudies": "Case Studies",
+    "changelog": "Changelog",
+    "legal": "Legal",
+    "resources": "Resources",
+    "designedBy": "صمم وطور {{author}}",
+    "copyright": "حقوق النشر © {{year}} {{author}}. جميع الحقوق محفوظة."
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "linkedinMessage": "رسالة على LinkedIn",
+    "twitter": "Twitter",
+    "whatsapp": "WhatsApp",
+    "viewGithub": "عرض على GitHub"
+  },
+  "theme": {
+    "switchToLight": "التبديل إلى الوضع الفاتح",
+    "switchToDark": "التبديل إلى الوضع الداكن"
+  },
+  "language": {
+    "label": "اللغة",
+    "en": "English",
+    "ur": "اردو",
+    "ar": "العربية"
+  },
+  "rating": {
+    "title": "كيف أعجبك portfolio الخاص بي؟",
+    "description": "ملاحظاتك تساعدني على تحسين عملي وعرض المشاريع بشكل أفضل.",
+    "skip": "تخطي",
+    "submit": "إرسال التقييم",
+    "selectRating": "اختر تقييماً",
+    "feedback": {
+      "1": "😞 أود سماع ما يمكنني تحسينه!",
+      "2": "😐 يرجى مشاركة ملاحظاتك للتحسين.",
+      "3": "😊 سعيد أنه أعجبك!",
+      "4": "😄 رائع! شكراً!",
+      "5": "🎉 ممتاز! شكراً جزيلاً!"
+    }
+  },
+  "buttons": {
+    "downloadResume": "تحميل السيرة الذاتية",
+    "viewProjects": "عرض مشاريعي",
+    "hireMe": "وظّفني",
+    "letsTalk": "لنتحدث",
+    "viewAll": "عرض الكل",
+    "bookCall": "حجز مكالمة",
+    "sendMessage": "إرسال رسالة",
+    "messageSent": "تم إرسال الرسالة! ✓"
+  },
+  "site": {
+    "jobTitle": "Senior MERN Stack Developer",
+    "availability": "متاح للعمل الحر عن بُعد وعقود بدوام جزئي"
+  },
+  "sticky": {
+    "scrollTop": "الانتقال للأعلى",
+    "chatWhatsApp": "دردشة على WhatsApp",
+    "linkedinMessage": "رسالة على LinkedIn",
+    "chatMessenger": "دردشة على Messenger",
+    "instagramMessage": "رسالة على Instagram"
+  },
+  "copyEmail": {
+    "label": "نسخ البريد الإلكتروني",
+    "copied": "تم نسخ البريد!"
+  },
+  "commandPalette": {
+    "title": "لوحة الأوامر",
+    "placeholder": "ابحث في الصفحات أو المشاريع أو الإجراءات…",
+    "noResults": "لا توجد نتائج.",
+    "navigate": "تنقل",
+    "select": "اختر",
+    "groups": {
+      "navigate": "تنقل",
+      "projects": "المشاريع",
+      "actions": "إجراءات"
+    },
+    "actions": {
+      "copyEmail": "نسخ البريد الإلكتروني",
+      "lightMode": "التبديل إلى الوضع الفاتح",
+      "darkMode": "التبديل إلى الوضع الداكن",
+      "scrollTop": "الانتقال للأعلى"
+    }
+  },
+  "visitorCounter": {
+    "label": "{{count}} زائر"
+  },
+  "notFound": {
+    "title": "Page Not Found | Arslan Jaffar",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "heading": "Page Not",
+    "headingAccent": "Found",
+    "subtitle": "The page you requested doesn't exist or may have been moved.",
+    "backHome": "Back to Home",
+    "contact": "Contact Me"
+  },
+  "sitemap": {
+    "description": "Browse all pages on this website, organized by section.",
+    "groups": {
+      "main": "Main Pages",
+      "legal": "Legal",
+      "resources": "Resources",
+      "blog": "Blog Articles"
+    }
+  },
+  "about": {
+    "viewSetup": "View full tech setup"
+  },
+  "projects": {
+    "readCaseStudy": "Read case study"
+  }
+}

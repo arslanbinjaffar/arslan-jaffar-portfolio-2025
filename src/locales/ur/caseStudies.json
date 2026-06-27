@@ -1,0 +1,13 @@
+{
+  "heading": "Case",
+  "headingAccent": "Studies",
+  "subtitle": "Deep dives into selected projects — the challenge, approach, and outcomes.",
+  "viewAllProjects": "View All Projects",
+  "labels": {
+    "challenge": "Challenge",
+    "approach": "Approach",
+    "outcome": "Outcome",
+    "demo": "Live Demo",
+    "source": "Source / App"
+  }
+}

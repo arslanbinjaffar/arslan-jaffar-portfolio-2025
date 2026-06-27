@@ -1,13 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 
-const stats = [
-  { value: 4, suffix: "+", label: "Years Experience" },
-  { value: 8, suffix: "+", label: "Products Shipped" },
-  { value: 15, suffix: "K+", label: "Lawbot Users" },
-  { value: 35, suffix: "%", label: "API Response Improvement" },
+const statValues = [
+  { value: 4, suffix: "+" },
+  { value: 8, suffix: "+" },
+  { value: 15, suffix: "K+" },
+  { value: 35, suffix: "%" },
 ];
 
 function AnimatedCounter({ target, suffix }) {
@@ -33,7 +34,7 @@ function AnimatedCounter({ target, suffix }) {
   }, [inView, target]);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} dir="ltr">
       {count}
       {suffix}
     </span>
@@ -41,12 +42,20 @@ function AnimatedCounter({ target, suffix }) {
 }
 
 function Stats() {
+  const { t } = useTranslation("home");
+  const labels = t("stats", { returnObjects: true });
+
   return (
     <Section className="!py-12">
       <Container>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {stats.map((stat, i) => (
-            <Col key={stat.label} stat={stat} index={i} />
+          {statValues.map((stat, i) => (
+            <Col
+              key={i}
+              stat={stat}
+              label={Array.isArray(labels) ? labels[i]?.label : ""}
+              index={i}
+            />
           ))}
         </div>
       </Container>
@@ -54,7 +63,7 @@ function Stats() {
   );
 }
 
-function Col({ stat, index }) {
+function Col({ stat, label, index }) {
   return (
     <motion.div
       className="bg-card border border-border rounded-2xl p-6 text-center backdrop-blur-sm hover:shadow-lg hover:shadow-accent/20 transition-shadow"
@@ -67,7 +76,7 @@ function Col({ stat, index }) {
       <div className="text-3xl md:text-4xl font-extrabold text-accent">
         <AnimatedCounter target={stat.value} suffix={stat.suffix} />
       </div>
-      <div className="text-sm text-text-secondary mt-2">{stat.label}</div>
+      <div className="text-sm text-text-secondary mt-2">{label}</div>
     </motion.div>
   );
 }

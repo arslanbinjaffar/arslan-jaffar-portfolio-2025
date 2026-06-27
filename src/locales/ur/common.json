@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "ہوم",
+    "about": "میرے بارے میں",
+    "experience": "تجربہ ⭐",
+    "projects": "پروجیکٹس",
+    "skills": "مہارتیں",
+    "services": "خدمات",
+    "blog": "بلاگ",
+    "contact": "رابطہ",
+    "resume": "ریزیومے",
+    "gallery": "گیلری",
+    "hireMe": "ملازمت دیں"
+  },
+  "badge": {
+    "available": "کام کے لیے دستیاب"
+  },
+  "footer": {
+    "tagline": "سینior MERN اور AI انجینئر — scalable ویب پلیٹ فارمز، SaaS پروڈکٹس، اور production AI سسٹمز بناتا ہوں۔",
+    "quickLinks": "فوری لنکس",
+    "contact": "رابطہ",
+    "connect": "جڑیں",
+    "connectText": "ریموٹ freelance، part-time contracts، اور collaboration کے لیے دستیاب۔",
+    "location": "مقام",
+    "availability": "دستیابی",
+    "chatWhatsApp": "WhatsApp پر چیٹ کریں",
+    "privacyPolicy": "رازداری کی پالیسی",
+    "termsConditions": "شرائط و ضوابط",
+    "cookiesPolicy": "Cookies Policy",
+    "sitemap": "Sitemap",
+    "sitemapAccent": "Map",
+    "faqs": "FAQs",
+    "uses": "Uses / Setup",
+    "caseStudies": "Case Studies",
+    "changelog": "Changelog",
+    "legal": "Legal",
+    "resources": "Resources",
+    "designedBy": "{{author}} نے ڈیزائن اور تیار کیا",
+    "copyright": "کاپی رائٹ © {{year}} {{author}}۔ تمام حقوق محفوظ ہیں۔"
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "linkedinMessage": "LinkedIn پر پیغام بھیجیں",
+    "twitter": "Twitter",
+    "whatsapp": "WhatsApp",
+    "viewGithub": "GitHub پر دیکھیں"
+  },
+  "theme": {
+    "switchToLight": "لائٹ موڈ میں تبدیل کریں",
+    "switchToDark": "ڈارک موڈ میں تبدیل کریں"
+  },
+  "language": {
+    "label": "زبان",
+    "en": "English",
+    "ur": "اردو",
+    "ar": "العربية"
+  },
+  "rating": {
+    "title": "آپ کو میرا پورٹ فolio کیسا لگا؟",
+    "description": "آپ کی رائے مجھے بہتر کام کرنے اور پروجیکٹس بہتر پیش کرنے میں مدد کرتی ہے۔",
+    "skip": "چھوڑیں",
+    "submit": "درجہ جمع کریں",
+    "selectRating": "درجہ منتخب کریں",
+    "feedback": {
+      "1": "😞 میں بہتری کے لیے آپ کی رائے سننا چاہوں گا!",
+      "2": "😐 براہ کرم بہتری کے لیے رائے دیں۔",
+      "3": "😊 خوشی ہے کہ آپ کو پسند آیا!",
+      "4": "😄 زبردست! شکریہ!",
+      "5": "🎉 شاندار! بہت بہت شکریہ!"
+    }
+  },
+  "buttons": {
+    "downloadResume": "ریزیومے ڈاؤن لوڈ",
+    "viewProjects": "میرے پروجیکٹس دیکھیں",
+    "hireMe": "ملازمت دیں",
+    "letsTalk": "بات کریں",
+    "viewAll": "سب دیکھیں",
+    "bookCall": "Call بک کریں",
+    "sendMessage": "پیغام بھیجیں",
+    "messageSent": "پیغام بھیج دیا گیا! ✓"
+  },
+  "site": {
+    "jobTitle": "سینior MERN Stack Developer",
+    "availability": "ریموٹ freelance اور part-time contracts کے لیے دستیاب"
+  },
+  "sticky": {
+    "scrollTop": "اوپر سکرول کریں",
+    "chatWhatsApp": "WhatsApp پر چیٹ کریں",
+    "linkedinMessage": "LinkedIn پر پیغام بھیجیں",
+    "chatMessenger": "Messenger پر چیٹ کریں",
+    "instagramMessage": "Instagram پر پیغام بھیجیں"
+  },
+  "copyEmail": {
+    "label": "ای میل کاپی کریں",
+    "copied": "ای میل کاپی ہو گئی!"
+  },
+  "commandPalette": {
+    "title": "کمانڈ پیلیٹ",
+    "placeholder": "صفحات، پروجیکٹس، یا actions تلاش کریں…",
+    "noResults": "کوئی نتیجہ نہیں ملا۔",
+    "navigate": "نیویگیٹ",
+    "select": "منتخب",
+    "groups": {
+      "navigate": "نیویگیٹ",
+      "projects": "پروجیکٹس",
+      "actions": "Actions"
+    },
+    "actions": {
+      "copyEmail": "ای میل کاپی کریں",
+      "lightMode": "لائٹ موڈ میں تبدیل کریں",
+      "darkMode": "ڈارک موڈ میں تبدیل کریں",
+      "scrollTop": "اوپر سکرول کریں"
+    }
+  },
+  "visitorCounter": {
+    "label": "{{count}} وزیٹر"
+  },
+  "notFound": {
+    "title": "Page Not Found | Arslan Jaffar",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "heading": "Page Not",
+    "headingAccent": "Found",
+    "subtitle": "The page you requested doesn't exist or may have been moved.",
+    "backHome": "Back to Home",
+    "contact": "Contact Me"
+  },
+  "sitemap": {
+    "description": "Browse all pages on this website, organized by section.",
+    "groups": {
+      "main": "Main Pages",
+      "legal": "Legal",
+      "resources": "Resources",
+      "blog": "Blog Articles"
+    }
+  },
+  "about": {
+    "viewSetup": "View full tech setup"
+  },
+  "projects": {
+    "readCaseStudy": "Read case study"
+  }
+}

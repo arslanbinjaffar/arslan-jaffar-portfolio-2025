@@ -1,0 +1,151 @@
+{
+  "heading": "کam",
+  "headingAccent": "تجربہ",
+  "subtitle": "Startups، enterprises، اور freelance work میں میرا professional سفر۔",
+  "openForWork": "کam کے لیے دستیاب",
+  "items": [
+    {
+      "role": "Full-Stack Engineer / AI Product Engineer",
+      "company": "PixelPK Technologies",
+      "designation": "Senior Software Engineer",
+      "duration": "Present",
+      "description": "PixelPK Technologies میں own-product legal technology بنانا، Pakistan Lawbot پر end-to-end ownership۔",
+      "highlights": [
+        "Full-Stack Engineer / AI Product Engineer",
+        "Building own-product legal technology at PixelPK Technologies, with end-to-end ownership across frontend and backend for Pakistan Lawbot — Pakistan's first AI-powered legal research, drafting, and lawyer marketplace platform.",
+        "Developed AI legal research and chat grounded in Pakistani statutes, court judgments, and citations.",
+        "Built instant legal document drafting, lawyer marketplace, and bilingual (English/Urdu) user experiences.",
+        "Delivered scalable APIs and web interfaces serving 15,000+ advocates, firms, and citizens.",
+        "Integrated LLM and RAG workflows with verified legal data sources for cited, production-ready answers.",
+        "Shipped features across research, drafting, marketplace booking, and WhatsApp-based legal assistance."
+      ]
+    },
+    {
+      "role": "AI Systems Engineer — AI Engineering Projects",
+      "company": "Beyond Technologies",
+      "designation": "AI Systems Engineer",
+      "duration": "December 2024 - Present",
+      "description": "Enterprise AI assistant اور production AI backend architecture کی قیادت۔",
+      "highlights": [
+        "AI Systems Engineer — AI Engineering Projects",
+        "Leading enterprise AI assistant and production AI backend architecture — building multi-agent workflows, RAG pipelines, and intelligent request routing for next-generation AI-powered platforms.",
+        "Built multi-agent workflows using LangGraph and LangChain.",
+        "Designed Retrieval-Augmented Generation pipeline using Qdrant vector database.",
+        "Integrated Gemini and local LLMs using Ollama.",
+        "Built memory-aware conversational workflows and tool-calling agents.",
+        "Implemented MCP-based external tool integrations.",
+        "Designed intelligent request routing between LLM, Agent, and RAG execution layers."
+      ]
+    },
+    {
+      "role": "Senior Software Engineer - MERN / Backend Architect",
+      "company": "Beyond Technologies",
+      "designation": "Senior Software Engineer",
+      "duration": "October 2023 - Present",
+      "description": "Scalable backend platforms architect کرنا اور cross-functional teams lead کرنا۔",
+      "highlights": [
+        "Senior Software Engineer - MERN / Backend Architect",
+        "Architecting scalable backend platforms and leading cross-functional engineering teams delivering enterprise ERP platforms, high-traffic SaaS applications, and mission-critical backend services.",
+        "Architect scalable backend platforms using Node.js and NestJS with modular microservices and event-driven workflows.",
+        "Lead multiple cross-functional teams delivering enterprise ERP platforms and high-traffic SaaS applications.",
+        "Improved API response times by 35% through SQL optimization, indexing strategies, caching layers, and database tuning.",
+        "Designed automated Docker-based GitLab CI/CD pipelines, reducing release failures and accelerating delivery.",
+        "Built end-to-end data-intensive platforms integrating PostgreSQL/MySQL with Next.js real-time dashboards and analytics.",
+        "Extending backend architectures with LLM integrations, RAG pipelines, vector search, and agent orchestration."
+      ]
+    },
+    {
+      "role": "Midlevel React.js / Full-Stack Developer",
+      "company": "Eventbuizz",
+      "designation": "React.js Developer",
+      "duration": "February 2022 - October 2023",
+      "description": "Contributed to multiple web and mobile products with a full-stack approach, focusing on user experience, API integration, and delivery speed.",
+      "highlights": [
+        "Contributed to multiple web and mobile products with a full-stack approach, focusing on user experience, API integration, and delivery speed.",
+        "Built responsive user interfaces with React.js and reusable component-driven architecture.",
+        "Integrated REST and GraphQL APIs with secure authentication and data flow handling.",
+        "Worked across React Native, Node.js, and Express.js for cross-platform delivery.",
+        "Optimized frontend performance and SEO on key pages using Next.js techniques.",
+        "Collaborated closely with product and QA teams to ensure stable production releases."
+      ]
+    },
+    {
+      "role": "Frontend / Full-Stack Developer",
+      "company": "Enlatics",
+      "designation": "React/Vue.js Developer",
+      "duration": "March 2021 - February 2022",
+      "description": "Worked on dynamic product modules with a focus on usability, maintainable frontend architecture, and smooth backend integration.",
+      "highlights": [
+        "Worked on dynamic product modules with a focus on usability, maintainable frontend architecture, and smooth backend integration.",
+        "Developed modern interfaces using React.js and Vue.js with reusable patterns.",
+        "Integrated backend APIs and managed complex client-side state efficiently.",
+        "Delivered analytics and real-time interaction features for AML Watcher workflows.",
+        "Improved UI consistency, cross-browser compatibility, and performance baselines.",
+        "Supported deployment automation and quality checks in team release cycles."
+      ]
+    },
+    {
+      "role": "Full-Stack & Freelance Developer",
+      "company": "Freelance / Remote (Fiverr & Upwork)",
+      "designation": "Independent Contractor",
+      "duration": "2021 - Present",
+      "description": "Delivering remote freelance and part-time contracts for clients worldwide through Fiverr and Upwork — alongside full-time product work. I take on MVPs, API integrations, AI features (RAG, agents, assistants), legacy refactors, and production support with async-friendly communication across time zones.",
+      "highlights": [
+        "Delivering remote freelance and part-time contracts for clients worldwide through Fiverr and Upwork — alongside full-time product work. I take on MVPs, API integrations, AI features (RAG, agents, assistants), legacy refactors, and production support with async-friendly communication across time zones.",
+        "Currently open for remote freelance, part-time, and fixed-scope contract work.",
+        "Flexible engagement: project-based sprints, ongoing part-time (20–40 hrs/week), or milestone delivery.",
+        "Built RAG pipelines, AI workflows, and AI assistants with LLM API orchestration in production apps.",
+        "Designed agent-style flows and model-backed API integrations for chat, search, and document Q&A.",
+        "Preparing for dedicated AI engineering — growing Python skills and hands-on work with AI models.",
+        "Delivered React/Next.js frontends, Node.js/NestJS APIs, database design, and cloud deployments."
+      ]
+    },
+    {
+      "role": "Junior Web Developer / Trainee",
+      "company": "Tech Startup",
+      "designation": "Trainee Developer",
+      "duration": "Sep 2020 - Dec 2020",
+      "description": "Started my professional journey by building frontend and basic full-stack features while learning software delivery fundamentals.",
+      "highlights": [
+        "Started my professional journey by building frontend and basic full-stack features while learning software delivery fundamentals.",
+        "Built early-stage UI modules using HTML, CSS, JavaScript, and React.js.",
+        "Learned version control, agile collaboration, and pull-request based workflows.",
+        "Supported backend integration and testing across staging environments.",
+        "Improved debugging and problem-solving skills through production support tasks.",
+        "Developed a strong foundation for scalable engineering practices."
+      ]
+    }
+  ],
+  "highlights": [
+    {
+      "company": "Beyond Technologies",
+      "text": "Built multi-agent workflows with LangGraph and production RAG pipelines using Qdrant.",
+      "tech": "LangGraph"
+    },
+    {
+      "company": "Beyond Technologies",
+      "text": "Designed intelligent routing between LLM, Agent, and RAG execution layers with observability.",
+      "tech": "RAG"
+    },
+    {
+      "company": "Beyond Technologies",
+      "text": "Improved API response times by 35% through SQL optimization, caching, and indexing.",
+      "tech": "NestJS"
+    },
+    {
+      "company": "Beyond Technologies",
+      "text": "Lead cross-functional teams delivering enterprise ERP platforms and high-traffic SaaS applications.",
+      "tech": "Microservices"
+    },
+    {
+      "company": "PixelPK Technologies",
+      "text": "Shipped Pakistan Lawbot — AI legal research and drafting serving 15,000+ users.",
+      "tech": "LLM"
+    },
+    {
+      "company": "PixelPK Technologies",
+      "text": "Integrated MCP-based tool calling and memory-aware conversational AI workflows.",
+      "tech": "MCP"
+    }
+  ]
+}

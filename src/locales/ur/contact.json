@@ -1,0 +1,28 @@
+{
+  "heading": "رابطہ",
+  "headingAccent": "کریں",
+  "subtitle": "Remote freelance، part-time work، یا collaboration کے لیے رابطہ کریں۔",
+  "formTitle": "مجھے پیغام بھیجیں",
+  "nameLabel": "آپ کا نام",
+  "namePlaceholder": "اپنا نام درج کریں",
+  "emailLabel": "آپ کا ای میل",
+  "emailPlaceholder": "your.email@example.com",
+  "messageLabel": "پیغام",
+  "messagePlaceholder": "اپنا پیغام یہاں لکھیں (کم از کم 10 حروف)...",
+  "infoTitle": "رابطے کی معلومات",
+  "chatTitle": "مجھ سے چیٹ کریں",
+  "followTitle": "مجھے فالو کریں",
+  "labels": {
+    "email": "ای میل",
+    "location": "مقام",
+    "availability": "دستیابی",
+    "whatsapp": "WhatsApp"
+  },
+  "validation": {
+    "nameRequired": "نام ضروری ہے",
+    "emailRequired": "درست ای میل ضروری ہے",
+    "messageRequired": "پیغام کم از کم 10 حروف کا ہونا چاہیے",
+    "submitFailed": "پیغام نہیں بھیجا جا سکا۔ دوبارہ کوشش کریں یا براہ راست ای میل کریں۔"
+  },
+  "calendarTitle": "Call بک کریں"
+}

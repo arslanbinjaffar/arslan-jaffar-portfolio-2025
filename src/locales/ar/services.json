@@ -1,0 +1,67 @@
+{
+  "heading": "الخدمات التي",
+  "headingAccent": "أقدمها",
+  "subtitle": "خدمات هندسية شاملة للشركات الناشئة والمؤسسات والعملاء المستقلين.",
+  "items": [
+    {
+      "title": "Full-Stack Web Development",
+      "description": "تطبيقات ويب شاملة مع React و Next.js و Node.js.",
+      "features": [
+        "Responsive, accessible frontends",
+        "RESTful & GraphQL APIs",
+        "Database design & optimization",
+        "CI/CD and cloud deployment"
+      ]
+    },
+    {
+      "title": "React Development",
+      "description": "تطبيقات React و Next.js عالية الأداء.",
+      "features": [
+        "Component-driven UI systems",
+        "Redux / Context state management",
+        "Performance & accessibility",
+        "SSR and static generation"
+      ]
+    },
+    {
+      "title": "NestJS APIs",
+      "description": "Backends NestJS جاهزة للإنتاج.",
+      "features": [
+        "REST & GraphQL endpoints",
+        "Auth & role-based access",
+        "Microservices modules",
+        "OpenAPI documentation"
+      ]
+    },
+    {
+      "title": "AI & LLM Integration",
+      "description": "ميزات ذكية مدعومة بـ LLMs — RAG و multi-agent workflows.",
+      "features": [
+        "RAG & vector search",
+        "Multi-agent orchestration",
+        "Prompt engineering & evaluation",
+        "API integration with OpenAI & more"
+      ]
+    },
+    {
+      "title": "Backend & API Design",
+      "description": "أنظمة backend قابلة للتوسع مع microservices.",
+      "features": [
+        "NestJS & Express.js services",
+        "Message queues & caching",
+        "Authentication & authorization",
+        "Performance tuning & monitoring"
+      ]
+    },
+    {
+      "title": "Technical Consulting",
+      "description": "مراجعات معمارية وتدقيق كود وإرشاد استراتيجي.",
+      "features": [
+        "System architecture review",
+        "Code quality & best practices",
+        "Tech stack recommendations",
+        "Mentoring & team upskilling"
+      ]
+    }
+  ]
+}

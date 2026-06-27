@@ -1,10 +1,13 @@
 import React, { useEffect, useState, useContext } from "react";
 import GitHubCalendar from "react-github-calendar";
+import { useTranslation } from "react-i18next";
 import PageHeading from "../ui/PageHeading";
+import GitHubStats from "./GitHubStats";
 import { ThemeContext } from "../../App";
 
 function Github() {
   const { theme } = useContext(ThemeContext);
+  const { t } = useTranslation("about");
   const [calendarColor, setCalendarColor] = useState("");
 
   useEffect(() => {
@@ -16,17 +19,20 @@ function Github() {
 
   return (
     <div className="flex flex-col items-center py-8">
-      <PageHeading accent="Code" className="!mb-6">
-        Days I
+      <PageHeading accent={t("github.headingAccent")} className="!mb-6">
+        {t("github.heading")}
       </PageHeading>
+      <GitHubStats />
       {calendarColor && (
-        <GitHubCalendar
-          username="arslanbinjaffar"
-          blockSize={15}
-          blockMargin={5}
-          color={calendarColor}
-          fontSize={16}
-        />
+        <div dir="ltr">
+          <GitHubCalendar
+            username="arslanbinjaffar"
+            blockSize={15}
+            blockMargin={5}
+            color={calendarColor}
+            fontSize={16}
+          />
+        </div>
       )}
     </div>
   );

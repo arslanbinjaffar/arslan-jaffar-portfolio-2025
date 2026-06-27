@@ -1,0 +1,52 @@
+{
+  "heading": "My",
+  "headingAccent": "Setup",
+  "subtitle": "The tools, hardware, and stack I use to build production web and AI systems.",
+  "skillsetHeading": "Professional",
+  "skillsetAccent": "Skillset",
+  "toolsHeading": "Tools I",
+  "toolsAccent": "Use",
+  "sections": [
+    {
+      "title": "Editor & IDE",
+      "items": [
+        "Cursor AI — primary editor for AI-assisted development",
+        "VS Code — secondary editor and debugging",
+        "Postman — API testing and documentation"
+      ]
+    },
+    {
+      "title": "Hardware",
+      "items": [
+        "MacBook Pro — primary development machine",
+        "External monitor for multi-window workflows",
+        "Mechanical keyboard and ergonomic setup for long coding sessions"
+      ]
+    },
+    {
+      "title": "Dev Tools",
+      "items": [
+        "Git & GitHub for version control",
+        "Docker for containerized local development",
+        "Vite for fast frontend builds",
+        "Jira & ClickUp for project tracking"
+      ]
+    },
+    {
+      "title": "Hosting & CI",
+      "items": [
+        "Vercel for frontend deployment and previews",
+        "AWS for backend services, S3, and cloud infrastructure",
+        "CI/CD pipelines with automated testing and deploys"
+      ]
+    },
+    {
+      "title": "Productivity",
+      "items": [
+        "Slack for team communication",
+        "Notion for notes and planning",
+        "Linear-style task management for focused delivery"
+      ]
+    }
+  ]
+}

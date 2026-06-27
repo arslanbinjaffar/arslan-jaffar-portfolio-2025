@@ -1,0 +1,20 @@
+{
+  "heading": "Achievement",
+  "headingAccent": "Gallery",
+  "subtitle": "Awards, certificates, and milestones from my engineering journey.",
+  "categories": [
+    "Award",
+    "Certificate",
+    "Event",
+    "Recognition"
+  ],
+  "items": [
+    {
+      "title": "LinkedIn Achievement",
+      "date": "2025",
+      "category": "Recognition",
+      "description": "A milestone shared on LinkedIn.",
+      "embedTitle": "Embedded post"
+    }
+  ]
+}

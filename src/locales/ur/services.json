@@ -1,0 +1,67 @@
+{
+  "heading": "خدمات جو میں",
+  "headingAccent": "فراہم کرتا ہوں",
+  "subtitle": "Startups، enterprises، اور freelance clients کے لیے end-to-end engineering services۔",
+  "items": [
+    {
+      "title": "Full-Stack Web Development",
+      "description": "جدید React، Next.js، Node.js stacks کے ساتھ end-to-end web applications۔",
+      "features": [
+        "Responsive, accessible frontends",
+        "RESTful & GraphQL APIs",
+        "Database design & optimization",
+        "CI/CD and cloud deployment"
+      ]
+    },
+    {
+      "title": "React Development",
+      "description": "High-performance React اور Next.js applications۔",
+      "features": [
+        "Component-driven UI systems",
+        "Redux / Context state management",
+        "Performance & accessibility",
+        "SSR and static generation"
+      ]
+    },
+    {
+      "title": "NestJS APIs",
+      "description": "Production-grade NestJS backends۔",
+      "features": [
+        "REST & GraphQL endpoints",
+        "Auth & role-based access",
+        "Microservices modules",
+        "OpenAPI documentation"
+      ]
+    },
+    {
+      "title": "AI & LLM Integration",
+      "description": "LLMs سے intelligent features — RAG pipelines، multi-agent workflows۔",
+      "features": [
+        "RAG & vector search",
+        "Multi-agent orchestration",
+        "Prompt engineering & evaluation",
+        "API integration with OpenAI & more"
+      ]
+    },
+    {
+      "title": "Backend & API Design",
+      "description": "Microservices اور event-driven architecture کے ساتھ scalable backend systems۔",
+      "features": [
+        "NestJS & Express.js services",
+        "Message queues & caching",
+        "Authentication & authorization",
+        "Performance tuning & monitoring"
+      ]
+    },
+    {
+      "title": "Technical Consulting",
+      "description": "Architecture reviews، code audits، strategic guidance۔",
+      "features": [
+        "System architecture review",
+        "Code quality & best practices",
+        "Tech stack recommendations",
+        "Mentoring & team upskilling"
+      ]
+    }
+  ]
+}

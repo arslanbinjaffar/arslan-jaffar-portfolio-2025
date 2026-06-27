@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { motion } from "framer-motion";
 import {
@@ -11,6 +12,7 @@ import {
 import { Button } from "@/components/ui/button";
 
 function RatingModal() {
+  const { t } = useTranslation("common");
   const [showRating, setShowRating] = useState(false);
   const [rating, setRating] = useState(0);
   const [hoverRating, setHoverRating] = useState(0);
@@ -47,23 +49,15 @@ function RatingModal() {
     }
   };
 
-  const feedbackMessages = {
-    1: "😞 I'd love to hear what I can improve!",
-    2: "😐 Please share your feedback for improvement.",
-    3: "😊 Glad you liked it! Any suggestions?",
-    4: "😄 Great! Happy to hear that!",
-    5: "🎉 Awesome! Thank you so much!",
-  };
-
   return (
     <Dialog open={showRating} onOpenChange={setShowRating}>
       <DialogContent className="rounded-2xl sm:max-w-md">
         <DialogHeader>
-          <DialogTitle>How did you like my portfolio?</DialogTitle>
+          <DialogTitle>{t("rating.title")}</DialogTitle>
         </DialogHeader>
 
         <p className="text-text-secondary text-center mb-6">
-          Your feedback helps me improve my work and showcase projects better.
+          {t("rating.description")}
         </p>
 
         <div className="flex justify-center gap-2">
@@ -93,16 +87,16 @@ function RatingModal() {
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
           >
-            {feedbackMessages[rating]}
+            {t(`rating.feedback.${rating}`)}
           </motion.p>
         )}
 
         <DialogFooter>
           <Button variant="outline" onClick={() => setShowRating(false)}>
-            Skip
+            {t("rating.skip")}
           </Button>
           <Button onClick={handleSubmitRating} disabled={rating === 0}>
-            {rating > 0 ? "Submit Rating" : "Select a rating"}
+            {rating > 0 ? t("rating.submit") : t("rating.selectRating")}
           </Button>
         </DialogFooter>
       </DialogContent>

@@ -1,0 +1,158 @@
+{
+  "welcome": "میرے پورٹ فolio میں خوش آمدید",
+  "greeting": "السلام، میں",
+  "name": "Arslan Jaffar",
+  "tagline": "میں صرف apps نہیں بناتا۔ میں ایسے systems ڈیزائن کرتا ہوں جو scale کریں۔",
+  "taglineLine1": "میں صرف apps نہیں بناتا۔",
+  "taglineLine2": "میں ایسے systems ڈیزائن کرتا ہوں جو scale کریں۔",
+  "taglineLine3": "خیال → architecture → production۔",
+  "introTitle": "مجھے",
+  "introAccent": "متعارف",
+  "introTitleEnd": "کرائیں",
+  "introBody": "السلام، میں Arslan Jaffar ہوں — PixelPK میں Senior Software Engineer اور Beyond Technologies میں AI Systems Engineer / Team Lead، 4+ سال scalable production-ready platforms بنانے کا تجربہ۔\n\nمیں Node.js، NestJS، اور Python کے ساتھ backend systems architect کرتا ہوں — microservices، event-driven workflows، اور AWS پر cloud-native deployments۔ میں AI systems بھی بناتا ہوں: RAG pipelines، LangGraph multi-agent workflows، Qdrant vector search، اور Gemini و Ollama کے ساتھ MCP integrations۔\n\nفی الحال enterprise ERP اور SaaS products پر cross-functional teams lead کرتا ہوں اور Pakistan Lawbot اور enterprise AI assistant platforms ship کرتا ہوں۔",
+  "findMeOn": "مجھے یہاں تلاش کریں",
+  "findMeText": "بلا جھجھک <accent>جڑیں</accent>",
+  "typewriter": [
+    "AI Systems Engineer",
+    "Senior Software Engineer @ PixelPK",
+    "RAG & LLM Orchestration",
+    "LangGraph Multi-Agent Developer",
+    "Team Lead @ Beyond Technologies",
+    "Backend Architect - Node.js / NestJS",
+    "Microservices and API Specialist",
+    "Cloud-Native Systems Engineer"
+  ],
+  "stats": [
+    {
+      "label": "سال کا تجربہ"
+    },
+    {
+      "label": "شipped پروڈکٹس"
+    },
+    {
+      "label": "Lawbot صارفین"
+    },
+    {
+      "label": "API Response بہتری"
+    }
+  ],
+  "engineering": {
+    "heading": "میں کیا",
+    "headingAccent": "واقعی بناتا ہوں",
+    "subtitle": "صرف code لکھنے سے آگے — real-world scale اور complexity handle کرنے والے systems۔",
+    "cards": [
+      {
+        "title": "AI Agents & RAG Systems",
+        "desc": "LangGraph اور LangChain کے ساتھ multi-agent workflows۔ Qdrant vector retrieval، Gemini و Ollama LLMs، memory-aware conversations، tool-calling، اور MCP integrations۔"
+      },
+      {
+        "title": "Production AI Backend",
+        "desc": "LLM، Agent، اور RAG layers کے درمیان intelligent routing۔ Chunking، embeddings، reranking، contextual memory، اور observability کے ساتھ stateful orchestration۔"
+      },
+      {
+        "title": "Backend Systems & APIs",
+        "desc": "Node.js، NestJS، اور Express.js کے ساتھ production-grade REST اور GraphQL APIs۔ Security، validation، اور performance پر focus۔"
+      },
+      {
+        "title": "Microservices & Queues",
+        "desc": "RabbitMQ اور BullMQ کے ساتھ event-driven distributed architectures۔ Redis caching سے latency کم۔"
+      },
+      {
+        "title": "Cloud & DevOps",
+        "desc": "AWS اور GCP پر Dockerized deployments۔ GitLab اور GitHub Actions CI/CD۔ Kubernetes orchestration۔"
+      },
+      {
+        "title": "Frontend Engineering",
+        "desc": "React.js اور Next.js کے ساتھ clean responsive UIs۔ Redux state management۔ Performance، accessibility، اور SEO۔"
+      }
+    ]
+  },
+  "highlights": {
+    "heading": "حالیہ",
+    "headingAccent": "کارنامے",
+    "subtitle": "حالیہ roles سے اہم engineering outcomes۔"
+  },
+  "sections": {
+    "clients": {
+      "heading": "جِن کے ساتھ",
+      "headingAccent": "کام کیا",
+      "subtitle": "Companies، startups، اور teams جن کے لیے products بنائے۔",
+      "groups": {
+        "companies": "Companies",
+        "openSource": "Open Source",
+        "freelance": "Freelance",
+        "startups": "Startups"
+      }
+    },
+    "skills": {
+      "heading": "Tech",
+      "headingAccent": "Stack",
+      "subtitle": "روزانہ استعمال کی technologies — years of experience کے ساتھ۔",
+      "years": "سال",
+      "viewAll": "About پر مکمل stack دیکھیں",
+      "categories": {
+        "frontend": { "label": "Frontend", "skills": [] },
+        "backend": { "label": "Backend", "skills": [] },
+        "database": { "label": "Database", "skills": [] },
+        "cloud": { "label": "Cloud", "skills": [] },
+        "devops": { "label": "DevOps", "skills": [] },
+        "ai": { "label": "AI", "skills": [] },
+        "tools": { "label": "Tools", "skills": [] }
+      }
+    },
+    "projects": {
+      "heading": "Featured",
+      "headingAccent": "Projects",
+      "subtitle": "Impact-focused کام — business problems، solutions، results۔",
+      "problem": "Business Problem",
+      "solution": "Solution",
+      "demo": "Live Demo",
+      "caseStudy": "Case Study",
+      "viewAll": "تمام projects دیکھیں"
+    },
+    "experience": {
+      "heading": "Experience",
+      "headingAccent": "Timeline",
+      "subtitle": "Current roles، internships، freelance، open source۔",
+      "viewAll": "مکمل experience دیکھیں"
+    },
+    "services": {
+      "heading": "Services",
+      "headingAccent": "Offer",
+      "subtitle": "Full-stack development، AI integration، consulting۔",
+      "getQuote": "Quote لیں",
+      "viewAll": "تمام services دیکھیں"
+    },
+    "github": {
+      "heading": "GitHub",
+      "headingAccent": "Activity",
+      "subtitle": "Contributions، stars، followers، languages۔",
+      "viewAll": "About پر دیکھیں"
+    },
+    "blog": {
+      "heading": "Latest",
+      "headingAccent": "Articles",
+      "subtitle": "Engineering، architecture، AI systems پر recent posts۔",
+      "viewAll": "تمام articles پڑھیں"
+    },
+    "certifications": {
+      "heading": "Certifications",
+      "headingAccent": "& Awards",
+      "subtitle": "Credentials اور recognitions۔",
+      "viewAll": "Gallery دیکھیں"
+    },
+    "opensource": {
+      "heading": "Open",
+      "headingAccent": "Source",
+      "subtitle": "Pull requests، packages، GitHub libraries۔",
+      "viewRepo": "Repository دیکھیں",
+      "viewAll": "تمام repositories دیکھیں"
+    },
+    "contact": {
+      "heading": "Let's",
+      "headingAccent": "Connect",
+      "subtitle": "Freelance، collaboration، یا full-time opportunities کے لیے رابطہ کریں۔",
+      "body": "Quick chat؟ WhatsApp یا LinkedIn پر message کریں، call book کریں، یا detailed inquiry بھیجیں۔"
+    }
+  }
+}

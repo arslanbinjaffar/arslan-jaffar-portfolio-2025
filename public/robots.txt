@@ -1,5 +1,3 @@
-# https://www.robotstxt.org/robotstxt.html
+# Generated for non-production environment
 User-agent: *
-Allow: /
-
-Sitemap: https://arslan-jaffar-portfolio-2025.vercel.app/sitemap.xml
+Disallow: /

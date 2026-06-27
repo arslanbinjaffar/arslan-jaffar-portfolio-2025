@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Arslan Jaffar Blog</title>
+    <link>http://localhost:3000/blog</link>
+    <description>Articles on full-stack development, backend architecture, and AI-powered systems.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Jun 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>MERN Stack Patterns for Production SaaS Apps</title>
+      <link>http://localhost:3000/blog/mern-stack-patterns-production-saas</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/mern-stack-patterns-production-saas</guid>
+      <pubDate>Thu, 18 Jun 2026 12:00:00 GMT</pubDate>
+      <description>Practical MERN stack patterns for authentication, API design, and deployment that hold up in production SaaS products.</description>
+      <category>Full-Stack Development</category>
+      <category>React</category>
+      <category>Node.js</category>
+      <category>MongoDB</category>
+      <category>MERN</category>
+    </item>
+    <item>
+      <title>Building Event-Driven Microservices with RabbitMQ</title>
+      <link>http://localhost:3000/blog/building-event-driven-microservices</link>
+      <guid isPermaLink="true">http://localhost:3000/blog/building-event-driven-microservices</guid>
+      <pubDate>Wed, 10 Jun 2026 12:00:00 GMT</pubDate>
+      <description>How to design resilient microservices with RabbitMQ, Redis, and Node.js for real-time workloads at scale.</description>
+      <category>Backend Architecture</category>
+      <category>Node.js</category>
+      <category>RabbitMQ</category>
+      <category>Microservices</category>
+      <category>Redis</category>
+    </item>
+  </channel>
+</rss>

@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "./styles/theme.css";
@@ -12,6 +14,16 @@ body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html[lang="ur"] body.font-rtl,
+html[lang="ur"] body.font-rtl *:not([dir="ltr"]) {
+  font-family: "Noto Nastaliq Urdu", "Inter", serif;
+}
+
+html[lang="ar"] body.font-rtl,
+html[lang="ar"] body.font-rtl *:not([dir="ltr"]) {
+  font-family: "Noto Sans Arabic", "Inter", sans-serif;
 }
 
 #no-scroll {

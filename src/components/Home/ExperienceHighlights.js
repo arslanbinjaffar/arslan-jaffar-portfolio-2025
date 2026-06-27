@@ -1,19 +1,23 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { homeHighlights } from "../Experience/experienceData";
+import { useTranslation } from "react-i18next";
+import { useExperience } from "@/hooks/useExperience";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
 
 function ExperienceHighlights() {
+  const { t } = useTranslation("home");
+  const { homeHighlights } = useExperience();
+
   return (
     <Section className="!py-12">
       <Container>
         <PageHeading
-          accent="Highlights"
-          subtitle="Key outcomes from my recent engineering and AI systems work."
+          accent={t("highlights.headingAccent")}
+          subtitle={t("highlights.subtitle")}
         >
-          Career
+          {t("highlights.heading")}
         </PageHeading>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
@@ -33,7 +37,10 @@ function ExperienceHighlights() {
                 {item.text}
               </p>
               {item.tech && (
-                <span className="text-xs px-2 py-1 rounded-full border border-border text-text-secondary w-fit mt-4">
+                <span
+                  className="text-xs px-2 py-1 rounded-full border border-border text-text-secondary w-fit mt-4"
+                  dir="ltr"
+                >
                   {item.tech}
                 </span>
               )}

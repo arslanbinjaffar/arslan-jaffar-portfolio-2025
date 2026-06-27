@@ -1,0 +1,143 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience ⭐",
+    "projects": "Projects",
+    "skills": "Skills",
+    "services": "Services",
+    "blog": "Blog",
+    "contact": "Contact",
+    "resume": "Resume",
+    "gallery": "Gallery",
+    "hireMe": "Hire Me"
+  },
+  "badge": {
+    "available": "Available for Work"
+  },
+  "footer": {
+    "tagline": "Senior MERN & AI engineer building scalable web platforms, SaaS products, and production AI systems.",
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "connect": "Connect",
+    "connectText": "Open to remote freelance, part-time contracts, and collaboration.",
+    "location": "Location",
+    "availability": "Availability",
+    "chatWhatsApp": "Chat on WhatsApp",
+    "privacyPolicy": "Privacy Policy",
+    "termsConditions": "Terms & Conditions",
+    "cookiesPolicy": "Cookies Policy",
+    "sitemap": "Sitemap",
+    "sitemapAccent": "Map",
+    "faqs": "FAQs",
+    "uses": "Uses / Setup",
+    "caseStudies": "Case Studies",
+    "changelog": "Changelog",
+    "legal": "Legal",
+    "resources": "Resources",
+    "designedBy": "Designed and Developed by {{author}}",
+    "copyright": "Copyright © {{year}} {{author}}. All rights reserved."
+  },
+  "social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "linkedinMessage": "Message on LinkedIn",
+    "twitter": "Twitter",
+    "whatsapp": "WhatsApp",
+    "viewGithub": "View on GitHub"
+  },
+  "theme": {
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "ur": "Urdu",
+    "ar": "Arabic"
+  },
+  "rating": {
+    "title": "How did you like my portfolio?",
+    "description": "Your feedback helps me improve my work and showcase projects better.",
+    "skip": "Skip",
+    "submit": "Submit Rating",
+    "selectRating": "Select a rating",
+    "feedback": {
+      "1": "😞 I'd love to hear what I can improve!",
+      "2": "😐 Please share your feedback for improvement.",
+      "3": "😊 Glad you liked it! Any suggestions?",
+      "4": "😄 Great! Happy to hear that!",
+      "5": "🎉 Awesome! Thank you so much!"
+    }
+  },
+  "buttons": {
+    "downloadResume": "Download Resume",
+    "viewProjects": "View My Projects",
+    "hireMe": "Hire Me",
+    "letsTalk": "Let's Talk",
+    "viewAll": "View all",
+    "bookCall": "Book a Call",
+    "sendMessage": "Send Message",
+    "messageSent": "Message Sent! ✓"
+  },
+  "site": {
+    "jobTitle": "Senior MERN Stack Developer",
+    "availability": "Open for remote freelance & part-time contracts"
+  },
+  "sticky": {
+    "scrollTop": "Scroll to top",
+    "chatWhatsApp": "Chat on WhatsApp",
+    "linkedinMessage": "Message on LinkedIn",
+    "chatMessenger": "Chat on Messenger",
+    "instagramMessage": "Message on Instagram"
+  },
+  "copyEmail": {
+    "label": "Copy email address",
+    "copied": "Email copied!"
+  },
+  "commandPalette": {
+    "title": "Command Palette",
+    "placeholder": "Search pages, projects, or actions…",
+    "noResults": "No results found.",
+    "navigate": "Navigate",
+    "select": "Select",
+    "groups": {
+      "navigate": "Navigate",
+      "projects": "Projects",
+      "actions": "Actions"
+    },
+    "actions": {
+      "copyEmail": "Copy email address",
+      "lightMode": "Switch to light mode",
+      "darkMode": "Switch to dark mode",
+      "scrollTop": "Scroll to top"
+    }
+  },
+  "visitorCounter": {
+    "label": "{{count}} visitors"
+  },
+  "notFound": {
+    "title": "Page Not Found | Arslan Jaffar",
+    "description": "The page you are looking for does not exist or has been moved.",
+    "heading": "Page Not",
+    "headingAccent": "Found",
+    "subtitle": "The page you requested doesn't exist or may have been moved.",
+    "backHome": "Back to Home",
+    "contact": "Contact Me"
+  },
+  "sitemap": {
+    "description": "Browse all pages on this website, organized by section.",
+    "groups": {
+      "main": "Main Pages",
+      "legal": "Legal",
+      "resources": "Resources",
+      "blog": "Blog Articles"
+    }
+  },
+  "about": {
+    "viewSetup": "View full tech setup"
+  },
+  "projects": {
+    "readCaseStudy": "Read case study"
+  }
+}

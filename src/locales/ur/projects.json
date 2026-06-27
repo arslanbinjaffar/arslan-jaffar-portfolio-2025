@@ -1,0 +1,174 @@
+{
+  "heading": "میرے حالیہ",
+  "headingAccent": "کام",
+  "subtitle": "یہاں چند حالیہ پروجیکٹس ہیں جن پر میں نے کام کیا۔",
+  "searchPlaceholder": "پروجیکٹس تلاش کریں…",
+  "emptyTitle": "آپ کے فلٹرز سے کوئی پروجیکٹ نہیں ملا",
+  "emptyDescription": "تلاش یا technology فلٹرز تبدیل کر کے دوبارہ کوشش کریں۔",
+  "items": [
+    {
+      "title": "VoxtAsia ایڈمن پینل",
+      "role": "بیک اینڈ انجینئر",
+      "impact": "ریئل ٹائم آڈیو اسٹریمنگ کے لیے ایونٹ ڈرiven مائیکرو سروسز",
+      "description": "VoxtAsia Admin ہمارے آڈیو اسٹریمنگ پلیٹ فارم کا مرکزی ڈیش بورڈ ہے۔"
+    },
+    {
+      "title": "VoxtAsia — موبائل ایپ",
+      "role": "فل اسٹیک انجینئر",
+      "impact": "آف لائن فرسٹ آڈیو پلے بیک کے ساتھ کراس پلیٹ فارم موبائل ایپ",
+      "description": "VoxtAsia Mobile مکمل آڈیو اسٹریمنگ تجربہ آپ کے اسmartphone پر لاتا ہے۔"
+    },
+    {
+      "title": "VoxtAsia — ویب پلیٹ فارم",
+      "role": "فل اسٹیک انجینئر",
+      "impact": "ریئل ٹائم مواد کی ترسیل کے ساتھ ریسپانسیو ویب اسٹریمنگ پلیٹ فارم",
+      "description": "VoxtAsia Web آڈیو اسٹریمنگ پلیٹ فارم کا فرنٹ اینڈ ہے۔"
+    },
+    {
+      "title": "انٹرپرائز AI اسسٹنٹ پلیٹ فارم",
+      "role": "AI سسٹمز انجینئر",
+      "impact": "RAG، ٹول کالنگ، اور MCP انٹیگریشنز کے ساتھ ملٹی ایجنٹ انٹرپرائز اسسٹنٹ",
+      "description": "PixelPK / Beyond Technologies میں انٹرپرائز AI اسسٹنٹ پلیٹ فارم — ملٹی ایجنٹ آرکسٹریشن اور RAG کے ساتھ پروڈکشن AI سسٹم۔"
+    },
+    {
+      "title": "Gigbase — فری لانسر پلیٹ فارم",
+      "role": "فل اسٹیک انجینئر",
+      "impact": "10+ الگ ٹولز کی جگہ AI سے مدد یافتہ فری لانسر ورک اسپیس",
+      "description": "Gigbase ڈیجیٹل فری لancers کے لیے آل ان ون پلیٹ فارم ہے۔"
+    },
+    {
+      "title": "AML Watcher — کمپلائنس پلیٹ فارم",
+      "role": "MERN اسٹیک ڈevelper",
+      "impact": "مالی لین دین کے потокوں میں ریئل ٹائم AML مانیٹرنگ",
+      "description": "AML Watcher ایپلیکیشن پر MERN ڈevelper کے طور پر کام کیا۔"
+    },
+    {
+      "title": "AI فلیٹ مینجمنٹ ERP",
+      "role": "لیڈ بیک اینڈ انجینئر",
+      "impact": "فلیٹ، HR، فنانس، اور گیراج آپریشنز کا انٹرپرائز ERP",
+      "description": "فلیٹ ERP سسٹم — مکمل فلیٹ لائف سائیکل، گیراج، HR، اور فنانس مینجمنٹ۔"
+    },
+    {
+      "title": "AIFA Services — کمپنی ویب سائٹ",
+      "role": "فرنٹ اینڈ ڈevelper",
+      "impact": "ملٹی سروس FM کمپنی کے لیے کنورژن فوکسڈ کارپوریٹ سائٹ",
+      "description": "ہماری کمپنی لاگت مؤثر سافٹ اور ہارڈ سروسز فراہم کرتی ہے۔"
+    },
+    {
+      "title": "FeedDrop — AI ویڈیو جنریشن",
+      "role": "فل اسٹیک انجینئر",
+      "impact": "2 منٹ سے کم میں شارٹ فارم سوشل ویڈیوز بنانے والا AI پائپ لائن",
+      "description": "FeedDrop AI سے چلنے والا پلیٹ فارم ہے جو TikTok اور Instagram ریلز جیسی ویڈیوز بناتا ہے۔"
+    },
+    {
+      "title": "PATCO — سافٹ ویئر ڈevelpment کمپنی",
+      "role": "فرنٹ اینڈ ڈevelper",
+      "impact": "بین الاقوامی 50+ ٹیم ایجنسی کے لیے اعتماد والی کارپوریٹ سائٹ",
+      "description": "PATCO آذربائیجان میں AI پر مبنی سافٹ ویئر ڈevelpment کمپنی ہے۔"
+    },
+    {
+      "title": "Aifa ERP سسٹم",
+      "role": "لیڈ فل اسٹیک انجینئر",
+      "impact": "دستی انتظامی کام ~60% کم کرنے والا end-to-end ERP آٹomation",
+      "description": "جامع ERP سسٹم جو تمام بنیادی کاروباری افعال کو ایک پلیٹ فارم میں یکجا کرتا ہے۔"
+    },
+    {
+      "title": "Pakistan Lawbot — AI قانونی پلیٹ فارم",
+      "role": "فل اسٹیک انجینئر",
+      "impact": "پاکستان کا پہلا AI قانونی تحقیق، ڈrafting اور وکیل marketplace — 15,000+ صارفین",
+      "description": "Pakistan Lawbot PixelPK Technologies کا پروڈکٹ ہے — پاکستان کا پہلا AI قانونی پلیٹ فارم۔"
+    },
+    {
+      "title": "AITube — AI ویڈیو پلیٹ فارم",
+      "role": "فل اسٹیک انجینئر",
+      "impact": "ٹیکسٹ سے ویڈیو تخلیق، دریافت، اور شیئرنگ کے لیے AI ویڈیو پلیٹ فارم",
+      "description": "AITube PixelPK Technologies کا AI سے چلنے والا ویڈیو پلیٹ فارم ہے۔"
+    },
+    {
+      "title": "QuickLegals ویب سائٹ اور یوزر پورٹل",
+      "role": "فل اسٹیک انجینئر",
+      "impact": "وکیل کے بغیر UX کے ساتھ قانونی دستاویز جنریشن پلیٹ فارم",
+      "description": "QuickLegals آن لائن پلیٹ فارم ہے جو منٹوں میں قانونی دستاویزات بنانے میں مدد کرتا ہے۔"
+    },
+    {
+      "title": "QuickLegals ایڈمن پورٹل",
+      "role": "",
+      "impact": "",
+      "description": "QuickLegals ایڈمن پورٹل صارفین، دستاویزات، اور پلیٹ فارم سیٹنگز کا انتظام کرتا ہے۔"
+    },
+    {
+      "title": "Islamiyya — شریعت کے مطابق وصیت نامے",
+      "role": "فل اسٹیک انjینئر",
+      "impact": "سکاٹ لینڈ کی پہلی شریعت کے مطابق وصیت نامہ سروس",
+      "description": "Islamiyya سکاٹ لینڈ کی پہلی شریعت کے مطابق وصیت نامہ سروس ہے۔"
+    },
+    {
+      "title": "Islamiyya ایڈمن پینل",
+      "role": "",
+      "impact": "",
+      "description": "Islamiyya ایڈمن پینل پلیٹ فارم کے آپریشنز پر انتظامی کنٹرول فراہم کرتا ہے۔"
+    },
+    {
+      "title": "EventBuizz موبائل ایپ",
+      "role": "",
+      "impact": "",
+      "description": "React.js، Material-UI، اور Firebase کے ساتھ بنایا گیا چیٹ اور ورک اسپیس۔"
+    },
+    {
+      "title": "Facebook Clone",
+      "role": "",
+      "impact": "",
+      "description": "React.js کے ساتھ بنایا گیا سوشل میڈیا پلیٹ فارم۔"
+    },
+    {
+      "title": "Martial Arts",
+      "role": "",
+      "impact": "",
+      "description": "مارشل آرٹس ٹrainers اور شوقین افراد کے لیے ڈائnamic پلیٹ فارم۔"
+    },
+    {
+      "title": "Hasty App",
+      "role": "",
+      "impact": "",
+      "description": "ریئل اسٹیٹ پروجیکٹس کو منظم کرنے کے لیے جامع پلیٹ فارم۔"
+    },
+    {
+      "title": "Ninja Training App",
+      "role": "",
+      "impact": "",
+      "description": "نینجا کی طرح ٹrainنگ کے لیے ڈائnamic پلیٹ فارم۔"
+    },
+    {
+      "title": "Eventcenter ویب ایپ",
+      "role": "React.js ڈevelper",
+      "impact": "Eventbuizz میں ریئل ٹائم ایونٹ scheduling اور check-in سسٹم",
+      "description": "Eventcenter پروجیکٹ پر MERN ڈevelper کے طور پر کام کیا۔"
+    }
+  ],
+  "backendItems": [
+    {
+      "title": "Islamiya Backend",
+      "role": "",
+      "impact": "",
+      "description": "Islamiya پلیٹ فارم کے لیے solo backend پروجیکٹ۔"
+    },
+    {
+      "title": "Fleet Management Backend",
+      "role": "",
+      "impact": "",
+      "description": "Fleet Management سسٹم کے لیے solo backend پروجیکٹ۔"
+    },
+    {
+      "title": "Quick Legals Backend",
+      "role": "",
+      "impact": "",
+      "description": "Quick Legals پلیٹ فارم کے لیے solo backend پروجیکٹ۔"
+    },
+    {
+      "title": "Aifa ERP Backend",
+      "role": "",
+      "impact": "",
+      "description": "Aifa ERP سسٹم کے لیے solo backend پروجیکٹ۔"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "heading": "Services I",
+  "headingAccent": "Offer",
+  "subtitle": "End-to-end engineering services for startups, enterprises, and freelance clients.",
+  "items": [
+    {
+      "title": "Full-Stack Web Development",
+      "description": "End-to-end web applications with modern React, Next.js, and Node.js stacks — from UI to deployment.",
+      "features": [
+        "Responsive, accessible frontends",
+        "RESTful & GraphQL APIs",
+        "Database design & optimization",
+        "CI/CD and cloud deployment"
+      ]
+    },
+    {
+      "title": "React Development",
+      "description": "High-performance React and Next.js applications with clean architecture, state management, and SEO.",
+      "features": [
+        "Component-driven UI systems",
+        "Redux / Context state management",
+        "Performance & accessibility",
+        "SSR and static generation"
+      ]
+    },
+    {
+      "title": "NestJS APIs",
+      "description": "Production-grade NestJS backends with modular architecture, validation, and scalable API design.",
+      "features": [
+        "REST & GraphQL endpoints",
+        "Auth & role-based access",
+        "Microservices modules",
+        "OpenAPI documentation"
+      ]
+    },
+    {
+      "title": "AI & LLM Integration",
+      "description": "Intelligent features powered by LLMs — RAG pipelines, multi-agent workflows, and production AI systems.",
+      "features": [
+        "RAG & vector search",
+        "Multi-agent orchestration",
+        "Prompt engineering & evaluation",
+        "API integration with OpenAI & more"
+      ]
+    },
+    {
+      "title": "Backend & API Design",
+      "description": "Scalable backend systems with microservices, event-driven architecture, and production-grade reliability.",
+      "features": [
+        "NestJS & Express.js services",
+        "Message queues & caching",
+        "Authentication & authorization",
+        "Performance tuning & monitoring"
+      ]
+    },
+    {
+      "title": "Technical Consulting",
+      "description": "Architecture reviews, code audits, and strategic guidance to help teams ship faster and scale confidently.",
+      "features": [
+        "System architecture review",
+        "Code quality & best practices",
+        "Tech stack recommendations",
+        "Mentoring & team upskilling"
+      ]
+    }
+  ]
+}

@@ -45,6 +45,8 @@
   --social-linkedin: #0077b5;
   --social-twitter: #1da1f2;
   --social-whatsapp: #25d366;
+  --social-facebook: #0084ff;
+  --social-instagram: #e4405f;
   --social-email: #ea4335;
   --star: #fbbf24;
   --error: #f87171;
@@ -126,6 +128,8 @@
   --color-social-linkedin: var(--social-linkedin);
   --color-social-twitter: var(--social-twitter);
   --color-social-whatsapp: var(--social-whatsapp);
+  --color-social-facebook: var(--social-facebook);
+  --color-social-instagram: var(--social-instagram);
   --color-social-email: var(--social-email);
   --color-star: var(--star);
   --color-error: var(--error);
@@ -171,6 +175,13 @@
 /* Typewriter cursor */
 .Typewriter__cursor {
   color: var(--accent) !important;
+}
+
+/* Custom animated cursor */
+body.custom-cursor-active,
+body.custom-cursor-active a,
+body.custom-cursor-active button {
+  cursor: none !important;
 }
 
 /* Navbar — collapsed menu touch targets & scroll lock */

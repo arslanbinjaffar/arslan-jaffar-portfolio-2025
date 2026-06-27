@@ -1,12 +1,13 @@
 import React, { useMemo, useState, useTransition } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import Particle from "../Particle";
 import Container from "../ui/Container";
 import Section from "../ui/Section";
 import PageHeading from "../ui/PageHeading";
 import AchievementCard from "./AchievementCard";
 import AchievementEmbedCard from "./AchievementEmbedCard";
-import galleryItems, { GALLERY_CATEGORIES } from "./galleryData";
+import { useGallery } from "@/hooks/useGallery";
 import {
   Dialog,
   DialogContent,
@@ -15,24 +16,28 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import Seo from "../Seo";
-import { routeSeo } from "@/config/seo";
+import { useRouteSeo } from "@/hooks/useRouteSeo";
 import { staggerContainer } from "@/lib/motion";
 import GalleryCardSkeleton from "../skeletons/GalleryCardSkeleton";
 
 function Gallery() {
+  const { t } = useTranslation("gallery");
+  const { galleryItems, categories: galleryCategories } = useGallery();
+  const seo = useRouteSeo("/gallery");
   const [activeCategory, setActiveCategory] = useState("All");
   const [selected, setSelected] = useState(null);
   const [isPending, startTransition] = useTransition();
 
   const categories = useMemo(() => {
     const used = new Set(galleryItems.map((item) => item.category).filter(Boolean));
-    return ["All", ...GALLERY_CATEGORIES.filter((c) => used.has(c))];
-  }, []);
+    return [t("allCategory", { defaultValue: "All" }), ...galleryCategories.filter((c) => used.has(c))];
+  }, [galleryItems, galleryCategories, t]);
 
   const filteredItems = useMemo(() => {
-    if (activeCategory === "All") return galleryItems;
+    const allLabel = t("allCategory", { defaultValue: "All" });
+    if (activeCategory === allLabel || activeCategory === "All") return galleryItems;
     return galleryItems.filter((item) => item.category === activeCategory);
-  }, [activeCategory]);
+  }, [activeCategory, galleryItems, t]);
 
   const showFilters = galleryItems.length > 0 && categories.length > 1;
 
@@ -44,14 +49,11 @@ function Gallery() {
 
   return (
     <Section className="relative">
-      <Seo {...routeSeo["/gallery"]} path="/gallery" />
+      <Seo {...seo} path="/gallery" />
       <Particle />
       <Container>
-        <PageHeading
-          accent="Gallery"
-          subtitle="A visual collection of awards, certificates, and milestones from my journey."
-        >
-          Achievements
+        <PageHeading accent={t("headingAccent")} subtitle={t("subtitle")}>
+          {t("heading")}
         </PageHeading>
 
         {showFilters && (
@@ -79,10 +81,10 @@ function Gallery() {
               🏆
             </p>
             <p className="text-lg font-semibold text-text-primary">
-              Achievement photos coming soon.
+              {t("emptyTitle", { defaultValue: "Achievement photos coming soon." })}
             </p>
             <p className="text-sm text-text-secondary mt-2 max-w-md mx-auto">
-              Awards, certificates, and event highlights will appear here once added.
+              {t("emptyDescription", { defaultValue: "Awards, certificates, and event highlights will appear here once added." })}
             </p>
           </div>
         ) : isPending ? (
@@ -128,7 +130,7 @@ function Gallery() {
                 />
               </div>
               <div className="p-6">
-                <DialogHeader className="text-left">
+                <DialogHeader className="text-start">
                   <DialogTitle className="text-text-primary">{selected.title}</DialogTitle>
                   {(selected.date || selected.category) && (
                     <DialogDescription className="text-text-secondary">
